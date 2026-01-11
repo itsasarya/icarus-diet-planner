@@ -1,0 +1,3383 @@
+[
+  {
+    "id": "avocado",
+    "name": "Avocado",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 60,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "avocado.png"
+  },
+  {
+    "id": "bacon_butty",
+    "name": "Bacon Butty",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 125
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 25
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 25
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "bacon_butty.png"
+  },
+  {
+    "id": "banana",
+    "name": "Banana",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 100
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "banana.png"
+  },
+  {
+    "id": "barbecue_carrot",
+    "name": "Barbecue Carrot",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "barbecue_carrot.png"
+  },
+  {
+    "id": "basic_dried_meat",
+    "name": "Basic Dried Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 75
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 20
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "basic_dried_meat.png"
+  },
+  {
+    "id": "beer",
+    "name": "Beer",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 125
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 100
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "beer.png"
+  },
+  {
+    "id": "berry_seed_bar",
+    "name": "Berry & Seed Bar",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "berry_seed_bar.png"
+  },
+  {
+    "id": "berry_jam",
+    "name": "Berry Jam",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 125
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "berry_jam.png"
+  },
+  {
+    "id": "berry_smoked_saltwater_fillet",
+    "name": "Berry Smoked Saltwater Fillet",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 25
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "berry_smoked_saltwater_fillet.png"
+  },
+  {
+    "id": "big_breakfast",
+    "name": "Big Breakfast",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "max_health",
+        "value": 225
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "big_breakfast.png"
+  },
+  {
+    "id": "bread",
+    "name": "Bread",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 125
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 10
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "bread.png"
+  },
+  {
+    "id": "broiled_kumara",
+    "name": "Broiled Kumara",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "broiled_kumara.png"
+  },
+  {
+    "id": "caramel_berry_tart",
+    "name": "Caramel Berry Tart",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "caramel_berry_tart.png"
+  },
+  {
+    "id": "caramel_pastry",
+    "name": "Caramel Pastry",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 15
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "caramel_pastry.png"
+  },
+  {
+    "id": "carrot",
+    "name": "Carrot",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 60,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "carrot.png"
+  },
+  {
+    "id": "carrot_cake_piece",
+    "name": "Carrot Cake Piece",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 100
+      },
+      {
+        "id": "max_health",
+        "value": 100
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 50
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 25
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "carrot_cake_piece.png"
+  },
+  {
+    "id": "chargrilled_chicken",
+    "name": "Chargrilled Chicken",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 100
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "chargrilled_chicken.png"
+  },
+  {
+    "id": "charred_corn",
+    "name": "Charred Corn",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "charred_corn.png"
+  },
+  {
+    "id": "cheese",
+    "name": "Cheese",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 100
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 25
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "cheese.png"
+  },
+  {
+    "id": "cheese_pizza_slice",
+    "name": "Cheese Pizza Slice",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1500,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 50
+      },
+      {
+        "id": "max_health",
+        "value": 125
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 5
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "cheese_pizza_slice.png"
+  },
+  {
+    "id": "cheese_roll",
+    "name": "Cheese Roll",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 125
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 25
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "cheese_roll.png"
+  },
+  {
+    "id": "chewy_coconut_cookie",
+    "name": "Chewy Coconut Cookie",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 175
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "chewy_coconut_cookie.png"
+  },
+  {
+    "id": "choc_chip_cookie",
+    "name": "Choc-Chip Cookie",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 175
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "choc_chip_cookie.png"
+  },
+  {
+    "id": "chocolate_cake_piece",
+    "name": "Chocolate Cake Piece",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 200
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 200
+      },
+      {
+        "id": "max_health",
+        "value": 300
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 200
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 25
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "chocolate_cake_piece.png"
+  },
+  {
+    "id": "cocoa_smoked_soft_meat",
+    "name": "Cocoa Smoked Soft Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 25
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 20
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "cocoa_smoked_soft_meat.png"
+  },
+  {
+    "id": "coconut_cake_piece",
+    "name": "Coconut Cake Piece",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 250
+      },
+      {
+        "id": "max_health",
+        "value": 250
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 50
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 25
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "coconut_cake_piece.png"
+  },
+  {
+    "id": "coffee_smoked_fatty_t_bone",
+    "name": "Coffee Smoked Fatty T-bone",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 20
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "coffee_smoked_fatty_t_bone.png"
+  },
+  {
+    "id": "cooked_bacon",
+    "name": "Cooked Bacon",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 15
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "cooked_bacon.png"
+  },
+  {
+    "id": "cooked_fatty_t_bone",
+    "name": "Cooked Fatty T-Bone",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 100
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 5
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "cooked_fatty_t_bone.png"
+  },
+  {
+    "id": "cooked_fish",
+    "name": "Cooked Fish",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "stamina_regen_pct",
+        "value": 20
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "cooked_fish.png"
+  },
+  {
+    "id": "cooked_gamey_meat",
+    "name": "Cooked Gamey Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 100
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 5
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "cooked_gamey_meat.png"
+  },
+  {
+    "id": "cooked_giant_steak",
+    "name": "Cooked Giant Steak",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 100
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 5
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "cooked_giant_steak.png"
+  },
+  {
+    "id": "cooked_meat",
+    "name": "Cooked Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 75
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 20
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "cooked_meat.png"
+  },
+  {
+    "id": "cooked_soft_meat",
+    "name": "Cooked Soft Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 100
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 5
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "cooked_soft_meat.png"
+  },
+  {
+    "id": "cooked_stringy_meat",
+    "name": "Cooked Stringy Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 100
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 5
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "cooked_stringy_meat.png"
+  },
+  {
+    "id": "cooked_white_meat",
+    "name": "Cooked White Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 100
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 5
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "cooked_white_meat.png"
+  },
+  {
+    "id": "corn",
+    "name": "Corn",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 60,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "corn.png"
+  },
+  {
+    "id": "creamed_corn",
+    "name": "Creamed Corn",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "creamed_corn.png"
+  },
+  {
+    "id": "crispy_bacon",
+    "name": "Crispy Bacon",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 90
+      },
+      {
+        "id": "max_health",
+        "value": 90
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 15
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "crispy_bacon.png"
+  },
+  {
+    "id": "crispy_potato",
+    "name": "Crispy Potato",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "crispy_potato.png"
+  },
+  {
+    "id": "crumbed_fish_fillet",
+    "name": "Crumbed Fish Fillet",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "crumbed_fish_fillet.png"
+  },
+  {
+    "id": "crumbed_saltwater_fillet",
+    "name": "Crumbed Saltwater Fillet",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "crumbed_saltwater_fillet.png"
+  },
+  {
+    "id": "crunchy_soy_bean",
+    "name": "Crunchy Soy Bean",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 75
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "crunchy_soy_bean.png"
+  },
+  {
+    "id": "dried_avocado",
+    "name": "Dried Avocado",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "dried_avocado.png"
+  },
+  {
+    "id": "dried_fatty_t_bone",
+    "name": "Dried Fatty T-Bone",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "dried_fatty_t_bone.png"
+  },
+  {
+    "id": "dried_freshwater_fillet",
+    "name": "Dried Freshwater Fillet",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "stamina_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 5
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "dried_freshwater_fillet.png"
+  },
+  {
+    "id": "dried_gamey_meat",
+    "name": "Dried Gamey Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "dried_gamey_meat.png"
+  },
+  {
+    "id": "dried_giant_steak",
+    "name": "Dried Giant Steak",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 100
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 25
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "dried_giant_steak.png"
+  },
+  {
+    "id": "dried_kiwifruit_chips",
+    "name": "Dried Kiwifruit Chips",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "dried_kiwifruit_chips.png"
+  },
+  {
+    "id": "dried_rhubarb",
+    "name": "Dried Rhubarb",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "dried_rhubarb.png"
+  },
+  {
+    "id": "dried_saltwater_fillet",
+    "name": "Dried Saltwater Fillet",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "stamina_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "dried_saltwater_fillet.png"
+  },
+  {
+    "id": "dried_soft_meat",
+    "name": "Dried Soft Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 100
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 15
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "dried_soft_meat.png"
+  },
+  {
+    "id": "dried_stringy_meat",
+    "name": "Dried Stringy Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "dried_stringy_meat.png"
+  },
+  {
+    "id": "dried_tomato",
+    "name": "Dried Tomato",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "dried_tomato.png"
+  },
+  {
+    "id": "dried_white_meat",
+    "name": "Dried White Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "dried_white_meat.png"
+  },
+  {
+    "id": "endurogel",
+    "name": "Endurogel",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 0,
+    "buffs": [],
+    "instant": [],
+    "recipe": [],
+    "image": "endurogel.png"
+  },
+  {
+    "id": "energy_bar",
+    "name": "Energy Bar",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 100
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "energy_bar.png"
+  },
+  {
+    "id": "fish_chunk_stew",
+    "name": "Fish Chunk Stew",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 10
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "fish_chunk_stew.png"
+  },
+  {
+    "id": "fish_chunks",
+    "name": "Fish Chunks",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 0,
+    "buffs": [],
+    "instant": [],
+    "recipe": [],
+    "image": "fish_chunks.png"
+  },
+  {
+    "id": "fish_pie",
+    "name": "Fish Pie",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "stamina_regen_pct",
+        "value": 30
+      },
+      {
+        "id": "max_health",
+        "value": 225
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 5
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "fish_pie.png"
+  },
+  {
+    "id": "flatbread",
+    "name": "Flatbread",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "stamina_regen_pct",
+        "value": 100
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 5
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "flatbread.png"
+  },
+  {
+    "id": "freshwater_fillet_curry",
+    "name": "Freshwater Fillet Curry",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "stamina_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "max_health",
+        "value": 225
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 15
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "freshwater_fillet_curry.png"
+  },
+  {
+    "id": "freshwater_fish_fillet",
+    "name": "Freshwater Fish Fillet",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 0,
+    "buffs": [],
+    "instant": [],
+    "recipe": [],
+    "image": "freshwater_fish_fillet.png"
+  },
+  {
+    "id": "fried_chicken",
+    "name": "Fried Chicken",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "max_health",
+        "value": 200
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "fried_chicken.png"
+  },
+  {
+    "id": "fried_chunky_vegetables",
+    "name": "Fried Chunky Vegetables",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "fried_chunky_vegetables.png"
+  },
+  {
+    "id": "fried_eggs",
+    "name": "Fried Eggs",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "fried_eggs.png"
+  },
+  {
+    "id": "fried_fish_chunks",
+    "name": "Fried Fish Chunks",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "stamina_regen_pct",
+        "value": 10
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "fried_fish_chunks.png"
+  },
+  {
+    "id": "fried_tomato",
+    "name": "Fried Tomato",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "fried_tomato.png"
+  },
+  {
+    "id": "fruit_muffin",
+    "name": "Fruit Muffin",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 225
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 35
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "fruit_muffin.png"
+  },
+  {
+    "id": "fruit_pie",
+    "name": "Fruit Pie",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "fruit_pie.png"
+  },
+  {
+    "id": "fruit_salad",
+    "name": "Fruit Salad",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "fruit_salad.png"
+  },
+  {
+    "id": "fruit_smoothie",
+    "name": "Fruit Smoothie",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 300,
+    "buffs": [
+      {
+        "id": "health_regen_pct",
+        "value": 10
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "fruit_smoothie.png"
+  },
+  {
+    "id": "fruit_snack_pack",
+    "name": "Fruit Snack Pack",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "fruit_snack_pack.png"
+  },
+  {
+    "id": "glass_milk_bottle",
+    "name": "Glass Milk Bottle",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 300,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 40
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "glass_milk_bottle.png"
+  },
+  {
+    "id": "go",
+    "name": "Go",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 10
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": -10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "go.png"
+  },
+  {
+    "id": "gorse_smoked_gamey_meat",
+    "name": "Gorse Smoked Gamey Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "max_health",
+        "value": 100
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 20
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "gorse_smoked_gamey_meat.png"
+  },
+  {
+    "id": "gorse_tea",
+    "name": "Gorse Tea",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "exp_gain_pct",
+        "value": -25
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "gorse_tea.png"
+  },
+  {
+    "id": "grilled_freshwater_fillet",
+    "name": "Grilled Freshwater Fillet",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "stamina_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 5
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "grilled_freshwater_fillet.png"
+  },
+  {
+    "id": "grilled_pumpkin",
+    "name": "Grilled Pumpkin",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "grilled_pumpkin.png"
+  },
+  {
+    "id": "grilled_saltwater_fillet",
+    "name": "Grilled Saltwater Fillet",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "stamina_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "grilled_saltwater_fillet.png"
+  },
+  {
+    "id": "hearty_salad",
+    "name": "Hearty Salad",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 20
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "hearty_salad.png"
+  },
+  {
+    "id": "honey",
+    "name": "Honey",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 60,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 50
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "honey.png"
+  },
+  {
+    "id": "honey_glazed_pastry",
+    "name": "Honey Glazed Pastry",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 15
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "honey_glazed_pastry.png"
+  },
+  {
+    "id": "honey_mead",
+    "name": "Honey Mead",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1000,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 125
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 100
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "honey_mead.png"
+  },
+  {
+    "id": "honey_smoked_bacon",
+    "name": "Honey Smoked Bacon",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 20
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 15
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "honey_smoked_bacon.png"
+  },
+  {
+    "id": "honey_tea",
+    "name": "Honey Tea",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "honey_tea.png"
+  },
+  {
+    "id": "honeycomb",
+    "name": "Honeycomb",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 60,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "honeycomb.png"
+  },
+  {
+    "id": "honeycomb_bar",
+    "name": "Honeycomb Bar",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "honeycomb_bar.png"
+  },
+  {
+    "id": "hot_cocoa",
+    "name": "Hot Cocoa",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "exp_gain_pct",
+        "value": -25
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "hot_cocoa.png"
+  },
+  {
+    "id": "hot_coffee",
+    "name": "Hot Coffee",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 10
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "hot_coffee.png"
+  },
+  {
+    "id": "hot_coffee_with_cream",
+    "name": "Hot Coffee with Cream",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 300,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 25
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "hot_coffee_with_cream.png"
+  },
+  {
+    "id": "hot_tea",
+    "name": "Hot Tea",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 25
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "hot_tea.png"
+  },
+  {
+    "id": "jarred_honey",
+    "name": "Jarred Honey",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 125
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "jarred_honey.png"
+  },
+  {
+    "id": "kiwifruit",
+    "name": "Kiwifruit",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 50
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "kiwifruit.png"
+  },
+  {
+    "id": "kiwifruit_jam",
+    "name": "Kiwifruit Jam",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 125
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 20
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "kiwifruit_jam.png"
+  },
+  {
+    "id": "kiwifruit_sorbet",
+    "name": "Kiwifruit Sorbet",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1800,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "kiwifruit_sorbet.png"
+  },
+  {
+    "id": "kumara",
+    "name": "Kumara",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 60,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "kumara.png"
+  },
+  {
+    "id": "mature_coconut",
+    "name": "Mature Coconut",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 50
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "mature_coconut.png"
+  },
+  {
+    "id": "meat_pie",
+    "name": "Meat Pie",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "stamina_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "max_health",
+        "value": 225
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "meat_pie.png"
+  },
+  {
+    "id": "melon_smoked_giant_steak",
+    "name": "Melon Smoked Giant Steak",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "max_health",
+        "value": 100
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 50
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "melon_smoked_giant_steak.png"
+  },
+  {
+    "id": "micromeal",
+    "name": "MicroMeal",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "stamina_regen_pct",
+        "value": 10
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "micromeal.png"
+  },
+  {
+    "id": "milk_pail",
+    "name": "Milk Pail",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 300,
+    "buffs": [
+      {
+        "id": "stamina_regen_pct",
+        "value": 40
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "milk_pail.png"
+  },
+  {
+    "id": "mixed_berries",
+    "name": "Mixed Berries",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "mixed_berries.png"
+  },
+  {
+    "id": "mushroom",
+    "name": "Mushroom",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 60,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "mushroom.png"
+  },
+  {
+    "id": "mushroom_omelette",
+    "name": "Mushroom Omelette",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "stamina_regen_pct",
+        "value": 10
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "mushroom_omelette.png"
+  },
+  {
+    "id": "mushroom_soup",
+    "name": "Mushroom Soup",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "stamina_regen_pct",
+        "value": 10
+      },
+      {
+        "id": "max_health",
+        "value": 100
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "mushroom_soup.png"
+  },
+  {
+    "id": "oxygel",
+    "name": "Oxygel",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 0,
+    "buffs": [],
+    "instant": [],
+    "recipe": [],
+    "image": "oxygel.png"
+  },
+  {
+    "id": "pavlova",
+    "name": "Pavlova",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1800,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "max_health",
+        "value": 125
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "pavlova.png"
+  },
+  {
+    "id": "pickled_avocado",
+    "name": "Pickled Avocado",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "pickled_avocado.png"
+  },
+  {
+    "id": "pickled_carrot",
+    "name": "Pickled Carrot",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "pickled_carrot.png"
+  },
+  {
+    "id": "pickled_eggs",
+    "name": "Pickled Eggs",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "pickled_eggs.png"
+  },
+  {
+    "id": "pickled_freshwater_fillet",
+    "name": "Pickled Freshwater Fillet",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 30
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 150
+      },
+      {
+        "id": "max_health",
+        "value": 10
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 20
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "pickled_freshwater_fillet.png"
+  },
+  {
+    "id": "pickled_tomato",
+    "name": "Pickled Tomato",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 20
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "pickled_tomato.png"
+  },
+  {
+    "id": "plain_jerky",
+    "name": "Plain Jerky",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 60
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "plain_jerky.png"
+  },
+  {
+    "id": "potato",
+    "name": "Potato",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 60,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "potato.png"
+  },
+  {
+    "id": "potato_bread",
+    "name": "Potato Bread",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": -20
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "potato_bread.png"
+  },
+  {
+    "id": "potato_and_carrot_fries",
+    "name": "Potato and Carrot Fries",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "potato_and_carrot_fries.png"
+  },
+  {
+    "id": "pumpkin",
+    "name": "Pumpkin",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 60,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "pumpkin.png"
+  },
+  {
+    "id": "pumpkin_bread",
+    "name": "Pumpkin Bread",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 15
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "pumpkin_bread.png"
+  },
+  {
+    "id": "raw_bacon",
+    "name": "Raw Bacon",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 0,
+    "buffs": [],
+    "instant": [],
+    "recipe": [],
+    "image": "raw_bacon.png"
+  },
+  {
+    "id": "raw_chicken",
+    "name": "Raw Chicken",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 0,
+    "buffs": [],
+    "instant": [],
+    "recipe": [],
+    "image": "raw_chicken.png"
+  },
+  {
+    "id": "raw_fatty_t_bone",
+    "name": "Raw Fatty T-Bone",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 0,
+    "buffs": [],
+    "instant": [],
+    "recipe": [],
+    "image": "raw_fatty_t_bone.png"
+  },
+  {
+    "id": "raw_fish",
+    "name": "Raw Fish",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 0,
+    "buffs": [],
+    "instant": [],
+    "recipe": [],
+    "image": "raw_fish.png"
+  },
+  {
+    "id": "raw_gamey_meat",
+    "name": "Raw Gamey Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 0,
+    "buffs": [],
+    "instant": [],
+    "recipe": [],
+    "image": "raw_gamey_meat.png"
+  },
+  {
+    "id": "raw_giant_steak",
+    "name": "Raw Giant Steak",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 0,
+    "buffs": [],
+    "instant": [],
+    "recipe": [],
+    "image": "raw_giant_steak.png"
+  },
+  {
+    "id": "raw_meat",
+    "name": "Raw Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 0,
+    "buffs": [],
+    "instant": [],
+    "recipe": [],
+    "image": "raw_meat.png"
+  },
+  {
+    "id": "raw_soft_meat",
+    "name": "Raw Soft Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 0,
+    "buffs": [],
+    "instant": [],
+    "recipe": [],
+    "image": "raw_soft_meat.png"
+  },
+  {
+    "id": "raw_stringy_meat",
+    "name": "Raw Stringy Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 0,
+    "buffs": [],
+    "instant": [],
+    "recipe": [],
+    "image": "raw_stringy_meat.png"
+  },
+  {
+    "id": "raw_white_meat",
+    "name": "Raw White Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 0,
+    "buffs": [],
+    "instant": [],
+    "recipe": [],
+    "image": "raw_white_meat.png"
+  },
+  {
+    "id": "rhubarb",
+    "name": "Rhubarb",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 60,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "rhubarb.png"
+  },
+  {
+    "id": "rhubarb_stew",
+    "name": "Rhubarb Stew",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 225
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "rhubarb_stew.png"
+  },
+  {
+    "id": "ripe_coconut",
+    "name": "Ripe Coconut",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "ripe_coconut.png"
+  },
+  {
+    "id": "roast_chicken",
+    "name": "Roast Chicken",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1500,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 200
+      },
+      {
+        "id": "max_health",
+        "value": 250
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "roast_chicken.png"
+  },
+  {
+    "id": "roast_squash",
+    "name": "Roast Squash",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "roast_squash.png"
+  },
+  {
+    "id": "roast_vegetables",
+    "name": "Roast Vegetables",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 225
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "roast_vegetables.png"
+  },
+  {
+    "id": "saltwater_fillet_sashimi",
+    "name": "Saltwater Fillet Sashimi",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "saltwater_fillet_sashimi.png"
+  },
+  {
+    "id": "saltwater_fish_fillet",
+    "name": "Saltwater Fish Fillet",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 0,
+    "buffs": [],
+    "instant": [],
+    "recipe": [],
+    "image": "saltwater_fish_fillet.png"
+  },
+  {
+    "id": "sauteed_rhubarb",
+    "name": "Sauteed Rhubarb",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "sauteed_rhubarb.png"
+  },
+  {
+    "id": "savory_roll",
+    "name": "Savory Roll",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "max_health",
+        "value": 225
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 30
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "savory_roll.png"
+  },
+  {
+    "id": "scrambled_eggs",
+    "name": "Scrambled Eggs",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 100
+      },
+      {
+        "id": "max_health",
+        "value": 50
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 15
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "scrambled_eggs.png"
+  },
+  {
+    "id": "seared_mushroom",
+    "name": "Seared Mushroom",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "stamina_regen_pct",
+        "value": 5
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "seared_mushroom.png"
+  },
+  {
+    "id": "seed_bread",
+    "name": "Seed Bread",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": -20
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "seed_bread.png"
+  },
+  {
+    "id": "seed_cracker",
+    "name": "Seed Cracker",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 100
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "seed_cracker.png"
+  },
+  {
+    "id": "shepherd_s_pie",
+    "name": "Shepherd's Pie",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "max_health",
+        "value": 225
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 40
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "shepherd_s_pie.png"
+  },
+  {
+    "id": "shepherd_s_roll",
+    "name": "Shepherd's Roll",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "shepherd_s_roll.png"
+  },
+  {
+    "id": "smashed_avocado_toast",
+    "name": "Smashed Avocado Toast",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 15
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "smashed_avocado_toast.png"
+  },
+  {
+    "id": "soy_bean",
+    "name": "Soy Bean",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 60,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "soy_bean.png"
+  },
+  {
+    "id": "soy_bean_stir_fry",
+    "name": "Soy Bean Stir-Fry",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 10
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "soy_bean_stir_fry.png"
+  },
+  {
+    "id": "spoiled_meat",
+    "name": "Spoiled Meat",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 300,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 25
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 10
+      },
+      {
+        "id": "max_health",
+        "value": 25
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "spoiled_meat.png"
+  },
+  {
+    "id": "squash",
+    "name": "Squash",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 60,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "squash.png"
+  },
+  {
+    "id": "stew",
+    "name": "Stew",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 10
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "stew.png"
+  },
+  {
+    "id": "strawberries_cream",
+    "name": "Strawberries & Cream",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 100
+      },
+      {
+        "id": "max_health",
+        "value": 50
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "strawberries_cream.png"
+  },
+  {
+    "id": "strawberry",
+    "name": "Strawberry",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 60,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "strawberry.png"
+  },
+  {
+    "id": "strawberry_hard_candy",
+    "name": "Strawberry Hard Candy",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 120,
+    "buffs": [
+      {
+        "id": "exp_gain_pct",
+        "value": 25
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "strawberry_hard_candy.png"
+  },
+  {
+    "id": "strawberry_jam",
+    "name": "Strawberry Jam",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 125
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 20
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "strawberry_jam.png"
+  },
+  {
+    "id": "stringy_jerky",
+    "name": "Stringy Jerky",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 50
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "stringy_jerky.png"
+  },
+  {
+    "id": "stuffed_avocado",
+    "name": "Stuffed Avocado",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "stuffed_avocado.png"
+  },
+  {
+    "id": "sweetcorn_soup",
+    "name": "Sweetcorn Soup",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 100
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "sweetcorn_soup.png"
+  },
+  {
+    "id": "tea_smoked_freshwater_fillet",
+    "name": "Tea Smoked Freshwater Fillet",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 25
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 50
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "tea_smoked_freshwater_fillet.png"
+  },
+  {
+    "id": "tomato",
+    "name": "Tomato",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 60,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 30
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "tomato.png"
+  },
+  {
+    "id": "tomato_egg_bowl",
+    "name": "Tomato & Egg Bowl",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "tomato_egg_bowl.png"
+  },
+  {
+    "id": "tomato_soup",
+    "name": "Tomato Soup",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 100
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 20
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "tomato_soup.png"
+  },
+  {
+    "id": "ultrameal",
+    "name": "UltraMeal",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 3600,
+    "buffs": [
+      {
+        "id": "stamina_regen_pct",
+        "value": 10
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "ultrameal.png"
+  },
+  {
+    "id": "vegetable_pie",
+    "name": "Vegetable Pie",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 15
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "vegetable_pie.png"
+  },
+  {
+    "id": "vegetable_roll",
+    "name": "Vegetable Roll",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 30
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "vegetable_roll.png"
+  },
+  {
+    "id": "watermelon",
+    "name": "Watermelon",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 50
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "watermelon.png"
+  },
+  {
+    "id": "watermelon_lollypop",
+    "name": "Watermelon Lollypop",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 300,
+    "buffs": [
+      {
+        "id": "exp_gain_pct",
+        "value": -50
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "watermelon_lollypop.png"
+  },
+  {
+    "id": "white_jerky",
+    "name": "White Jerky",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 1200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "max_health",
+        "value": 75
+      },
+      {
+        "id": "health_regen_pct",
+        "value": 50
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "white_jerky.png"
+  },
+  {
+    "id": "wild_berry",
+    "name": "Wild Berry",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 50
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "wild_berry.png"
+  },
+  {
+    "id": "wild_salad",
+    "name": "Wild Salad",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "wild_salad.png"
+  },
+  {
+    "id": "wine",
+    "name": "Wine",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 125
+      },
+      {
+        "id": "stamina_regen_pct",
+        "value": 100
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "wine.png"
+  },
+  {
+    "id": "young_coconut",
+    "name": "Young Coconut",
+    "type": "cooked",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 25
+      }
+    ],
+    "instant": [],
+    "recipe": [],
+    "image": "young_coconut.png"
+  }
+]
