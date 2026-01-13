@@ -1,0 +1,37 @@
+[
+  {
+    "id": "campfire",
+    "name": "Campfire",
+    "tier": 1
+  },
+  {
+    "id": "cooking_station",
+    "name": "Cooking Station",
+    "tier": 2
+  },
+  {
+    "id": "kitchen_bench",
+    "name": "Kitchen Bench",
+    "tier": 3
+  },
+  {
+    "id": "potbelly_stove",
+    "name": "Potbelly Stove",
+    "tier": 3
+  },
+  {
+    "id": "biofuel_stove",
+    "name": "Biofuel Stove",
+    "tier": 4
+  },
+  {
+    "id": "electric_kitchen",
+    "name": "Electric Kitchen",
+    "tier": 4
+  },
+  {
+    "id": "advanced_kitchen",
+    "name": "Advanced Kitchen",
+    "tier": 4
+  }
+]

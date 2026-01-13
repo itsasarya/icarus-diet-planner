@@ -102,5 +102,21 @@
   "butchering_yield_pct": {
     "label": "Butchering Yield",
     "format": "+{value}%"
+  },
+  "max_health": {
+    "label": "Maximum Health",
+    "format": "+{value}"
+  },
+  "health_regen_pct": {
+    "label": "Health Regeneration",
+    "format": "+{value}%"
+  },
+  "stamina_regen_pct": {
+    "label": "Stamina Regeneration",
+    "format": "+{value}%"
+  },
+  "exp_gain_pct": {
+    "label": "Experience Gain",
+    "format": "{value}%"
   }
 }

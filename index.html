@@ -1,13 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Icarus Diet Planner</title>
-  </head>
-  <body>
-    <header>
-      <h1>Icarus Diet Planner</h1>
-    </header>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Icarus Diet Planner</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>Icarus Diet Planner</h1>
+  </header>
+  <main>
+    <div class="playersetup">
+      <div class="player-slots">
+        <h2>Player Setup</h2>
+        <p id="slots"></p>
+      </div>
+      <div class="slots">
+        <input id="talent" type="checkbox" name="extra_slot" value="1"><label for="talent">Talent</label>
+      </div>
+      <div class="slots">
+        <input id="armor_mod" type="checkbox" name="extra_slot" value="1"><label for="armor_mod">Armor
+          Mod</label>
+      </div>
+    </div>
+  </main>
+</body>
+
 </html>

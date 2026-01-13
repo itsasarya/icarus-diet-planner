@@ -2,7 +2,6 @@
   {
     "id": "avocado",
     "name": "Avocado",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 60,
     "buffs": [
@@ -11,58 +10,75 @@
         "value": 30
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "avocado.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 20
+      }
+    ],
+    "craftedAt": [],
+    "image": "avocado.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "bacon_butty",
     "name": "Bacon Butty",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 125
-      },
       {
         "id": "max_health",
         "value": 150
       },
       {
-        "id": "health_regen_pct",
-        "value": 25
+        "id": "max_stamina",
+        "value": 125
       },
       {
         "id": "exp_gain_pct",
         "value": 25
+      },
+      {
+        "id": "crit_damage_pct",
+        "value": 25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "bacon_butty.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "bacon_butty.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "banana",
     "name": "Banana",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 600,
+    "durationSec": 60,
     "buffs": [
+      {
+        "id": "food_consumption_pct",
+        "value": -10
+      },
       {
         "id": "max_stamina",
         "value": 100
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "banana.png"
+    "instantEffects": [],
+    "craftedAt": [],
+    "image": "banana.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "barbecue_carrot",
     "name": "Barbecue Carrot",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
@@ -71,54 +87,54 @@
         "value": 75
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "barbecue_carrot.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Campfire",
+      "Firepit",
+      "Fireplace",
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "barbecue_carrot.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "basic_dried_meat",
     "name": "Basic Dried Meat",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 320,
     "buffs": [
       {
         "id": "max_health",
         "value": 75
       },
       {
-        "id": "health_regen_pct",
-        "value": 20
+        "id": "food_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "basic_dried_meat.png"
-  },
-  {
-    "id": "beer",
-    "name": "Beer",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 900,
-    "buffs": [
+    "instantEffects": [
       {
-        "id": "max_stamina",
-        "value": 125
-      },
-      {
-        "id": "stamina_regen_pct",
+        "id": "nutrition",
         "value": 100
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "beer.png"
+    "craftedAt": [
+      "Drying Rack",
+      "Smoker"
+    ],
+    "image": "basic_dried_meat.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "berry_seed_bar",
     "name": "Berry & Seed Bar",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
@@ -127,106 +143,152 @@
         "value": 75
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "berry_seed_bar.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      },
+      {
+        "id": "hydration",
+        "value": 20
+      }
+    ],
+    "craftedAt": [
+      "Character Crafting"
+    ],
+    "image": "berry_seed_bar.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "berry_jam",
     "name": "Berry Jam",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 125
+      },
+      {
+        "id": "water_consumption_pct",
+        "value": -20
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "berry_jam.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 40
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "berry_jam.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "berry_smoked_saltwater_fillet",
     "name": "Berry Smoked Saltwater Fillet",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
+      {
+        "id": "max_health",
+        "value": 75
+      },
       {
         "id": "max_stamina",
         "value": 75
       },
       {
-        "id": "stamina_regen_pct",
-        "value": 25
+        "id": "exposure_resistance_pct",
+        "value": 5
       },
       {
-        "id": "max_health",
-        "value": 75
+        "id": "water_consumption_pct",
+        "value": -25
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "berry_smoked_saltwater_fillet.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 200
+      }
+    ],
+    "craftedAt": [
+      "Smoker"
+    ],
+    "image": "berry_smoked_saltwater_fillet.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "big_breakfast",
     "name": "Big Breakfast",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 75
-      },
       {
         "id": "max_health",
         "value": 225
       },
       {
-        "id": "health_regen_pct",
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "bonus_stone_chance_pct",
         "value": 15
       },
       {
-        "id": "exp_gain_pct",
-        "value": 10
+        "id": "food_consumption_pct",
+        "value": -15
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "big_breakfast.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "big_breakfast.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "bread",
     "name": "Bread",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 125
-      },
-      {
-        "id": "health_regen_pct",
-        "value": 10
-      },
-      {
-        "id": "exp_gain_pct",
-        "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "bread.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 80
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "bread.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "broiled_kumara",
     "name": "Broiled Kumara",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
@@ -235,50 +297,106 @@
         "value": 75
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "broiled_kumara.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Campfire",
+      "Firepit",
+      "Fireplace",
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "broiled_kumara.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "caramel_berry_tart",
     "name": "Caramel Berry Tart",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
-    "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 150
-      }
-    ],
-    "instant": [],
-    "recipe": [],
-    "image": "caramel_berry_tart.png"
-  },
-  {
-    "id": "caramel_pastry",
-    "name": "Caramel Pastry",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 150
       },
       {
-        "id": "health_regen_pct",
+        "id": "charge_speed_pct",
+        "value": 15
+      },
+      {
+        "id": "reload_speed_pct",
+        "value": 15
+      },
+      {
+        "id": "cave_sickness_resist_pct",
+        "value": 15
+      },
+      {
+        "id": "water_consumption_pct",
+        "value": -35
+      },
+      {
+        "id": "bonus_stone_chance_pct",
+        "value": 10
+      }
+    ],
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "caramel_berry_tart.png",
+    "source": "icarus_wiki"
+  },
+  {
+    "id": "caramel_pastry",
+    "name": "Caramel Pastry",
+    "stomachCost": 1,
+    "durationSec": 200,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "charge_speed_pct",
+        "value": 25
+      },
+      {
+        "id": "reload_speed_pct",
+        "value": 25
+      },
+      {
+        "id": "exp_gain_pct",
         "value": 15
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "caramel_pastry.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "caramel_pastry.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "carrot",
     "name": "Carrot",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 60,
     "buffs": [
@@ -287,62 +405,102 @@
         "value": 30
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "carrot.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 20
+      }
+    ],
+    "craftedAt": [],
+    "image": "carrot.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "carrot_cake_piece",
     "name": "Carrot Cake Piece",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 100
-      },
       {
         "id": "max_health",
         "value": 100
       },
       {
-        "id": "health_regen_pct",
-        "value": 50
+        "id": "max_stamina",
+        "value": 100
       },
       {
         "id": "exp_gain_pct",
         "value": 25
+      },
+      {
+        "id": "charge_speed_pct",
+        "value": 30
+      },
+      {
+        "id": "reload_speed_pct",
+        "value": 30
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "carrot_cake_piece.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 200
+      }
+    ],
+    "craftedAt": [],
+    "image": "carrot_cake_piece.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "chargrilled_chicken",
     "name": "Chargrilled Chicken",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 900,
+    "durationSec": 1800,
     "buffs": [
+      {
+        "id": "max_health",
+        "value": 150
+      },
       {
         "id": "max_stamina",
         "value": 100
       },
       {
-        "id": "max_health",
-        "value": 150
+        "id": "exposure_resistance_pct",
+        "value": 10
+      },
+      {
+        "id": "bonus_stone_chance_pct",
+        "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "chargrilled_chicken.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Campfire",
+      "Firepit",
+      "Fireplace",
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove",
+      "Biofuel Fireplace",
+      "Electric Fireplace",
+      "MXC Camping Cooker",
+      "MXC Campfire",
+      "Art Deco Fireplace",
+      "Wood Burner"
+    ],
+    "image": "chargrilled_chicken.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "charred_corn",
     "name": "Charred Corn",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
@@ -351,256 +509,365 @@
         "value": 75
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "charred_corn.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Campfire",
+      "Firepit",
+      "Fireplace",
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "charred_corn.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "cheese",
     "name": "Cheese",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_health",
         "value": 100
-      },
-      {
-        "id": "health_regen_pct",
-        "value": 25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "cheese.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "cheese.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "cheese_pizza_slice",
     "name": "Cheese Pizza Slice",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1500,
+    "durationSec": 500,
     "buffs": [
+      {
+        "id": "max_health",
+        "value": 125
+      },
       {
         "id": "max_stamina",
         "value": 75
       },
       {
-        "id": "stamina_regen_pct",
-        "value": 50
-      },
-      {
-        "id": "max_health",
-        "value": 125
+        "id": "shared_exp_pct",
+        "value": 10
       },
       {
         "id": "exp_gain_pct",
         "value": 5
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "cheese_pizza_slice.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Electric Stove"
+    ],
+    "image": "cheese_pizza_slice.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "cheese_roll",
     "name": "Cheese Roll",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 125
-      },
       {
         "id": "max_health",
         "value": 150
       },
       {
-        "id": "health_regen_pct",
-        "value": 25
+        "id": "max_stamina",
+        "value": 125
       },
       {
         "id": "exp_gain_pct",
         "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "cheese_roll.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 120
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "cheese_roll.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "chewy_coconut_cookie",
     "name": "Chewy Coconut Cookie",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 1200,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 175
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -25
+      },
+      {
+        "id": "charge_speed_pct",
+        "value": 15
+      },
+      {
+        "id": "reload_speed_pct",
+        "value": 30
+      },
+      {
+        "id": "crafting_speed_pct",
+        "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "chewy_coconut_cookie.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 25
+      },
+      {
+        "id": "hydration",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Electric Stove"
+    ],
+    "image": "chewy_coconut_cookie.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "choc_chip_cookie",
     "name": "Choc-Chip Cookie",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 175
       },
       {
-        "id": "health_regen_pct",
+        "id": "food_consumption_pct",
+        "value": -25
+      },
+      {
+        "id": "charge_speed_pct",
+        "value": 30
+      },
+      {
+        "id": "reload_speed_pct",
+        "value": 15
+      },
+      {
+        "id": "bonus_stone_chance_pct",
+        "value": 10
+      },
+      {
+        "id": "exp_gain_pct",
         "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "choc_chip_cookie.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 75
+      }
+    ],
+    "craftedAt": [
+      "Electric Stove"
+    ],
+    "image": "choc_chip_cookie.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "chocolate_cake_piece",
     "name": "Chocolate Cake Piece",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 200
-      },
-      {
-        "id": "stamina_regen_pct",
-        "value": 200
-      },
       {
         "id": "max_health",
         "value": 300
       },
       {
-        "id": "health_regen_pct",
+        "id": "max_stamina",
         "value": 200
       },
       {
         "id": "exp_gain_pct",
         "value": 25
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": 15
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "chocolate_cake_piece.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 200
+      }
+    ],
+    "craftedAt": [],
+    "image": "chocolate_cake_piece.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "cocoa_smoked_soft_meat",
     "name": "Cocoa Smoked Soft Meat",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_stamina",
-        "value": 150
+        "value": 175
       },
       {
-        "id": "stamina_regen_pct",
-        "value": 25
-      },
-      {
-        "id": "health_regen_pct",
-        "value": 20
+        "id": "food_consumption_pct",
+        "value": -40
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "cocoa_smoked_soft_meat.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 200
+      }
+    ],
+    "craftedAt": [
+      "Smoker"
+    ],
+    "image": "cocoa_smoked_soft_meat.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "coconut_cake_piece",
     "name": "Coconut Cake Piece",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 250
-      },
       {
         "id": "max_health",
         "value": 250
       },
       {
-        "id": "health_regen_pct",
-        "value": 50
+        "id": "max_stamina",
+        "value": 250
       },
       {
         "id": "exp_gain_pct",
         "value": 25
+      },
+      {
+        "id": "crafting_speed_pct",
+        "value": 50
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "coconut_cake_piece.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 200
+      }
+    ],
+    "craftedAt": [],
+    "image": "coconut_cake_piece.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "coffee_smoked_fatty_t_bone",
     "name": "Coffee Smoked Fatty T-bone",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_health",
-        "value": 150
+        "value": 175
       },
       {
-        "id": "health_regen_pct",
-        "value": 20
+        "id": "butchering_yield_pct",
+        "value": 50
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "coffee_smoked_fatty_t_bone.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 200
+      }
+    ],
+    "craftedAt": [
+      "Smoker"
+    ],
+    "image": "coffee_smoked_fatty_t_bone.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "cooked_bacon",
     "name": "Cooked Bacon",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
-        "id": "max_stamina",
-        "value": 75
+        "id": "exp_gain_pct",
+        "value": 15
       },
       {
         "id": "max_health",
         "value": 75
       },
       {
-        "id": "exp_gain_pct",
-        "value": 15
+        "id": "max_stamina",
+        "value": 75
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "cooked_bacon.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Campfire",
+      "Firepit",
+      "Fireplace",
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "cooked_bacon.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "cooked_fatty_t_bone",
     "name": "Cooked Fatty T-Bone",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 600,
     "buffs": [
       {
         "id": "max_stamina",
@@ -611,40 +878,36 @@
         "value": 150
       },
       {
+        "id": "butchering_yield_pct",
+        "value": 40
+      },
+      {
         "id": "exp_gain_pct",
         "value": 5
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "cooked_fatty_t_bone.png"
-  },
-  {
-    "id": "cooked_fish",
-    "name": "Cooked Fish",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 600,
-    "buffs": [
+    "instantEffects": [
       {
-        "id": "stamina_regen_pct",
-        "value": 20
-      },
-      {
-        "id": "max_health",
-        "value": 75
+        "id": "nutrition",
+        "value": 150
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "cooked_fish.png"
+    "craftedAt": [
+      "Campfire",
+      "Firepit",
+      "Fireplace",
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "cooked_fatty_t_bone.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "cooked_gamey_meat",
     "name": "Cooked Gamey Meat",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 600,
     "buffs": [
       {
         "id": "max_stamina",
@@ -659,16 +922,28 @@
         "value": 5
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "cooked_gamey_meat.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Campfire",
+      "Firepit",
+      "Fireplace",
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "cooked_gamey_meat.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "cooked_giant_steak",
     "name": "Cooked Giant Steak",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 600,
     "buffs": [
       {
         "id": "max_stamina",
@@ -683,36 +958,56 @@
         "value": 5
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "cooked_giant_steak.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Campfire",
+      "Firepit",
+      "Fireplace",
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "cooked_giant_steak.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "cooked_meat",
     "name": "Cooked Meat",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
       {
         "id": "max_health",
         "value": 75
-      },
-      {
-        "id": "health_regen_pct",
-        "value": 20
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "cooked_meat.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Campfire",
+      "Firepit",
+      "Fireplace",
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "cooked_meat.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "cooked_soft_meat",
     "name": "Cooked Soft Meat",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 600,
     "buffs": [
       {
         "id": "max_stamina",
@@ -727,16 +1022,28 @@
         "value": 5
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "cooked_soft_meat.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Campfire",
+      "Firepit",
+      "Fireplace",
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "cooked_soft_meat.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "cooked_stringy_meat",
     "name": "Cooked Stringy Meat",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 600,
     "buffs": [
       {
         "id": "max_stamina",
@@ -751,16 +1058,28 @@
         "value": 5
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "cooked_stringy_meat.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Campfire",
+      "Firepit",
+      "Fireplace",
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "cooked_stringy_meat.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "cooked_white_meat",
     "name": "Cooked White Meat",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 600,
     "buffs": [
       {
         "id": "max_stamina",
@@ -771,35 +1090,51 @@
         "value": 150
       },
       {
+        "id": "exposure_resistance_pct",
+        "value": 20
+      },
+      {
         "id": "exp_gain_pct",
         "value": 5
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "cooked_white_meat.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Campfire",
+      "Firepit",
+      "Fireplace",
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "cooked_white_meat.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "corn",
     "name": "Corn",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 60,
-    "buffs": [
+    "stomachCost": 0,
+    "durationSec": 0,
+    "buffs": [],
+    "instantEffects": [
       {
-        "id": "max_health",
-        "value": 30
+        "id": "nutrition",
+        "value": 20
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "corn.png"
+    "craftedAt": [],
+    "image": "corn.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "creamed_corn",
     "name": "Creamed Corn",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 900,
     "buffs": [
       {
@@ -811,421 +1146,522 @@
         "value": 150
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "creamed_corn.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Cooking Station",
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "creamed_corn.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "crispy_bacon",
     "name": "Crispy Bacon",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
-        "id": "max_stamina",
-        "value": 90
+        "id": "exp_gain_pct",
+        "value": 15
       },
       {
         "id": "max_health",
         "value": 90
       },
       {
-        "id": "exp_gain_pct",
-        "value": 15
+        "id": "max_stamina",
+        "value": 90
+      },
+      {
+        "id": "crit_damage_pct",
+        "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "crispy_bacon.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove",
+      "Potbelly Stove"
+    ],
+    "image": "crispy_bacon.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "crispy_potato",
     "name": "Crispy Potato",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 75
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "crispy_potato.png"
-  },
-  {
-    "id": "crumbed_fish_fillet",
-    "name": "Crumbed Fish Fillet",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 1200,
-    "buffs": [
+    "instantEffects": [
       {
-        "id": "max_stamina",
-        "value": 75
-      },
-      {
-        "id": "stamina_regen_pct",
-        "value": 15
-      },
-      {
-        "id": "max_health",
-        "value": 150
-      },
-      {
-        "id": "exp_gain_pct",
-        "value": 10
+        "id": "nutrition",
+        "value": 50
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "crumbed_fish_fillet.png"
+    "craftedAt": [
+      "Biofuel Stove"
+    ],
+    "image": "crispy_potato.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "crumbed_saltwater_fillet",
     "name": "Crumbed Saltwater Fillet",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
+      {
+        "id": "max_health",
+        "value": 150
+      },
       {
         "id": "max_stamina",
         "value": 75
       },
       {
-        "id": "stamina_regen_pct",
-        "value": 15
-      },
-      {
-        "id": "max_health",
-        "value": 150
+        "id": "exposure_resistance_pct",
+        "value": 5
       },
       {
         "id": "exp_gain_pct",
         "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "crumbed_saltwater_fillet.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "crumbed_saltwater_fillet.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "crunchy_soy_bean",
     "name": "Crunchy Soy Bean",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
       {
         "id": "max_health",
         "value": 75
-      },
-      {
-        "id": "health_regen_pct",
-        "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "crunchy_soy_bean.png"
-  },
-  {
-    "id": "dried_avocado",
-    "name": "Dried Avocado",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 1200,
-    "buffs": [
+    "instantEffects": [
       {
-        "id": "max_stamina",
-        "value": 75
+        "id": "nutrition",
+        "value": 50
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "dried_avocado.png"
+    "craftedAt": [
+      "Campfire",
+      "Fireplace",
+      "Firepit",
+      "Art Deco Fireplace",
+      "Biofuel Stove",
+      "Electric Stove",
+      "Potbelly Stove",
+      "Wood Burner",
+      "MXC Campfire"
+    ],
+    "image": "crunchy_soy_bean.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "dried_fatty_t_bone",
     "name": "Dried Fatty T-Bone",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "max_health",
-        "value": 75
-      }
-    ],
-    "instant": [],
-    "recipe": [],
-    "image": "dried_fatty_t_bone.png"
-  },
-  {
-    "id": "dried_freshwater_fillet",
-    "name": "Dried Freshwater Fillet",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 1200,
-    "buffs": [
-      {
-        "id": "stamina_regen_pct",
-        "value": 15
-      },
       {
         "id": "max_health",
         "value": 75
       },
       {
-        "id": "health_regen_pct",
-        "value": 5
+        "id": "butchering_yield_pct",
+        "value": 25
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "dried_freshwater_fillet.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Drying Rack",
+      "Smoker"
+    ],
+    "image": "dried_fatty_t_bone.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "dried_gamey_meat",
     "name": "Dried Gamey Meat",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_health",
         "value": 75
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "dried_gamey_meat.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Drying Rack",
+      "Smoker"
+    ],
+    "image": "dried_gamey_meat.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "dried_giant_steak",
     "name": "Dried Giant Steak",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 0,
     "buffs": [
       {
         "id": "max_health",
         "value": 100
       },
       {
-        "id": "health_regen_pct",
-        "value": 25
+        "id": "food_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "dried_giant_steak.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Drying Rack",
+      "Smoker"
+    ],
+    "image": "dried_giant_steak.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "dried_kiwifruit_chips",
     "name": "Dried Kiwifruit Chips",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 0,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 75
-      }
-    ],
-    "instant": [],
-    "recipe": [],
-    "image": "dried_kiwifruit_chips.png"
-  },
-  {
-    "id": "dried_rhubarb",
-    "name": "Dried Rhubarb",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 1200,
-    "buffs": [
+      },
       {
-        "id": "max_stamina",
-        "value": 75
+        "id": "cave_sickness_resist_pct",
+        "value": 10
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "dried_rhubarb.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Drying Rack",
+      "Smoker"
+    ],
+    "image": "dried_kiwifruit_chips.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "dried_saltwater_fillet",
     "name": "Dried Saltwater Fillet",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "stamina_regen_pct",
-        "value": 15
-      },
       {
         "id": "max_health",
         "value": 75
+      },
+      {
+        "id": "exposure_resistance_pct",
+        "value": 5
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "dried_saltwater_fillet.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Drying Rack",
+      "Smoker"
+    ],
+    "image": "dried_saltwater_fillet.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "dried_soft_meat",
     "name": "Dried Soft Meat",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 100
       },
       {
-        "id": "stamina_regen_pct",
-        "value": 15
+        "id": "food_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "dried_soft_meat.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Drying Rack",
+      "Smoker"
+    ],
+    "image": "dried_soft_meat.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "dried_stringy_meat",
     "name": "Dried Stringy Meat",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 75
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "dried_stringy_meat.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Drying Rack",
+      "Smoker"
+    ],
+    "image": "dried_stringy_meat.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "dried_tomato",
     "name": "Dried Tomato",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 75
       },
       {
-        "id": "health_regen_pct",
-        "value": 30
+        "id": "food_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "dried_tomato.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Drying Rack",
+      "Smoker"
+    ],
+    "image": "dried_tomato.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "dried_white_meat",
     "name": "Dried White Meat",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 0,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 75
+      },
+      {
+        "id": "exposure_resistance_pct",
+        "value": 10
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "dried_white_meat.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Drying Rack",
+      "Smoker"
+    ],
+    "image": "dried_white_meat.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "endurogel",
     "name": "Endurogel",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 0,
     "buffs": [],
-    "instant": [],
-    "recipe": [],
-    "image": "endurogel.png"
+    "instantEffects": [],
+    "craftedAt": [],
+    "image": "endurogel.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "energy_bar",
     "name": "Energy Bar",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
-        "id": "max_stamina",
+        "id": "max_health",
+        "value": 100
+      },
+      {
+        "id": "charge_speed_pct",
+        "value": 10
+      },
+      {
+        "id": "reload_speed_pct",
+        "value": 10
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -25
+      }
+    ],
+    "instantEffects": [
+      {
+        "id": "nutrition",
         "value": 100
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "energy_bar.png"
+    "craftedAt": [],
+    "image": "energy_bar.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "fish_chunk_stew",
     "name": "Fish Chunk Stew",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
       {
-        "id": "max_stamina",
-        "value": 75
-      },
-      {
-        "id": "stamina_regen_pct",
-        "value": 10
-      },
-      {
         "id": "max_health",
         "value": 150
+      },
+      {
+        "id": "max_stamina",
+        "value": 75
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "fish_chunk_stew.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "fish_chunk_stew.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "fish_chunks",
     "name": "Fish Chunks",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 0,
     "buffs": [],
-    "instant": [],
-    "recipe": [],
-    "image": "fish_chunks.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 15
+      }
+    ],
+    "craftedAt": [
+      "Butchery Bench"
+    ],
+    "image": "fish_chunks.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "fish_pie",
     "name": "Fish Pie",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 1200,
+    "stomachCost": 0,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "stamina_regen_pct",
-        "value": 30
-      },
       {
         "id": "max_health",
         "value": 225
       },
       {
-        "id": "health_regen_pct",
+        "id": "exposure_resistance_pct",
         "value": 5
       },
       {
@@ -1233,437 +1669,563 @@
         "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "fish_pie.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "fish_pie.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "flatbread",
     "name": "Flatbread",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
       {
-        "id": "stamina_regen_pct",
-        "value": 100
-      },
-      {
-        "id": "health_regen_pct",
-        "value": 5
-      },
-      {
-        "id": "exp_gain_pct",
+        "id": "water_consumption_pct",
         "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "flatbread.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Campfire",
+      "Firepit",
+      "Fireplace",
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "flatbread.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "freshwater_fillet_curry",
     "name": "Freshwater Fillet Curry",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
       {
-        "id": "stamina_regen_pct",
-        "value": 15
-      },
-      {
         "id": "max_health",
         "value": 225
-      },
-      {
-        "id": "health_regen_pct",
-        "value": 15
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "freshwater_fillet_curry.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "freshwater_fillet_curry.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "freshwater_fish_fillet",
     "name": "Freshwater Fish Fillet",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 0,
     "buffs": [],
-    "instant": [],
-    "recipe": [],
-    "image": "freshwater_fish_fillet.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 15
+      }
+    ],
+    "craftedAt": [
+      "Basic Fishing Bench",
+      "Butchery Bench"
+    ],
+    "image": "freshwater_fish_fillet.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "fried_chicken",
     "name": "Fried Chicken",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
+      {
+        "id": "max_health",
+        "value": 200
+      },
       {
         "id": "max_stamina",
         "value": 150
       },
       {
-        "id": "max_health",
-        "value": 200
+        "id": "exposure_resistance_pct",
+        "value": 15
+      },
+      {
+        "id": "bonus_stone_chance_pct",
+        "value": 15
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "fried_chicken.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "fried_chicken.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "fried_chunky_vegetables",
     "name": "Fried Chunky Vegetables",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 900,
+    "durationSec": 200,
     "buffs": [
+      {
+        "id": "max_health",
+        "value": 75
+      },
       {
         "id": "max_stamina",
         "value": 150
       },
       {
-        "id": "max_health",
-        "value": 75
+        "id": "exposure_resistance_pct",
+        "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "fried_chunky_vegetables.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "fried_chunky_vegetables.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "fried_eggs",
     "name": "Fried Eggs",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 600,
+    "durationSec": 0,
     "buffs": [
       {
         "id": "max_health",
         "value": 75
+      },
+      {
+        "id": "bonus_stone_chance_pct",
+        "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "fried_eggs.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Art Deco Fireplace",
+      "Biofuel Stove",
+      "Campfire",
+      "Electric Stove",
+      "Firepit",
+      "Fireplace",
+      "MXC Campfire",
+      "MXC Camping Cooker",
+      "Potbelly Stove",
+      "Wood Burner"
+    ],
+    "image": "fried_eggs.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "fried_fish_chunks",
     "name": "Fried Fish Chunks",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
-      {
-        "id": "stamina_regen_pct",
-        "value": 10
-      },
       {
         "id": "max_health",
         "value": 75
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "fried_fish_chunks.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 80
+      }
+    ],
+    "craftedAt": [
+      "Campfire"
+    ],
+    "image": "fried_fish_chunks.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "fried_tomato",
     "name": "Fried Tomato",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 75
-      },
-      {
-        "id": "health_regen_pct",
-        "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "fried_tomato.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Campfire",
+      "Fireplace",
+      "Firepit",
+      "Art Deco Fireplace",
+      "Biofuel Stove",
+      "Electric Stove",
+      "Potbelly Stove",
+      "Wood Burner",
+      "MXC Campfire"
+    ],
+    "image": "fried_tomato.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "fruit_muffin",
     "name": "Fruit Muffin",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 225
       },
       {
-        "id": "health_regen_pct",
+        "id": "water_consumption_pct",
+        "value": -20
+      },
+      {
+        "id": "exp_gain_pct",
         "value": 35
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "fruit_muffin.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove"
+    ],
+    "image": "fruit_muffin.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "fruit_pie",
     "name": "Fruit Pie",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 1200,
+    "stomachCost": 0,
+    "durationSec": 200,
     "buffs": [
+      {
+        "id": "max_health",
+        "value": 75
+      },
       {
         "id": "max_stamina",
         "value": 150
       },
       {
-        "id": "max_health",
-        "value": 75
+        "id": "oxygen_consumption_pct",
+        "value": -15
+      },
+      {
+        "id": "water_consumption_pct",
+        "value": -15
       },
       {
         "id": "exp_gain_pct",
         "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "fruit_pie.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "fruit_pie.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "fruit_salad",
     "name": "Fruit Salad",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
+      {
+        "id": "max_health",
+        "value": 75
+      },
       {
         "id": "max_stamina",
         "value": 75
       },
       {
-        "id": "max_health",
-        "value": 75
-      }
-    ],
-    "instant": [],
-    "recipe": [],
-    "image": "fruit_salad.png"
-  },
-  {
-    "id": "fruit_smoothie",
-    "name": "Fruit Smoothie",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 300,
-    "buffs": [
-      {
-        "id": "health_regen_pct",
-        "value": 10
+        "id": "oxygen_consumption_pct",
+        "value": -10
       },
       {
-        "id": "exp_gain_pct",
-        "value": 30
+        "id": "water_consumption_pct",
+        "value": -10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "fruit_smoothie.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Cooking Station",
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "fruit_salad.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "fruit_snack_pack",
     "name": "Fruit Snack Pack",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
       {
-        "id": "max_stamina",
-        "value": 75
-      },
-      {
         "id": "max_health",
         "value": 75
-      }
-    ],
-    "instant": [],
-    "recipe": [],
-    "image": "fruit_snack_pack.png"
-  },
-  {
-    "id": "glass_milk_bottle",
-    "name": "Glass Milk Bottle",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 300,
-    "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 40
       },
       {
-        "id": "exp_gain_pct",
-        "value": 10
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "cave_sickness_resist_pct",
+        "value": 15
+      },
+      {
+        "id": "water_consumption_pct",
+        "value": -10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "glass_milk_bottle.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 25
+      },
+      {
+        "id": "hydration",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Cooking Station",
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "fruit_snack_pack.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "go",
     "name": "Go",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
-        "id": "max_health",
-        "value": 10
+        "id": "water_consumption_pct",
+        "value": -10
       },
       {
-        "id": "exp_gain_pct",
+        "id": "oxygen_consumption_pct",
         "value": -10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "go.png"
+    "instantEffects": [
+      {
+        "id": "hydration",
+        "value": 100
+      }
+    ],
+    "craftedAt": [],
+    "image": "go.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "gorse_smoked_gamey_meat",
     "name": "Gorse Smoked Gamey Meat",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 75
-      },
       {
         "id": "max_health",
         "value": 100
       },
       {
-        "id": "health_regen_pct",
-        "value": 20
-      }
-    ],
-    "instant": [],
-    "recipe": [],
-    "image": "gorse_smoked_gamey_meat.png"
-  },
-  {
-    "id": "gorse_tea",
-    "name": "Gorse Tea",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 900,
-    "buffs": [
+        "id": "max_stamina",
+        "value": 100
+      },
       {
-        "id": "exp_gain_pct",
+        "id": "food_consumption_pct",
+        "value": -25
+      },
+      {
+        "id": "water_consumption_pct",
         "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "gorse_tea.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 200
+      }
+    ],
+    "craftedAt": [
+      "Smoker"
+    ],
+    "image": "gorse_smoked_gamey_meat.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "grilled_freshwater_fillet",
     "name": "Grilled Freshwater Fillet",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
       {
-        "id": "stamina_regen_pct",
-        "value": 15
-      },
-      {
         "id": "max_health",
         "value": 75
-      },
-      {
-        "id": "health_regen_pct",
-        "value": 5
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "grilled_freshwater_fillet.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 120
+      }
+    ],
+    "craftedAt": [
+      "Campfire"
+    ],
+    "image": "grilled_freshwater_fillet.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "grilled_pumpkin",
     "name": "Grilled Pumpkin",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 75
+      },
+      {
+        "id": "exposure_resistance_pct",
+        "value": 5
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "grilled_pumpkin.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Campfire"
+    ],
+    "image": "grilled_pumpkin.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "grilled_saltwater_fillet",
     "name": "Grilled Saltwater Fillet",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
       {
-        "id": "stamina_regen_pct",
-        "value": 15
-      },
-      {
         "id": "max_health",
         "value": 75
+      },
+      {
+        "id": "exposure_resistance_pct",
+        "value": 5
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "grilled_saltwater_fillet.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 120
+      }
+    ],
+    "craftedAt": [
+      "Campfire"
+    ],
+    "image": "grilled_saltwater_fillet.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "hearty_salad",
     "name": "Hearty Salad",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 75
-      },
       {
         "id": "max_health",
         "value": 75
       },
       {
-        "id": "health_regen_pct",
-        "value": 20
+        "id": "max_stamina",
+        "value": 75
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "hearty_salad.png"
+    "instantEffects": [],
+    "craftedAt": [
+      "Cooking Station",
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "hearty_salad.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "honey",
     "name": "Honey",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 60,
     "buffs": [
@@ -1672,14 +2234,24 @@
         "value": 50
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "honey.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 20
+      }
+    ],
+    "craftedAt": [
+      "Mortar and Pestle",
+      "Beehive Extractor",
+      "Material Processor",
+      "Windmill"
+    ],
+    "image": "honey.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "honey_glazed_pastry",
     "name": "Honey Glazed Pastry",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
@@ -1688,40 +2260,28 @@
         "value": 150
       },
       {
-        "id": "health_regen_pct",
+        "id": "exp_gain_pct",
         "value": 15
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "honey_glazed_pastry.png"
-  },
-  {
-    "id": "honey_mead",
-    "name": "Honey Mead",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 1000,
-    "buffs": [
+    "instantEffects": [
       {
-        "id": "max_stamina",
-        "value": 125
-      },
-      {
-        "id": "stamina_regen_pct",
-        "value": 100
+        "id": "nutrition",
+        "value": 150
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "honey_mead.png"
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "honey_glazed_pastry.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "honey_smoked_bacon",
     "name": "Honey Smoked Bacon",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_stamina",
@@ -1732,54 +2292,29 @@
         "value": 75
       },
       {
-        "id": "health_regen_pct",
-        "value": 20
+        "id": "food_consumption_pct",
+        "value": -25
       },
       {
         "id": "exp_gain_pct",
         "value": 15
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "honey_smoked_bacon.png"
-  },
-  {
-    "id": "honey_tea",
-    "name": "Honey Tea",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 1200,
-    "buffs": [
+    "instantEffects": [
       {
-        "id": "exp_gain_pct",
-        "value": 10
+        "id": "nutrition",
+        "value": 200
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "honey_tea.png"
-  },
-  {
-    "id": "honeycomb",
-    "name": "Honeycomb",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 60,
-    "buffs": [
-      {
-        "id": "max_health",
-        "value": 30
-      }
+    "craftedAt": [
+      "Smoker"
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "honeycomb.png"
+    "image": "honey_smoked_bacon.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "honeycomb_bar",
     "name": "Honeycomb Bar",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
@@ -1788,123 +2323,83 @@
         "value": 75
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "honeycomb_bar.png"
-  },
-  {
-    "id": "hot_cocoa",
-    "name": "Hot Cocoa",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 900,
-    "buffs": [
+    "instantEffects": [
       {
-        "id": "exp_gain_pct",
-        "value": -25
-      }
-    ],
-    "instant": [],
-    "recipe": [],
-    "image": "hot_cocoa.png"
-  },
-  {
-    "id": "hot_coffee",
-    "name": "Hot Coffee",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 900,
-    "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 10
+        "id": "nutrition",
+        "value": 50
       },
       {
-        "id": "exp_gain_pct",
-        "value": 10
+        "id": "hydration",
+        "value": 20
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "hot_coffee.png"
-  },
-  {
-    "id": "hot_coffee_with_cream",
-    "name": "Hot Coffee with Cream",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 300,
-    "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 25
-      },
-      {
-        "id": "exp_gain_pct",
-        "value": 10
-      }
+    "craftedAt": [
+      "Character Crafting"
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "hot_coffee_with_cream.png"
-  },
-  {
-    "id": "hot_tea",
-    "name": "Hot Tea",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 900,
-    "buffs": [
-      {
-        "id": "max_health",
-        "value": 25
-      },
-      {
-        "id": "exp_gain_pct",
-        "value": 10
-      }
-    ],
-    "instant": [],
-    "recipe": [],
-    "image": "hot_tea.png"
+    "image": "honeycomb_bar.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "jarred_honey",
     "name": "Jarred Honey",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 125
+      },
+      {
+        "id": "shared_exp_pct",
+        "value": 20
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "jarred_honey.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 40
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "jarred_honey.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "kiwifruit",
     "name": "Kiwifruit",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 50
+      },
+      {
+        "id": "cave_sickness_resist_pct",
+        "value": 5
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "kiwifruit.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      },
+      {
+        "id": "hydration",
+        "value": 60
+      }
+    ],
+    "craftedAt": [],
+    "image": "kiwifruit.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "kiwifruit_jam",
     "name": "Kiwifruit Jam",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 900,
     "buffs": [
       {
@@ -1912,38 +2407,65 @@
         "value": 125
       },
       {
-        "id": "health_regen_pct",
+        "id": "exp_gain_pct",
+        "value": 20
+      },
+      {
+        "id": "cave_sickness_resist_pct",
         "value": 20
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "kiwifruit_jam.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 75
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "kiwifruit_jam.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "kiwifruit_sorbet",
     "name": "Kiwifruit Sorbet",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1800,
+    "durationSec": 800,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 150
       },
       {
-        "id": "health_regen_pct",
+        "id": "exp_gain_pct",
         "value": 30
+      },
+      {
+        "id": "cave_sickness_resist_pct",
+        "value": 45
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "kiwifruit_sorbet.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      },
+      {
+        "id": "hydration",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Marble Kitchen Bench"
+    ],
+    "image": "kiwifruit_sorbet.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "kumara",
     "name": "Kumara",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 60,
     "buffs": [
@@ -1952,43 +2474,57 @@
         "value": 30
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "kumara.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 20
+      }
+    ],
+    "craftedAt": [],
+    "image": "kumara.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "mature_coconut",
     "name": "Mature Coconut",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 600,
     "buffs": [
       {
         "id": "max_health",
         "value": 50
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "mature_coconut.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 10
+      },
+      {
+        "id": "hydration",
+        "value": 2
+      }
+    ],
+    "craftedAt": [],
+    "image": "mature_coconut.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "meat_pie",
     "name": "Meat Pie",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "stamina_regen_pct",
-        "value": 15
-      },
       {
         "id": "max_health",
         "value": 225
       },
       {
-        "id": "health_regen_pct",
+        "id": "exposure_resistance_pct",
         "value": 15
       },
       {
@@ -1996,98 +2532,119 @@
         "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "meat_pie.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "meat_pie.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "melon_smoked_giant_steak",
     "name": "Melon Smoked Giant Steak",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
+      {
+        "id": "max_health",
+        "value": 125
+      },
       {
         "id": "max_stamina",
         "value": 75
       },
       {
-        "id": "max_health",
-        "value": 100
+        "id": "food_consumption_pct",
+        "value": -25
       },
       {
-        "id": "health_regen_pct",
-        "value": 50
+        "id": "oxygen_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "melon_smoked_giant_steak.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 200
+      }
+    ],
+    "craftedAt": [
+      "Smoker"
+    ],
+    "image": "melon_smoked_giant_steak.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "micromeal",
     "name": "MicroMeal",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
-        "id": "stamina_regen_pct",
-        "value": 10
+        "id": "water_consumption_pct",
+        "value": -10
       },
       {
-        "id": "health_regen_pct",
-        "value": 10
-      }
-    ],
-    "instant": [],
-    "recipe": [],
-    "image": "micromeal.png"
-  },
-  {
-    "id": "milk_pail",
-    "name": "Milk Pail",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 300,
-    "buffs": [
-      {
-        "id": "stamina_regen_pct",
-        "value": 40
+        "id": "food_consumption_pct",
+        "value": -10
       },
       {
-        "id": "exp_gain_pct",
-        "value": 10
+        "id": "oxygen_consumption_pct",
+        "value": -10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "milk_pail.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [],
+    "image": "micromeal.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "mixed_berries",
     "name": "Mixed Berries",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 900,
+    "stomachCost": 0,
+    "durationSec": 0,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 150
       },
       {
-        "id": "health_regen_pct",
+        "id": "water_consumption_pct",
+        "value": -10
+      },
+      {
+        "id": "exp_gain_pct",
         "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "mixed_berries.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Cooking Station",
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "mixed_berries.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "mushroom",
     "name": "Mushroom",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 60,
     "buffs": [
@@ -2096,265 +2653,345 @@
         "value": 30
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "mushroom.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 20
+      }
+    ],
+    "craftedAt": [],
+    "image": "mushroom.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "mushroom_omelette",
     "name": "Mushroom Omelette",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 900,
+    "durationSec": 990,
     "buffs": [
-      {
-        "id": "stamina_regen_pct",
-        "value": 10
-      },
       {
         "id": "max_health",
         "value": 150
+      },
+      {
+        "id": "bonus_stone_chance_pct",
+        "value": 15
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "mushroom_omelette.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove"
+    ],
+    "image": "mushroom_omelette.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "mushroom_soup",
     "name": "Mushroom Soup",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 900,
     "buffs": [
       {
-        "id": "stamina_regen_pct",
-        "value": 10
-      },
-      {
         "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instantEffects": [
+      {
+        "id": "nutrition",
         "value": 100
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "mushroom_soup.png"
+    "craftedAt": [
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "mushroom_soup.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "oxygel",
     "name": "Oxygel",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 0,
     "buffs": [],
-    "instant": [],
-    "recipe": [],
-    "image": "oxygel.png"
+    "instantEffects": [],
+    "craftedAt": [],
+    "image": "oxygel.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "pavlova",
     "name": "Pavlova",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1800,
+    "durationSec": 800,
     "buffs": [
+      {
+        "id": "max_health",
+        "value": 125
+      },
       {
         "id": "max_stamina",
         "value": 75
       },
       {
-        "id": "max_health",
-        "value": 125
+        "id": "bonus_stone_chance_pct",
+        "value": 20
+      },
+      {
+        "id": "cave_sickness_resist_pct",
+        "value": 20
+      },
+      {
+        "id": "reload_speed_pct",
+        "value": 10
+      },
+      {
+        "id": "charge_speed_pct",
+        "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "pavlova.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 200
+      }
+    ],
+    "craftedAt": [
+      "Electric Stove"
+    ],
+    "image": "pavlova.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "pickled_avocado",
     "name": "Pickled Avocado",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 1200,
+    "stomachCost": 0,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 150
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -20
+      },
+      {
+        "id": "shared_exp_pct",
+        "value": 20
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "pickled_avocado.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "pickled_avocado.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "pickled_carrot",
     "name": "Pickled Carrot",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 1200,
+    "stomachCost": 0,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 150
+      },
+      {
+        "id": "shared_exp_pct",
+        "value": 20
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "pickled_carrot.png"
+    "instantEffects": [],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "pickled_carrot.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "pickled_eggs",
     "name": "Pickled Eggs",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 1200,
+    "stomachCost": 0,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 150
+      },
+      {
+        "id": "shared_exp_pct",
+        "value": 20
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "pickled_eggs.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "pickled_eggs.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "pickled_freshwater_fillet",
     "name": "Pickled Freshwater Fillet",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 1200,
+    "stomachCost": 0,
+    "durationSec": 200,
     "buffs": [
       {
-        "id": "max_stamina",
-        "value": 30
-      },
-      {
-        "id": "stamina_regen_pct",
-        "value": 150
-      },
-      {
         "id": "max_health",
-        "value": 10
-      },
-      {
-        "id": "exp_gain_pct",
-        "value": 20
+        "value": 150
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "pickled_freshwater_fillet.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "pickled_freshwater_fillet.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "pickled_tomato",
     "name": "Pickled Tomato",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 1200,
+    "stomachCost": 0,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 150
       },
       {
-        "id": "health_regen_pct",
+        "id": "shared_exp_pct",
         "value": 20
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "pickled_tomato.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "pickled_tomato.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "plain_jerky",
     "name": "Plain Jerky",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_health",
         "value": 150
       },
       {
-        "id": "health_regen_pct",
-        "value": 60
+        "id": "food_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "plain_jerky.png"
-  },
-  {
-    "id": "potato",
-    "name": "Potato",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 60,
-    "buffs": [
+    "instantEffects": [
       {
-        "id": "max_health",
-        "value": 30
+        "id": "nutrition",
+        "value": 200
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "potato.png"
-  },
-  {
-    "id": "potato_bread",
-    "name": "Potato Bread",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 1200,
-    "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 150
-      },
-      {
-        "id": "health_regen_pct",
-        "value": 15
-      },
-      {
-        "id": "exp_gain_pct",
-        "value": -20
-      }
+    "craftedAt": [
+      "Smoker"
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "potato_bread.png"
+    "image": "plain_jerky.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "potato_and_carrot_fries",
     "name": "Potato and Carrot Fries",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 900,
+    "durationSec": 600,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 75
       },
       {
-        "id": "max_health",
+        "id": "food_consumption_pct",
+        "value": -10
+      }
+    ],
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove"
+    ],
+    "image": "potato_and_carrot_fries.png",
+    "source": "icarus_wiki"
+  },
+  {
+    "id": "potato_bread",
+    "name": "Potato Bread",
+    "stomachCost": 1,
+    "durationSec": 200,
+    "buffs": [
+      {
+        "id": "max_stamina",
         "value": 150
       },
       {
-        "id": "health_regen_pct",
-        "value": 10
+        "id": "food_consumption_pct",
+        "value": -20
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 15
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "potato_and_carrot_fries.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove"
+    ],
+    "image": "potato_bread.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "pumpkin",
     "name": "Pumpkin",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 60,
     "buffs": [
@@ -2363,23 +3000,28 @@
         "value": 30
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "pumpkin.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 20
+      }
+    ],
+    "craftedAt": [],
+    "image": "pumpkin.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "pumpkin_bread",
     "name": "Pumpkin Bread",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 150
       },
       {
-        "id": "health_regen_pct",
+        "id": "exposure_resistance_pct",
         "value": 15
       },
       {
@@ -2387,124 +3029,92 @@
         "value": 15
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "pumpkin_bread.png"
-  },
-  {
-    "id": "raw_bacon",
-    "name": "Raw Bacon",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 0,
-    "buffs": [],
-    "instant": [],
-    "recipe": [],
-    "image": "raw_bacon.png"
-  },
-  {
-    "id": "raw_chicken",
-    "name": "Raw Chicken",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 0,
-    "buffs": [],
-    "instant": [],
-    "recipe": [],
-    "image": "raw_chicken.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove"
+    ],
+    "image": "pumpkin_bread.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "raw_fatty_t_bone",
     "name": "Raw Fatty T-Bone",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 0,
     "buffs": [],
-    "instant": [],
-    "recipe": [],
-    "image": "raw_fatty_t_bone.png"
-  },
-  {
-    "id": "raw_fish",
-    "name": "Raw Fish",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 0,
-    "buffs": [],
-    "instant": [],
-    "recipe": [],
-    "image": "raw_fish.png"
+    "instantEffects": [],
+    "craftedAt": [],
+    "image": "raw_fatty_t_bone.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "raw_gamey_meat",
     "name": "Raw Gamey Meat",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 0,
     "buffs": [],
-    "instant": [],
-    "recipe": [],
-    "image": "raw_gamey_meat.png"
+    "instantEffects": [],
+    "craftedAt": [],
+    "image": "raw_gamey_meat.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "raw_giant_steak",
     "name": "Raw Giant Steak",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 0,
     "buffs": [],
-    "instant": [],
-    "recipe": [],
-    "image": "raw_giant_steak.png"
-  },
-  {
-    "id": "raw_meat",
-    "name": "Raw Meat",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 0,
-    "buffs": [],
-    "instant": [],
-    "recipe": [],
-    "image": "raw_meat.png"
+    "instantEffects": [],
+    "craftedAt": [],
+    "image": "raw_giant_steak.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "raw_soft_meat",
     "name": "Raw Soft Meat",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 0,
     "buffs": [],
-    "instant": [],
-    "recipe": [],
-    "image": "raw_soft_meat.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 20
+      }
+    ],
+    "craftedAt": [],
+    "image": "raw_soft_meat.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "raw_stringy_meat",
     "name": "Raw Stringy Meat",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 0,
     "buffs": [],
-    "instant": [],
-    "recipe": [],
-    "image": "raw_stringy_meat.png"
+    "instantEffects": [],
+    "craftedAt": [],
+    "image": "raw_stringy_meat.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "raw_white_meat",
     "name": "Raw White Meat",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 0,
     "buffs": [],
-    "instant": [],
-    "recipe": [],
-    "image": "raw_white_meat.png"
+    "instantEffects": [],
+    "craftedAt": [],
+    "image": "raw_white_meat.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "rhubarb",
     "name": "Rhubarb",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 60,
     "buffs": [
@@ -2513,249 +3123,367 @@
         "value": 30
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "rhubarb.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 20
+      }
+    ],
+    "craftedAt": [],
+    "image": "rhubarb.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "rhubarb_stew",
     "name": "Rhubarb Stew",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 900,
+    "durationSec": 200,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 225
+      },
+      {
+        "id": "oxygen_consumption_pct",
+        "value": -10
+      },
+      {
+        "id": "water_consumption_pct",
+        "value": -10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "rhubarb_stew.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "rhubarb_stew.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "ripe_coconut",
     "name": "Ripe Coconut",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
       {
         "id": "max_health",
         "value": 75
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "ripe_coconut.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 8
+      },
+      {
+        "id": "hydration",
+        "value": 8
+      }
+    ],
+    "craftedAt": [],
+    "image": "ripe_coconut.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "roast_chicken",
     "name": "Roast Chicken",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1500,
+    "durationSec": 3000,
     "buffs": [
+      {
+        "id": "max_health",
+        "value": 250
+      },
       {
         "id": "max_stamina",
         "value": 200
       },
       {
-        "id": "max_health",
-        "value": 250
+        "id": "exposure_resistance_pct",
+        "value": 25
+      },
+      {
+        "id": "bonus_stone_chance_pct",
+        "value": 25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "roast_chicken.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove",
+      "Potbelly Stove",
+      "MXC Camping Cooker"
+    ],
+    "image": "roast_chicken.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "roast_squash",
     "name": "Roast Squash",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
       {
-        "id": "max_stamina",
+        "id": "max_health",
         "value": 75
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "roast_squash.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Campfire"
+    ],
+    "image": "roast_squash.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "roast_vegetables",
     "name": "Roast Vegetables",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 225
+      },
+      {
+        "id": "exposure_resistance_pct",
+        "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "roast_vegetables.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Potbelly Stove"
+    ],
+    "image": "roast_vegetables.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "saltwater_fillet_sashimi",
     "name": "Saltwater Fillet Sashimi",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
+      {
+        "id": "max_health",
+        "value": 75
+      },
       {
         "id": "max_stamina",
         "value": 75
       },
       {
-        "id": "stamina_regen_pct",
-        "value": 15
-      },
-      {
-        "id": "max_health",
-        "value": 75
+        "id": "exposure_resistance_pct",
+        "value": 5
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "saltwater_fillet_sashimi.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Cooking Station",
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "saltwater_fillet_sashimi.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "saltwater_fish_fillet",
     "name": "Saltwater Fish Fillet",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 0,
     "buffs": [],
-    "instant": [],
-    "recipe": [],
-    "image": "saltwater_fish_fillet.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 15
+      }
+    ],
+    "craftedAt": [
+      "Basic Fishing Bench",
+      "Butchery Bench"
+    ],
+    "image": "saltwater_fish_fillet.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "sauteed_rhubarb",
     "name": "Sauteed Rhubarb",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 75
+      },
+      {
+        "id": "oxygen_consumption_pct",
+        "value": -10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "sauteed_rhubarb.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Campfire"
+    ],
+    "image": "sauteed_rhubarb.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "savory_roll",
     "name": "Savory Roll",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 75
-      },
-      {
-        "id": "stamina_regen_pct",
-        "value": 15
-      },
       {
         "id": "max_health",
         "value": 225
       },
       {
-        "id": "health_regen_pct",
-        "value": 30
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -30
       },
       {
         "id": "exp_gain_pct",
         "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "savory_roll.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "savory_roll.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "scrambled_eggs",
     "name": "Scrambled Eggs",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 100
-      },
       {
         "id": "max_health",
         "value": 50
       },
       {
+        "id": "max_stamina",
+        "value": 100
+      },
+      {
+        "id": "bonus_stone_chance_pct",
+        "value": 25
+      },
+      {
         "id": "exp_gain_pct",
-        "value": 15
+        "value": 20
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "scrambled_eggs.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "scrambled_eggs.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "seared_mushroom",
     "name": "Seared Mushroom",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
-      {
-        "id": "stamina_regen_pct",
-        "value": 5
-      },
       {
         "id": "max_health",
         "value": 75
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "seared_mushroom.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Campfire"
+    ],
+    "image": "seared_mushroom.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "seed_bread",
     "name": "Seed Bread",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 150
-      },
-      {
-        "id": "health_regen_pct",
-        "value": 15
-      },
-      {
-        "id": "exp_gain_pct",
-        "value": -20
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "seed_bread.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 80
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "seed_bread.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "seed_cracker",
     "name": "Seed Cracker",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
@@ -2764,70 +3492,87 @@
         "value": 100
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "seed_cracker.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Cooking Station"
+    ],
+    "image": "seed_cracker.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "shepherd_s_pie",
     "name": "Shepherd's Pie",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 75
-      },
       {
         "id": "max_health",
         "value": 225
       },
       {
-        "id": "health_regen_pct",
-        "value": 40
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -20
       },
       {
         "id": "exp_gain_pct",
         "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "shepherd_s_pie.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove"
+    ],
+    "image": "shepherd_s_pie.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "shepherd_s_roll",
     "name": "Shepherd's Roll",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 150
-      },
       {
         "id": "max_health",
         "value": 150
       },
       {
-        "id": "health_regen_pct",
-        "value": 15
+        "id": "max_stamina",
+        "value": 150
       },
       {
         "id": "exp_gain_pct",
         "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "shepherd_s_roll.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove"
+    ],
+    "image": "shepherd_s_roll.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "smashed_avocado_toast",
     "name": "Smashed Avocado Toast",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
@@ -2836,18 +3581,34 @@
         "value": 150
       },
       {
-        "id": "health_regen_pct",
+        "id": "food_consumption_pct",
+        "value": -25
+      },
+      {
+        "id": "exp_gain_pct",
         "value": 15
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "smashed_avocado_toast.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 20
+      },
+      {
+        "id": "hydration",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "smashed_avocado_toast.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "soy_bean",
     "name": "Soy Bean",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 60,
     "buffs": [
@@ -2856,66 +3617,46 @@
         "value": 30
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "soy_bean.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 20
+      }
+    ],
+    "craftedAt": [],
+    "image": "soy_bean.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "soy_bean_stir_fry",
     "name": "Soy Bean Stir-Fry",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 75
-      },
-      {
-        "id": "stamina_regen_pct",
-        "value": 10
-      },
       {
         "id": "max_health",
         "value": 150
       },
       {
-        "id": "health_regen_pct",
-        "value": 10
-      }
-    ],
-    "instant": [],
-    "recipe": [],
-    "image": "soy_bean_stir_fry.png"
-  },
-  {
-    "id": "spoiled_meat",
-    "name": "Spoiled Meat",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 300,
-    "buffs": [
-      {
         "id": "max_stamina",
-        "value": 25
-      },
-      {
-        "id": "stamina_regen_pct",
-        "value": 10
-      },
-      {
-        "id": "max_health",
-        "value": 25
+        "value": 75
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "spoiled_meat.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Potbelly Stove"
+    ],
+    "image": "soy_bean_stir_fry.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "squash",
     "name": "Squash",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 60,
     "buffs": [
@@ -2924,66 +3665,115 @@
         "value": 30
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "squash.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 20
+      }
+    ],
+    "craftedAt": [],
+    "image": "squash.png",
+    "source": "icarus_wiki"
+  },
+  {
+    "id": "steamed_fish",
+    "name": "Steamed Fish",
+    "stomachCost": 1,
+    "durationSec": 600,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 75
+      }
+    ],
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 80
+      }
+    ],
+    "craftedAt": [
+      "Campfire",
+      "Fireplace",
+      "Art Deco Fireplace",
+      "Biofuel Fireplace",
+      "Electric Fireplace",
+      "Stone Brick Fireplace",
+      "MXC Campfire",
+      "MXC Camping Cooker",
+      "Firepit",
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove",
+      "Wood Burner"
+    ],
+    "image": "steamed_fish.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "stew",
     "name": "Stew",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 75
-      },
-      {
-        "id": "stamina_regen_pct",
-        "value": 10
-      },
       {
         "id": "max_health",
         "value": 150
       },
       {
-        "id": "health_regen_pct",
-        "value": 10
+        "id": "max_stamina",
+        "value": 75
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "stew.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "stew.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "strawberries_cream",
     "name": "Strawberries & Cream",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 100
-      },
       {
         "id": "max_health",
         "value": 50
       },
       {
+        "id": "max_stamina",
+        "value": 100
+      },
+      {
         "id": "exp_gain_pct",
         "value": 30
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "strawberries_cream.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "strawberries_cream.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "strawberry",
     "name": "Strawberry",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 60,
     "buffs": [
@@ -2992,30 +3782,44 @@
         "value": 30
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "strawberry.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 20
+      }
+    ],
+    "craftedAt": [],
+    "image": "strawberry.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "strawberry_hard_candy",
     "name": "Strawberry Hard Candy",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 120,
     "buffs": [
       {
-        "id": "exp_gain_pct",
+        "id": "movement_speed_pct",
         "value": 25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "strawberry_hard_candy.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 10
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove",
+      "Potbelly Stove"
+    ],
+    "image": "strawberry_hard_candy.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "strawberry_jam",
     "name": "Strawberry Jam",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
@@ -3024,110 +3828,144 @@
         "value": 125
       },
       {
-        "id": "health_regen_pct",
+        "id": "exp_gain_pct",
         "value": 20
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "strawberry_jam.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 40
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "strawberry_jam.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "stringy_jerky",
     "name": "Stringy Jerky",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 75
-      },
       {
         "id": "max_health",
         "value": 75
       },
       {
-        "id": "health_regen_pct",
-        "value": 50
+        "id": "max_stamina",
+        "value": 125
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "stringy_jerky.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 200
+      }
+    ],
+    "craftedAt": [
+      "Smoker"
+    ],
+    "image": "stringy_jerky.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "stuffed_avocado",
     "name": "Stuffed Avocado",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 900,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 75
-      },
       {
         "id": "max_health",
         "value": 75
       },
       {
-        "id": "health_regen_pct",
-        "value": 10
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "stuffed_avocado.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Cooking Station"
+    ],
+    "image": "stuffed_avocado.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "sweetcorn_soup",
     "name": "Sweetcorn Soup",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
       {
         "id": "max_stamina",
+        "value": 75
+      }
+    ],
+    "instantEffects": [
+      {
+        "id": "nutrition",
         "value": 100
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "sweetcorn_soup.png"
+    "craftedAt": [
+      "Potbelly Stove",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "sweetcorn_soup.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "tea_smoked_freshwater_fillet",
     "name": "Tea Smoked Freshwater Fillet",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 75
-      },
-      {
-        "id": "stamina_regen_pct",
-        "value": 25
-      },
       {
         "id": "max_health",
         "value": 75
       },
       {
-        "id": "health_regen_pct",
-        "value": 50
+        "id": "max_stamina",
+        "value": 75
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "tea_smoked_freshwater_fillet.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 200
+      }
+    ],
+    "craftedAt": [
+      "Smoker"
+    ],
+    "image": "tea_smoked_freshwater_fillet.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "tomato",
     "name": "Tomato",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 60,
     "buffs": [
@@ -3136,87 +3974,162 @@
         "value": 30
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "tomato.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 20
+      },
+      {
+        "id": "hydration",
+        "value": 10
+      }
+    ],
+    "craftedAt": [],
+    "image": "tomato.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "tomato_egg_bowl",
     "name": "Tomato & Egg Bowl",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
+      {
+        "id": "max_health",
+        "value": 75
+      },
       {
         "id": "max_stamina",
         "value": 75
       },
       {
-        "id": "max_health",
-        "value": 75
+        "id": "bonus_stone_chance_pct",
+        "value": 15
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "tomato_egg_bowl.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "tomato_egg_bowl.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "tomato_soup",
     "name": "Tomato Soup",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 100
-      },
-      {
-        "id": "health_regen_pct",
-        "value": 20
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "tomato_soup.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 100
+      },
+      {
+        "id": "hydration",
+        "value": 25
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove",
+      "Potbelly Stove"
+    ],
+    "image": "tomato_soup.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "ultrameal",
     "name": "UltraMeal",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 3600,
+    "durationSec": 600,
     "buffs": [
       {
-        "id": "stamina_regen_pct",
-        "value": 10
+        "id": "water_consumption_pct",
+        "value": -10
       },
       {
-        "id": "health_regen_pct",
-        "value": 10
+        "id": "food_consumption_pct",
+        "value": -10
+      },
+      {
+        "id": "oxygen_consumption_pct",
+        "value": -10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "ultrameal.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 200
+      }
+    ],
+    "craftedAt": [],
+    "image": "ultrameal.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "vegetable_pie",
     "name": "Vegetable Pie",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 150
-      },
       {
         "id": "max_health",
         "value": 150
       },
       {
-        "id": "health_regen_pct",
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      }
+    ],
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 150
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "vegetable_pie.png",
+    "source": "icarus_wiki"
+  },
+  {
+    "id": "vegetable_roll",
+    "name": "Vegetable Roll",
+    "stomachCost": 1,
+    "durationSec": 200,
+    "buffs": [
+      {
+        "id": "max_health",
+        "value": 150
+      },
+      {
+        "id": "max_stamina",
+        "value": 150
+      },
+      {
+        "id": "oxygen_consumption_pct",
+        "value": -30
+      },
+      {
+        "id": "exposure_resistance_pct",
         "value": 15
       },
       {
@@ -3224,160 +4137,192 @@
         "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "vegetable_pie.png"
-  },
-  {
-    "id": "vegetable_roll",
-    "name": "Vegetable Roll",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 1200,
-    "buffs": [
+    "instantEffects": [
       {
-        "id": "max_stamina",
+        "id": "nutrition",
         "value": 150
-      },
-      {
-        "id": "max_health",
-        "value": 150
-      },
-      {
-        "id": "health_regen_pct",
-        "value": 30
-      },
-      {
-        "id": "exp_gain_pct",
-        "value": 10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "vegetable_roll.png"
+    "craftedAt": [
+      "Biofuel Stove"
+    ],
+    "image": "vegetable_roll.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "watermelon",
     "name": "Watermelon",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 600,
+    "durationSec": 0,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 50
+      },
+      {
+        "id": "water_consumption_pct",
+        "value": -10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "watermelon.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 50
+      },
+      {
+        "id": "hydration",
+        "value": 60
+      }
+    ],
+    "craftedAt": [],
+    "image": "watermelon.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "watermelon_lollypop",
     "name": "Watermelon Lollypop",
-    "type": "cooked",
-    "stomachCost": 1,
+    "stomachCost": 0,
     "durationSec": 300,
     "buffs": [
       {
-        "id": "exp_gain_pct",
+        "id": "overencumber_penalty_pct",
         "value": -50
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "watermelon_lollypop.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 10
+      }
+    ],
+    "craftedAt": [
+      "Biofuel Stove",
+      "Electric Stove",
+      "Potbelly Stove"
+    ],
+    "image": "watermelon_lollypop.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "white_jerky",
     "name": "White Jerky",
-    "type": "cooked",
     "stomachCost": 1,
-    "durationSec": 1200,
+    "durationSec": 200,
     "buffs": [
+      {
+        "id": "max_health",
+        "value": 125
+      },
       {
         "id": "max_stamina",
         "value": 75
       },
       {
-        "id": "max_health",
-        "value": 75
+        "id": "exposure_resistance_pct",
+        "value": 15
       },
       {
-        "id": "health_regen_pct",
-        "value": 50
+        "id": "food_consumption_pct",
+        "value": -25
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "white_jerky.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 200
+      }
+    ],
+    "craftedAt": [
+      "Smoker"
+    ],
+    "image": "white_jerky.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "wild_berry",
     "name": "Wild Berry",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 50
+      },
+      {
+        "id": "water_consumption_pct",
+        "value": -10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "wild_berry.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 4
+      },
+      {
+        "id": "hydration",
+        "value": 2
+      }
+    ],
+    "craftedAt": [],
+    "image": "wild_berry.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "wild_salad",
     "name": "Wild Salad",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 900,
     "buffs": [
       {
         "id": "max_stamina",
         "value": 150
-      }
-    ],
-    "instant": [],
-    "recipe": [],
-    "image": "wild_salad.png"
-  },
-  {
-    "id": "wine",
-    "name": "Wine",
-    "type": "cooked",
-    "stomachCost": 1,
-    "durationSec": 900,
-    "buffs": [
-      {
-        "id": "max_stamina",
-        "value": 125
       },
       {
-        "id": "stamina_regen_pct",
+        "id": "exposure_resistance_pct",
+        "value": 10
+      }
+    ],
+    "instantEffects": [
+      {
+        "id": "nutrition",
         "value": 100
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "wine.png"
+    "craftedAt": [
+      "Cooking Station",
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "wild_salad.png",
+    "source": "icarus_wiki"
   },
   {
     "id": "young_coconut",
     "name": "Young Coconut",
-    "type": "cooked",
     "stomachCost": 1,
     "durationSec": 600,
     "buffs": [
       {
         "id": "max_health",
         "value": 25
+      },
+      {
+        "id": "food_consumption_pct",
+        "value": -10
       }
     ],
-    "instant": [],
-    "recipe": [],
-    "image": "young_coconut.png"
+    "instantEffects": [
+      {
+        "id": "nutrition",
+        "value": 2
+      },
+      {
+        "id": "hydration",
+        "value": 10
+      }
+    ],
+    "craftedAt": [],
+    "image": "young_coconut.png",
+    "source": "icarus_wiki"
   }
 ]
