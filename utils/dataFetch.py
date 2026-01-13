@@ -1,6 +1,7 @@
 import time
 import json
 import re
+import os
 import requests
 import mwparserfromhell
 from requests.adapters import HTTPAdapter
@@ -60,6 +61,67 @@ def extract_benches(value):
         return []
     matches = re.findall(r"\{\{ItemIconLink\|([^}]+)\}\}", value)
     return [m.strip() for m in matches if m.strip()]
+
+
+def clean_image_name(value):
+    if not value:
+        return None
+    # strip wikilink brackets and parameters like [[File:Name.png|...]]
+    v = re.sub(r"\[\[|\]\]", "", value)
+    v = v.split("|")[0].strip()
+    v = re.sub(r"^(File:|Image:)", "", v, flags=re.IGNORECASE)
+    return v or None
+
+
+def get_image_url_for_page(title, template_image=None):
+    # Try the template-provided image name first
+    if template_image:
+        name = clean_image_name(template_image)
+        # expand simple template variables like {{PAGENAME}} to the actual page title
+        if name:
+            name = re.sub(r"\{\{\s*PAGENAME\s*\}\}", title, name, flags=re.IGNORECASE)
+        if name:
+            params = {
+                "action": "query",
+                "titles": f"File:{name}",
+                "prop": "imageinfo",
+                "iiprop": "url",
+                "format": "json",
+                "redirects": 1
+            }
+            data = session.get(BASE_URL, params=params).json()
+            for p in data.get("query", {}).get("pages", {}).values():
+                if "imageinfo" in p and p["imageinfo"]:
+                    return p["imageinfo"][0].get("url")
+
+    # Fallback: ask for pageimage original
+    params = {
+        "action": "query",
+        "titles": title,
+        "prop": "pageimages",
+        "piprop": "original",
+        "format": "json",
+        "redirects": 1
+    }
+    data = session.get(BASE_URL, params=params).json()
+    for p in data.get("query", {}).get("pages", {}).values():
+        if "original" in p:
+            return p["original"].get("source")
+
+    return None
+
+
+def download_image(url, dest_path):
+    # ensure destination directory exists
+    os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+    r = session.get(url, stream=True)
+    if r.status_code != 200:
+        raise Exception(f"HTTP {r.status_code} for {url}")
+    with open(dest_path, "wb") as fh:
+        for chunk in r.iter_content(1024 * 8):
+            if not chunk:
+                continue
+            fh.write(chunk)
 
 # ----------------------------
 # Canonical Buff IDs
@@ -201,9 +263,15 @@ def extract_food(title):
 
         wikicode = mwparserfromhell.parse(text)
 
+        template_image_candidate = None
         for template in wikicode.filter_templates():
             if template.name.strip().lower() == "consumables":
                 raw = {p.name.strip(): str(p.value) for p in template.params}
+                # try common image keys from template
+                for key in ("image", "icon", "image_name", "imagefile", "image1"):
+                    if key in raw and raw[key].strip():
+                        template_image_candidate = raw[key].strip()
+                        break
 
                 buffs, instant, consumes_space, nutrition, hydration = parse_attributes(raw.get("attributes", ""))
 
@@ -219,15 +287,30 @@ def extract_food(title):
                 if hydration != 0:
                     instant.append({"id": "hydration", "value": hydration})
 
+                # prepare image filename and attempt to download
+                slug = slugify(title)
+                img_filename = f"{slug}.png"
+                img_path = os.path.join("assets", "foods", img_filename)
+
+                try:
+                    url = get_image_url_for_page(title, template_image_candidate)
+                    if url:
+                        download_image(url, img_path)
+                        log("INFO", f"Downloaded image for {title} -> {img_path}")
+                    else:
+                        log("WARN", f"No image found for {title}")
+                except Exception as e:
+                    log("WARN", f"Failed to download image for {title}: {e}")
+
                 return {
-                    "id": slugify(title),
+                    "id": slug,
                     "name": title,
                     "stomachCost": consumes_space,
                     "durationSec": duration,
                     "buffs": buffs,
                     "instantEffects": instant,
                     "craftedAt": benches,
-                    "image": f"{slugify(title)}.png",
+                    "image": img_filename,
                     "source": "icarus_wiki"
                 }, None
 

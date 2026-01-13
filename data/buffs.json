@@ -44,7 +44,7 @@
     "format": "+{value}%"
   },
   "health_regen_per_min": {
-    "label": "Health Regeneration",
+    "label": "Health Regeneration per minute",
     "format": "+{value} / min"
   },
   "max_stamina": {
