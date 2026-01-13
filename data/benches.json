@@ -1,37 +1,127 @@
 [
   {
-    "id": "campfire",
-    "name": "Campfire",
-    "tier": 1
+    "id": "art_deco_fireplace",
+    "name": "Art Deco Fireplace",
+    "image": "art_deco_fireplace.png"
   },
   {
-    "id": "cooking_station",
-    "name": "Cooking Station",
-    "tier": 2
+    "id": "basic_fishing_bench",
+    "name": "Basic Fishing Bench",
+    "image": "basic_fishing_bench.png"
   },
   {
-    "id": "kitchen_bench",
-    "name": "Kitchen Bench",
-    "tier": 3
+    "id": "beehive_extractor",
+    "name": "Beehive Extractor",
+    "image": "beehive_extractor.png"
   },
   {
-    "id": "potbelly_stove",
-    "name": "Potbelly Stove",
-    "tier": 3
+    "id": "biofuel_fireplace",
+    "name": "Biofuel Fireplace",
+    "image": "biofuel_fireplace.png"
   },
   {
     "id": "biofuel_stove",
     "name": "Biofuel Stove",
-    "tier": 4
+    "image": "biofuel_stove.png"
   },
   {
-    "id": "electric_kitchen",
-    "name": "Electric Kitchen",
-    "tier": 4
+    "id": "butchery_bench",
+    "name": "Butchery Bench",
+    "image": "butchery_bench.png"
   },
   {
-    "id": "advanced_kitchen",
-    "name": "Advanced Kitchen",
-    "tier": 4
+    "id": "campfire",
+    "name": "Campfire",
+    "image": "campfire.png"
+  },
+  {
+    "id": "character_crafting",
+    "name": "Character Crafting",
+    "image": "character_crafting.png"
+  },
+  {
+    "id": "cooking_station",
+    "name": "Cooking Station",
+    "image": "cooking_station.png"
+  },
+  {
+    "id": "drying_rack",
+    "name": "Drying Rack",
+    "image": "drying_rack.png"
+  },
+  {
+    "id": "electric_fireplace",
+    "name": "Electric Fireplace",
+    "image": "electric_fireplace.png"
+  },
+  {
+    "id": "electric_stove",
+    "name": "Electric Stove",
+    "image": "electric_stove.png"
+  },
+  {
+    "id": "firepit",
+    "name": "Firepit",
+    "image": "firepit.png"
+  },
+  {
+    "id": "fireplace",
+    "name": "Fireplace",
+    "image": "fireplace.png"
+  },
+  {
+    "id": "kitchen_bench",
+    "name": "Kitchen Bench",
+    "image": "kitchen_bench.png"
+  },
+  {
+    "id": "mxc_campfire",
+    "name": "MXC Campfire",
+    "image": "mxc_campfire.png"
+  },
+  {
+    "id": "mxc_camping_cooker",
+    "name": "MXC Camping Cooker",
+    "image": "mxc_camping_cooker.png"
+  },
+  {
+    "id": "marble_kitchen_bench",
+    "name": "Marble Kitchen Bench",
+    "image": "marble_kitchen_bench.png"
+  },
+  {
+    "id": "material_processor",
+    "name": "Material Processor",
+    "image": "material_processor.png"
+  },
+  {
+    "id": "mortar_and_pestle",
+    "name": "Mortar and Pestle",
+    "image": "mortar_and_pestle.png"
+  },
+  {
+    "id": "potbelly_stove",
+    "name": "Potbelly Stove",
+    "image": "potbelly_stove.png"
+  },
+  {
+    "id": "smoker",
+    "name": "Smoker",
+    "image": "smoker.png"
+  },
+  {
+    "id": "stone_brick_fireplace",
+    "name": "Stone Brick Fireplace",
+    "image": "stone_brick_fireplace.png"
+  },
+  {
+    "id": "windmill",
+    "name": "Windmill",
+    "image": "windmill.png"
+  },
+  {
+    "id": "wood_burner",
+    "name": "Wood Burner",
+    "image": "wood_burner.png"
   }
 ]
