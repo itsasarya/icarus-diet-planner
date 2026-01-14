@@ -10,32 +10,33 @@ from urllib3.util.retry import Retry
 BASE_URL = "https://icarus.fandom.com/api.php"
 START_TIME = time.time()
 
+
 # ----------------------------
 # Request-safe session
 # ----------------------------
 def create_session():
     session = requests.Session()
     retries = Retry(
-        total=5,
-        backoff_factor=1,
-        status_forcelist=[429, 500, 502, 503, 504]
+        total=5, backoff_factor=1, status_forcelist=[429, 500, 502, 503, 504]
     )
     session.mount("https://", HTTPAdapter(max_retries=retries))
-    session.headers.update({
-        "User-Agent": "IcarusFoodDataBot/4.0 (tool-grade JSON)"
-    })
+    session.headers.update({"User-Agent": "IcarusFoodDataBot/4.0 (tool-grade JSON)"})
     return session
+
 
 session = create_session()
 
+
 def log(level, msg):
     print(f"[{level}] {msg}")
+
 
 # ----------------------------
 # Helpers
 # ----------------------------
 def slugify(text):
     return re.sub(r"[^a-z0-9]+", "_", text.lower()).strip("_")
+
 
 def extract_seconds(text):
     if not text:
@@ -44,10 +45,14 @@ def extract_seconds(text):
     h = re.search(r"(\d+)\s*h", text)
     m = re.search(r"(\d+)\s*m", text)
     s = re.search(r"(\d+)\s*s", text)
-    if h: sec += int(h.group(1)) * 3600
-    if m: sec += int(m.group(1)) * 60
-    if s: sec += int(s.group(1))
+    if h:
+        sec += int(h.group(1)) * 3600
+    if m:
+        sec += int(m.group(1)) * 60
+    if s:
+        sec += int(s.group(1))
     return sec
+
 
 def clean_text(value):
     if not value:
@@ -55,6 +60,7 @@ def clean_text(value):
     value = re.sub(r"\{\{.*?\}\}", "", value)
     value = re.sub(r"\[\[|\]\]", "", value)
     return value.strip()
+
 
 def extract_benches(value):
     if not value:
@@ -87,7 +93,7 @@ def get_image_url_for_page(title, template_image=None):
                 "prop": "imageinfo",
                 "iiprop": "url",
                 "format": "json",
-                "redirects": 1
+                "redirects": 1,
             }
             data = session.get(BASE_URL, params=params).json()
             for p in data.get("query", {}).get("pages", {}).values():
@@ -101,7 +107,7 @@ def get_image_url_for_page(title, template_image=None):
         "prop": "pageimages",
         "piprop": "original",
         "format": "json",
-        "redirects": 1
+        "redirects": 1,
     }
     data = session.get(BASE_URL, params=params).json()
     for p in data.get("query", {}).get("pages", {}).values():
@@ -122,6 +128,7 @@ def download_image(url, dest_path):
             if not chunk:
                 continue
             fh.write(chunk)
+
 
 # ----------------------------
 # Canonical Buff IDs
@@ -144,6 +151,7 @@ BUFF_MAP = {
     "yield from butchering animals": "butchering_yield_pct",
     "overencumberance penalty": "overencumber_penalty_pct",
 }
+
 
 # ----------------------------
 # Attribute parser
@@ -186,10 +194,9 @@ def parse_attributes(text):
         if "chance to find additional" in line.lower():
             m = re.search(r"(-?\d+)%.*additional\s+(\w+)", line.lower())
             if m:
-                buffs.append({
-                    "id": f"bonus_{m.group(2)}_chance_pct",
-                    "value": int(m.group(1))
-                })
+                buffs.append(
+                    {"id": f"bonus_{m.group(2)}_chance_pct", "value": int(m.group(1))}
+                )
             continue
 
         # Percent buffs
@@ -214,6 +221,7 @@ def parse_attributes(text):
 
     return buffs, instant, consumes_space, nutrition, hydration
 
+
 # ----------------------------
 # Get food pages
 # ----------------------------
@@ -227,7 +235,7 @@ def get_food_pages():
             "list": "categorymembers",
             "cmtitle": "Category:Food",
             "cmlimit": 500,
-            "format": "json"
+            "format": "json",
         }
         if cmcontinue:
             params["cmcontinue"] = cmcontinue
@@ -243,6 +251,7 @@ def get_food_pages():
     log("INFO", f"Found {len(pages)} food pages")
     return pages
 
+
 # ----------------------------
 # Extract food
 # ----------------------------
@@ -255,10 +264,12 @@ def extract_food(title):
             "rvslots": "main",
             "titles": title,
             "redirects": 1,
-            "format": "json"
+            "format": "json",
         }
 
-        page = next(iter(session.get(BASE_URL, params=params).json()["query"]["pages"].values()))
+        page = next(
+            iter(session.get(BASE_URL, params=params).json()["query"]["pages"].values())
+        )
         text = page["revisions"][0]["slots"]["main"]["*"]
 
         wikicode = mwparserfromhell.parse(text)
@@ -273,7 +284,9 @@ def extract_food(title):
                         template_image_candidate = raw[key].strip()
                         break
 
-                buffs, instant, consumes_space, nutrition, hydration = parse_attributes(raw.get("attributes", ""))
+                buffs, instant, consumes_space, nutrition, hydration = parse_attributes(
+                    raw.get("attributes", "")
+                )
 
                 duration = extract_seconds(raw.get("duration", ""))
                 benches = extract_benches(raw.get("bench", ""))
@@ -311,13 +324,14 @@ def extract_food(title):
                     "instantEffects": instant,
                     "craftedAt": benches,
                     "image": img_filename,
-                    "source": "icarus_wiki"
+                    "source": "icarus_wiki",
                 }, None
 
         return None, "no consumables template"
 
     except Exception as e:
         return None, str(e)
+
 
 # ----------------------------
 # Main
@@ -341,12 +355,16 @@ def run():
         time.sleep(1)
 
     elapsed = round(time.time() - START_TIME, 2)
-    log("DONE", f"Parsed: {parsed} | Skipped: {skipped} | Errors: {errors} | Time: {elapsed}s")
+    log(
+        "DONE",
+        f"Parsed: {parsed} | Skipped: {skipped} | Errors: {errors} | Time: {elapsed}s",
+    )
 
     with open("./data/foods.json", "w", encoding="utf-8") as f:
         json.dump(foods, f, indent=2, ensure_ascii=False)
 
     log("INFO", f"Saved {len(foods)} foods to foods.json")
+
 
 if __name__ == "__main__":
     run()

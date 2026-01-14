@@ -28,7 +28,6 @@ function createBuffFilters(buffs) {
         const labelB = b[1].label.toLowerCase();
         return labelA.localeCompare(labelB);
     }).forEach(([id, buff]) => {
-        console.log(id, buff)
 
         const label = document.createElement("label");
 
@@ -44,4 +43,52 @@ function createBuffFilters(buffs) {
 
         container.appendChild(label);
     })
+}
+
+//Foods
+
+let ALL_FOODS = [];
+let ACTIVE_BUFF_FILTERS = [];
+
+fetch('./data/foods.json').then(res => res.json()).then(foods => {
+    ALL_FOODS = foods;
+    renderFoods(ALL_FOODS)
+})
+
+function renderFoods(foods) {
+    const grid = document.getElementById("food-grid");
+    grid.innerHTML = "";
+
+    foods.forEach(food => {
+        const card = document.createElement("div")
+        card.className = "food-card"
+        card.innerHTML = `
+        <img src="./assets/foods/${food.image}" alt="${food.name}"/>
+        <div class="food-name">${food.name}</div>
+        `;
+
+        grid.appendChild(card)
+    })
+}
+
+document.getElementById("filters").addEventListener("change", e => {
+    ACTIVE_BUFF_FILTERS = [...document.querySelectorAll(
+        "#filters input:checked"
+    )].map(cb => cb.value)
+
+    applyFoodFilters();
+})
+
+function applyFoodFilters() {
+    if (ACTIVE_BUFF_FILTERS.length === 0) {
+        renderFoods(ALL_FOODS)
+        return
+    }
+
+    const filtered = ALL_FOODS.filter(food => {
+        const foodBuffIds = food.buffs.map(b => b.id)
+
+        return ACTIVE_BUFF_FILTERS.every(buffId => foodBuffIds.includes(buffId))
+    })
+    renderFoods(filtered)
 }
