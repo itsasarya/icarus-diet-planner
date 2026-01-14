@@ -343,7 +343,7 @@ def run():
     elapsed = round(time.time() - START_TIME, 2)
     log("DONE", f"Parsed: {parsed} | Skipped: {skipped} | Errors: {errors} | Time: {elapsed}s")
 
-    with open("foods.json", "w", encoding="utf-8") as f:
+    with open("./data/foods.json", "w", encoding="utf-8") as f:
         json.dump(foods, f, indent=2, ensure_ascii=False)
 
     log("INFO", f"Saved {len(foods)} foods to foods.json")
