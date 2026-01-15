@@ -17,7 +17,10 @@ START_TIME = time.time()
 def create_session():
     session = requests.Session()
     retries = Retry(
-        total=5, backoff_factor=1, status_forcelist=[429, 500, 502, 503, 504]
+        total=5,
+        backoff_factor=1,
+        status_forcelist=[429, 500, 502, 503, 504],
+        allowed_methods=["GET"],
     )
     session.mount("https://", HTTPAdapter(max_retries=retries))
     session.headers.update({"User-Agent": "IcarusFoodDataBot/4.0 (tool-grade JSON)"})
@@ -54,14 +57,6 @@ def extract_seconds(text):
     return sec
 
 
-def clean_text(value):
-    if not value:
-        return ""
-    value = re.sub(r"\{\{.*?\}\}", "", value)
-    value = re.sub(r"\[\[|\]\]", "", value)
-    return value.strip()
-
-
 def extract_benches(value):
     if not value:
         return []
@@ -72,7 +67,6 @@ def extract_benches(value):
 def clean_image_name(value):
     if not value:
         return None
-    # strip wikilink brackets and parameters like [[File:Name.png|...]]
     v = re.sub(r"\[\[|\]\]", "", value)
     v = v.split("|")[0].strip()
     v = re.sub(r"^(File:|Image:)", "", v, flags=re.IGNORECASE)
@@ -80,12 +74,11 @@ def clean_image_name(value):
 
 
 def get_image_url_for_page(title, template_image=None):
-    # Try the template-provided image name first
     if template_image:
         name = clean_image_name(template_image)
-        # expand simple template variables like {{PAGENAME}} to the actual page title
         if name:
             name = re.sub(r"\{\{\s*PAGENAME\s*\}\}", title, name, flags=re.IGNORECASE)
+
         if name:
             params = {
                 "action": "query",
@@ -95,12 +88,11 @@ def get_image_url_for_page(title, template_image=None):
                 "format": "json",
                 "redirects": 1,
             }
-            data = session.get(BASE_URL, params=params).json()
+            data = session.get(BASE_URL, params=params, timeout=20).json()
             for p in data.get("query", {}).get("pages", {}).values():
-                if "imageinfo" in p and p["imageinfo"]:
+                if p.get("imageinfo"):
                     return p["imageinfo"][0].get("url")
 
-    # Fallback: ask for pageimage original
     params = {
         "action": "query",
         "titles": title,
@@ -109,7 +101,7 @@ def get_image_url_for_page(title, template_image=None):
         "format": "json",
         "redirects": 1,
     }
-    data = session.get(BASE_URL, params=params).json()
+    data = session.get(BASE_URL, params=params, timeout=20).json()
     for p in data.get("query", {}).get("pages", {}).values():
         if "original" in p:
             return p["original"].get("source")
@@ -118,22 +110,20 @@ def get_image_url_for_page(title, template_image=None):
 
 
 def download_image(url, dest_path):
-    # ensure destination directory exists
     os.makedirs(os.path.dirname(dest_path), exist_ok=True)
-    r = session.get(url, stream=True)
+    r = session.get(url, stream=True, timeout=30)
     if r.status_code != 200:
         raise Exception(f"HTTP {r.status_code} for {url}")
     with open(dest_path, "wb") as fh:
         for chunk in r.iter_content(1024 * 8):
-            if not chunk:
-                continue
-            fh.write(chunk)
+            if chunk:
+                fh.write(chunk)
 
 
 # ----------------------------
 # Canonical Buff IDs
 # ----------------------------
-BUFF_MAP = {
+RAW_BUFF_MAP = {
     "maximum health": "max_health",
     "maximum stamina": "max_stamina",
     "critical damage": "crit_damage_pct",
@@ -152,6 +142,10 @@ BUFF_MAP = {
     "overencumberance penalty": "overencumber_penalty_pct",
 }
 
+BUFF_MAP = {
+    k.replace(" ", "").lower(): v for k, v in RAW_BUFF_MAP.items()
+}
+
 
 # ----------------------------
 # Attribute parser
@@ -162,9 +156,10 @@ def parse_attributes(text):
     consumes_space = 0
     nutrition = 0
     hydration = 0
+    oxygen = 0
 
     if not text:
-        return buffs, instant, consumes_space, nutrition, hydration
+        return buffs, instant, consumes_space, nutrition, hydration, oxygen
 
     lines = re.split(r"(?:<br\s*/?>|\*)", text)
 
@@ -173,53 +168,59 @@ def parse_attributes(text):
         if not line:
             continue
 
-        # Consumes space
-        if "consumes" in line.lower() and "space" in line.lower():
+        l = line.lower()
+
+        if "consumes" in l and "space" in l:
             consumes_space = 1
             continue
 
-        # Nutrition / Hydration
-        if "food when consumed" in line.lower():
-            m = re.search(r"(-?\d+)", line)
+        if "food when consumed" in l:
+            m = re.search(r"(-?\d+)", l)
             if m:
                 nutrition = int(m.group(1))
             continue
-        if "water when consumed" in line.lower():
-            m = re.search(r"(-?\d+)", line)
+
+        if "water when consumed" in l:
+            m = re.search(r"(-?\d+)", l)
             if m:
                 hydration = int(m.group(1))
             continue
 
-        # Mining bonus
-        if "chance to find additional" in line.lower():
-            m = re.search(r"(-?\d+)%.*additional\s+(\w+)", line.lower())
+        if "oxygen when consumed" in l:
+            m = re.search(r"(-?\d+)", l)
+            if m:
+                oxygen = int(m.group(1))
+            continue
+
+        if "chance to find additional" in l:
+            m = re.search(r"(-?\d+)%.*additional\s+(\w+)", l)
             if m:
                 buffs.append(
-                    {"id": f"bonus_{m.group(2)}_chance_pct", "value": int(m.group(1))}
+                    {
+                        "id": f"bonus_{m.group(2)}_chance_pct",
+                        "value": int(m.group(1)),
+                    }
                 )
             continue
 
-        # Percent buffs
-        if "%" in line:
-            m = re.search(r"(-?\d+)%\s*(.+)", line)
-            if m:
-                value = int(m.group(1))
-                label = m.group(2).lower().replace("-", "").strip()
-                buff_id = BUFF_MAP.get(label)
-                if buff_id:
-                    buffs.append({"id": buff_id, "value": value})
+        m = re.search(r"(-?\d+)\s*%\s*(?:to\s*)?(.+)", line, re.I)
+        if m:
+            value = int(m.group(1))
+            label = re.sub(r"[\s\-]+", "", m.group(2).lower())
+            buff_id = BUFF_MAP.get(label)
+            if buff_id:
+                buffs.append({"id": buff_id, "value": value})
             continue
 
-        # Flat numeric buffs
         m = re.search(r"(-?\d+)\s*(.+)", line)
         if m:
             value = int(m.group(1))
-            label = m.group(2).lower().replace("-", "").strip()
+            label = re.sub(r"[\s\-]+", "", m.group(2).lower())
             buff_id = BUFF_MAP.get(label)
             if buff_id:
                 buffs.append({"id": buff_id, "value": value})
 
-    return buffs, instant, consumes_space, nutrition, hydration
+    return buffs, instant, consumes_space, nutrition, hydration, oxygen
 
 
 # ----------------------------
@@ -228,25 +229,28 @@ def parse_attributes(text):
 def get_food_pages():
     pages = []
     cmcontinue = None
+    consumables = ["drinks", "food"]
 
-    while True:
-        params = {
-            "action": "query",
-            "list": "categorymembers",
-            "cmtitle": "Category:Food",
-            "cmlimit": 500,
-            "format": "json",
-        }
-        if cmcontinue:
-            params["cmcontinue"] = cmcontinue
+    for c in consumables:
 
-        data = session.get(BASE_URL, params=params).json()
-        pages.extend(data["query"]["categorymembers"])
+        while True:
+            params = {
+                "action": "query",
+                "list": "categorymembers",
+                "cmtitle": f"Category:{c}",
+                "cmlimit": 500,
+                "format": "json",
+            }
+            if cmcontinue:
+                params["cmcontinue"] = cmcontinue
 
-        if "continue" not in data:
-            break
-        cmcontinue = data["continue"]["cmcontinue"]
-        time.sleep(1)
+            data = session.get(BASE_URL, params=params, timeout=20).json()
+            pages.extend(data["query"]["categorymembers"])
+
+            if "continue" not in data:
+                break
+            cmcontinue = data["continue"]["cmcontinue"]
+            time.sleep(1)
 
     log("INFO", f"Found {len(pages)} food pages")
     return pages
@@ -268,7 +272,11 @@ def extract_food(title):
         }
 
         page = next(
-            iter(session.get(BASE_URL, params=params).json()["query"]["pages"].values())
+            iter(
+                session.get(BASE_URL, params=params, timeout=20)
+                .json()["query"]["pages"]
+                .values()
+            )
         )
         text = page["revisions"][0]["slots"]["main"]["*"]
 
@@ -278,42 +286,39 @@ def extract_food(title):
         for template in wikicode.filter_templates():
             if template.name.strip().lower() == "consumables":
                 raw = {p.name.strip(): str(p.value) for p in template.params}
-                # try common image keys from template
+
                 for key in ("image", "icon", "image_name", "imagefile", "image1"):
-                    if key in raw and raw[key].strip():
+                    if raw.get(key, "").strip():
                         template_image_candidate = raw[key].strip()
                         break
 
-                buffs, instant, consumes_space, nutrition, hydration = parse_attributes(
+                buffs, instant, consumes_space, nutrition, hydration, oxygen = parse_attributes(
                     raw.get("attributes", "")
                 )
 
                 duration = extract_seconds(raw.get("duration", ""))
                 benches = extract_benches(raw.get("bench", ""))
 
-                if duration > 0 and not buffs:
-                    log("WARN", f"{title} has duration but no buffs")
-
-                # Add nutrition/hydration to instantEffects
                 if nutrition != 0:
                     instant.append({"id": "nutrition", "value": nutrition})
                 if hydration != 0:
                     instant.append({"id": "hydration", "value": hydration})
+                if oxygen != 0:
+                    instant.append({"id": "oxygen", "value": oxygen})
 
-                # prepare image filename and attempt to download
                 slug = slugify(title)
-                img_filename = f"{slug}.png"
-                img_path = os.path.join("assets", "foods", img_filename)
+                url = get_image_url_for_page(title, template_image_candidate)
 
-                try:
-                    url = get_image_url_for_page(title, template_image_candidate)
-                    if url:
+                image_name = None
+                if url:
+                    ext = os.path.splitext(url)[1] or ".png"
+                    image_name = f"{slug}{ext}"
+                    img_path = os.path.join("assets", "foods", image_name)
+                    try:
                         download_image(url, img_path)
-                        log("INFO", f"Downloaded image for {title} -> {img_path}")
-                    else:
-                        log("WARN", f"No image found for {title}")
-                except Exception as e:
-                    log("WARN", f"Failed to download image for {title}: {e}")
+                        log("INFO", f"Downloaded image for {title}")
+                    except Exception as e:
+                        log("WARN", f"Image download failed for {title}: {e}")
 
                 return {
                     "id": slug,
@@ -323,8 +328,7 @@ def extract_food(title):
                     "buffs": buffs,
                     "instantEffects": instant,
                     "craftedAt": benches,
-                    "image": img_filename,
-                    "source": "icarus_wiki",
+                    "image": image_name,
                 }, None
 
         return None, "no consumables template"
@@ -360,6 +364,7 @@ def run():
         f"Parsed: {parsed} | Skipped: {skipped} | Errors: {errors} | Time: {elapsed}s",
     )
 
+    os.makedirs("data", exist_ok=True)
     with open("./data/foods.json", "w", encoding="utf-8") as f:
         json.dump(foods, f, indent=2, ensure_ascii=False)
 

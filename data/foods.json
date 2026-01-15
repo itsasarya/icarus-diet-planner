@@ -1,5 +1,212 @@
 [
   {
+    "id": "beer",
+    "name": "Beer",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 125
+      }
+    ],
+    "instantEffects": [
+      {
+        "id": "hydration",
+        "value": 40
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "beer.png"
+  },
+  {
+    "id": "gorse_tea",
+    "name": "Gorse Tea",
+    "stomachCost": 0,
+    "durationSec": 300,
+    "buffs": [
+      {
+        "id": "water_consumption_pct",
+        "value": -25
+      }
+    ],
+    "instantEffects": [
+      {
+        "id": "hydration",
+        "value": 300
+      }
+    ],
+    "craftedAt": [],
+    "image": "gorse_tea.png"
+  },
+  {
+    "id": "honey_tea",
+    "name": "Honey Tea",
+    "stomachCost": 0,
+    "durationSec": 300,
+    "buffs": [],
+    "instantEffects": [],
+    "craftedAt": [],
+    "image": "honey_tea.png"
+  },
+  {
+    "id": "hot_cocoa",
+    "name": "Hot Cocoa",
+    "stomachCost": 0,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "food_consumption_pct",
+        "value": -25
+      }
+    ],
+    "instantEffects": [
+      {
+        "id": "hydration",
+        "value": 300
+      }
+    ],
+    "craftedAt": [],
+    "image": "hot_cocoa.png"
+  },
+  {
+    "id": "hot_coffee",
+    "name": "Hot Coffee",
+    "stomachCost": 0,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 10
+      }
+    ],
+    "instantEffects": [
+      {
+        "id": "hydration",
+        "value": 300
+      }
+    ],
+    "craftedAt": [],
+    "image": "hot_coffee.png"
+  },
+  {
+    "id": "hot_coffee_with_cream",
+    "name": "Hot Coffee with Cream",
+    "stomachCost": 0,
+    "durationSec": 300,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 25
+      }
+    ],
+    "instantEffects": [],
+    "craftedAt": [
+      "Campfire",
+      "Firepit",
+      "Art Deco Fireplace",
+      "Fireplace",
+      "Potbelly Stove",
+      "Wood Burner",
+      "MXC Campfire",
+      "MXC Camping Cooker",
+      "Biofuel Stove",
+      "Electric Stove"
+    ],
+    "image": "hot_coffee_with_cream.png"
+  },
+  {
+    "id": "hot_tea",
+    "name": "Hot Tea",
+    "stomachCost": 0,
+    "durationSec": 900,
+    "buffs": [],
+    "instantEffects": [
+      {
+        "id": "hydration",
+        "value": 300
+      }
+    ],
+    "craftedAt": [],
+    "image": "hot_tea.png"
+  },
+  {
+    "id": "fruit_smoothie",
+    "name": "Fruit Smoothie",
+    "stomachCost": 0,
+    "durationSec": 300,
+    "buffs": [
+      {
+        "id": "exp_gain_pct",
+        "value": 10
+      },
+      {
+        "id": "cave_sickness_resist_pct",
+        "value": 30
+      }
+    ],
+    "instantEffects": [
+      {
+        "id": "hydration",
+        "value": 300
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "fruit_smoothie.png"
+  },
+  {
+    "id": "honey_mead",
+    "name": "Honey Mead",
+    "stomachCost": 1,
+    "durationSec": 0,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 125
+      }
+    ],
+    "instantEffects": [
+      {
+        "id": "hydration",
+        "value": 50
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "honey_mead.png"
+  },
+  {
+    "id": "wine",
+    "name": "Wine",
+    "stomachCost": 1,
+    "durationSec": 900,
+    "buffs": [
+      {
+        "id": "max_stamina",
+        "value": 125
+      }
+    ],
+    "instantEffects": [
+      {
+        "id": "hydration",
+        "value": 40
+      }
+    ],
+    "craftedAt": [
+      "Kitchen Bench",
+      "Marble Kitchen Bench"
+    ],
+    "image": "wine.png"
+  },
+  {
     "id": "avocado",
     "name": "Avocado",
     "stomachCost": 1,
@@ -17,8 +224,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "avocado.png",
-    "source": "icarus_wiki"
+    "image": "avocado.png"
   },
   {
     "id": "bacon_butty",
@@ -53,8 +259,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "bacon_butty.png",
-    "source": "icarus_wiki"
+    "image": "bacon_butty.png"
   },
   {
     "id": "banana",
@@ -73,8 +278,7 @@
     ],
     "instantEffects": [],
     "craftedAt": [],
-    "image": "banana.png",
-    "source": "icarus_wiki"
+    "image": "banana.png"
   },
   {
     "id": "barbecue_carrot",
@@ -101,8 +305,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "barbecue_carrot.png",
-    "source": "icarus_wiki"
+    "image": "barbecue_carrot.png"
   },
   {
     "id": "basic_dried_meat",
@@ -129,8 +332,7 @@
       "Drying Rack",
       "Smoker"
     ],
-    "image": "basic_dried_meat.png",
-    "source": "icarus_wiki"
+    "image": "basic_dried_meat.png"
   },
   {
     "id": "berry_seed_bar",
@@ -156,8 +358,7 @@
     "craftedAt": [
       "Character Crafting"
     ],
-    "image": "berry_seed_bar.png",
-    "source": "icarus_wiki"
+    "image": "berry_seed_bar.png"
   },
   {
     "id": "berry_jam",
@@ -184,8 +385,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "berry_jam.png",
-    "source": "icarus_wiki"
+    "image": "berry_jam.png"
   },
   {
     "id": "berry_smoked_saltwater_fillet",
@@ -223,8 +423,7 @@
     "craftedAt": [
       "Smoker"
     ],
-    "image": "berry_smoked_saltwater_fillet.png",
-    "source": "icarus_wiki"
+    "image": "berry_smoked_saltwater_fillet.png"
   },
   {
     "id": "big_breakfast",
@@ -259,8 +458,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "big_breakfast.png",
-    "source": "icarus_wiki"
+    "image": "big_breakfast.png"
   },
   {
     "id": "bread",
@@ -283,8 +481,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "bread.png",
-    "source": "icarus_wiki"
+    "image": "bread.png"
   },
   {
     "id": "broiled_kumara",
@@ -311,8 +508,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "broiled_kumara.png",
-    "source": "icarus_wiki"
+    "image": "broiled_kumara.png"
   },
   {
     "id": "caramel_berry_tart",
@@ -355,8 +551,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "caramel_berry_tart.png",
-    "source": "icarus_wiki"
+    "image": "caramel_berry_tart.png"
   },
   {
     "id": "caramel_pastry",
@@ -391,8 +586,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "caramel_pastry.png",
-    "source": "icarus_wiki"
+    "image": "caramel_pastry.png"
   },
   {
     "id": "carrot",
@@ -412,8 +606,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "carrot.png",
-    "source": "icarus_wiki"
+    "image": "carrot.png"
   },
   {
     "id": "carrot_cake_piece",
@@ -449,8 +642,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "carrot_cake_piece.png",
-    "source": "icarus_wiki"
+    "image": "carrot_cake_piece.png"
   },
   {
     "id": "chargrilled_chicken",
@@ -495,8 +687,7 @@
       "Art Deco Fireplace",
       "Wood Burner"
     ],
-    "image": "chargrilled_chicken.png",
-    "source": "icarus_wiki"
+    "image": "chargrilled_chicken.png"
   },
   {
     "id": "charred_corn",
@@ -523,8 +714,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "charred_corn.png",
-    "source": "icarus_wiki"
+    "image": "charred_corn.png"
   },
   {
     "id": "cheese",
@@ -547,8 +737,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "cheese.png",
-    "source": "icarus_wiki"
+    "image": "cheese.png"
   },
   {
     "id": "cheese_pizza_slice",
@@ -582,8 +771,7 @@
     "craftedAt": [
       "Electric Stove"
     ],
-    "image": "cheese_pizza_slice.png",
-    "source": "icarus_wiki"
+    "image": "cheese_pizza_slice.png"
   },
   {
     "id": "cheese_roll",
@@ -614,8 +802,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "cheese_roll.png",
-    "source": "icarus_wiki"
+    "image": "cheese_roll.png"
   },
   {
     "id": "chewy_coconut_cookie",
@@ -657,8 +844,7 @@
     "craftedAt": [
       "Electric Stove"
     ],
-    "image": "chewy_coconut_cookie.png",
-    "source": "icarus_wiki"
+    "image": "chewy_coconut_cookie.png"
   },
   {
     "id": "choc_chip_cookie",
@@ -700,8 +886,7 @@
     "craftedAt": [
       "Electric Stove"
     ],
-    "image": "choc_chip_cookie.png",
-    "source": "icarus_wiki"
+    "image": "choc_chip_cookie.png"
   },
   {
     "id": "chocolate_cake_piece",
@@ -733,8 +918,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "chocolate_cake_piece.png",
-    "source": "icarus_wiki"
+    "image": "chocolate_cake_piece.png"
   },
   {
     "id": "cocoa_smoked_soft_meat",
@@ -760,8 +944,7 @@
     "craftedAt": [
       "Smoker"
     ],
-    "image": "cocoa_smoked_soft_meat.png",
-    "source": "icarus_wiki"
+    "image": "cocoa_smoked_soft_meat.png"
   },
   {
     "id": "coconut_cake_piece",
@@ -793,8 +976,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "coconut_cake_piece.png",
-    "source": "icarus_wiki"
+    "image": "coconut_cake_piece.png"
   },
   {
     "id": "coffee_smoked_fatty_t_bone",
@@ -824,8 +1006,7 @@
     "craftedAt": [
       "Smoker"
     ],
-    "image": "coffee_smoked_fatty_t_bone.png",
-    "source": "icarus_wiki"
+    "image": "coffee_smoked_fatty_t_bone.png"
   },
   {
     "id": "cooked_bacon",
@@ -860,8 +1041,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "cooked_bacon.png",
-    "source": "icarus_wiki"
+    "image": "cooked_bacon.png"
   },
   {
     "id": "cooked_fatty_t_bone",
@@ -900,8 +1080,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "cooked_fatty_t_bone.png",
-    "source": "icarus_wiki"
+    "image": "cooked_fatty_t_bone.png"
   },
   {
     "id": "cooked_gamey_meat",
@@ -936,8 +1115,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "cooked_gamey_meat.png",
-    "source": "icarus_wiki"
+    "image": "cooked_gamey_meat.png"
   },
   {
     "id": "cooked_giant_steak",
@@ -972,8 +1150,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "cooked_giant_steak.png",
-    "source": "icarus_wiki"
+    "image": "cooked_giant_steak.png"
   },
   {
     "id": "cooked_meat",
@@ -1000,8 +1177,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "cooked_meat.png",
-    "source": "icarus_wiki"
+    "image": "cooked_meat.png"
   },
   {
     "id": "cooked_soft_meat",
@@ -1036,8 +1212,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "cooked_soft_meat.png",
-    "source": "icarus_wiki"
+    "image": "cooked_soft_meat.png"
   },
   {
     "id": "cooked_stringy_meat",
@@ -1072,8 +1247,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "cooked_stringy_meat.png",
-    "source": "icarus_wiki"
+    "image": "cooked_stringy_meat.png"
   },
   {
     "id": "cooked_white_meat",
@@ -1112,8 +1286,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "cooked_white_meat.png",
-    "source": "icarus_wiki"
+    "image": "cooked_white_meat.png"
   },
   {
     "id": "corn",
@@ -1128,8 +1301,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "corn.png",
-    "source": "icarus_wiki"
+    "image": "corn.png"
   },
   {
     "id": "creamed_corn",
@@ -1157,8 +1329,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "creamed_corn.png",
-    "source": "icarus_wiki"
+    "image": "creamed_corn.png"
   },
   {
     "id": "crispy_bacon",
@@ -1194,8 +1365,7 @@
       "Electric Stove",
       "Potbelly Stove"
     ],
-    "image": "crispy_bacon.png",
-    "source": "icarus_wiki"
+    "image": "crispy_bacon.png"
   },
   {
     "id": "crispy_potato",
@@ -1221,8 +1391,7 @@
     "craftedAt": [
       "Biofuel Stove"
     ],
-    "image": "crispy_potato.png",
-    "source": "icarus_wiki"
+    "image": "crispy_potato.png"
   },
   {
     "id": "crumbed_saltwater_fillet",
@@ -1257,8 +1426,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "crumbed_saltwater_fillet.png",
-    "source": "icarus_wiki"
+    "image": "crumbed_saltwater_fillet.png"
   },
   {
     "id": "crunchy_soy_bean",
@@ -1288,8 +1456,7 @@
       "Wood Burner",
       "MXC Campfire"
     ],
-    "image": "crunchy_soy_bean.png",
-    "source": "icarus_wiki"
+    "image": "crunchy_soy_bean.png"
   },
   {
     "id": "dried_fatty_t_bone",
@@ -1320,8 +1487,7 @@
       "Drying Rack",
       "Smoker"
     ],
-    "image": "dried_fatty_t_bone.png",
-    "source": "icarus_wiki"
+    "image": "dried_fatty_t_bone.png"
   },
   {
     "id": "dried_gamey_meat",
@@ -1348,8 +1514,7 @@
       "Drying Rack",
       "Smoker"
     ],
-    "image": "dried_gamey_meat.png",
-    "source": "icarus_wiki"
+    "image": "dried_gamey_meat.png"
   },
   {
     "id": "dried_giant_steak",
@@ -1376,8 +1541,7 @@
       "Drying Rack",
       "Smoker"
     ],
-    "image": "dried_giant_steak.png",
-    "source": "icarus_wiki"
+    "image": "dried_giant_steak.png"
   },
   {
     "id": "dried_kiwifruit_chips",
@@ -1408,8 +1572,7 @@
       "Drying Rack",
       "Smoker"
     ],
-    "image": "dried_kiwifruit_chips.png",
-    "source": "icarus_wiki"
+    "image": "dried_kiwifruit_chips.png"
   },
   {
     "id": "dried_saltwater_fillet",
@@ -1440,8 +1603,7 @@
       "Drying Rack",
       "Smoker"
     ],
-    "image": "dried_saltwater_fillet.png",
-    "source": "icarus_wiki"
+    "image": "dried_saltwater_fillet.png"
   },
   {
     "id": "dried_soft_meat",
@@ -1468,8 +1630,7 @@
       "Drying Rack",
       "Smoker"
     ],
-    "image": "dried_soft_meat.png",
-    "source": "icarus_wiki"
+    "image": "dried_soft_meat.png"
   },
   {
     "id": "dried_stringy_meat",
@@ -1496,8 +1657,7 @@
       "Drying Rack",
       "Smoker"
     ],
-    "image": "dried_stringy_meat.png",
-    "source": "icarus_wiki"
+    "image": "dried_stringy_meat.png"
   },
   {
     "id": "dried_tomato",
@@ -1524,8 +1684,7 @@
       "Drying Rack",
       "Smoker"
     ],
-    "image": "dried_tomato.png",
-    "source": "icarus_wiki"
+    "image": "dried_tomato.png"
   },
   {
     "id": "dried_white_meat",
@@ -1556,8 +1715,7 @@
       "Drying Rack",
       "Smoker"
     ],
-    "image": "dried_white_meat.png",
-    "source": "icarus_wiki"
+    "image": "dried_white_meat.png"
   },
   {
     "id": "endurogel",
@@ -1567,8 +1725,7 @@
     "buffs": [],
     "instantEffects": [],
     "craftedAt": [],
-    "image": "endurogel.png",
-    "source": "icarus_wiki"
+    "image": "endurogel.png"
   },
   {
     "id": "energy_bar",
@@ -1600,8 +1757,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "energy_bar.png",
-    "source": "icarus_wiki"
+    "image": "energy_bar.png"
   },
   {
     "id": "fish_chunk_stew",
@@ -1629,8 +1785,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "fish_chunk_stew.png",
-    "source": "icarus_wiki"
+    "image": "fish_chunk_stew.png"
   },
   {
     "id": "fish_chunks",
@@ -1647,8 +1802,7 @@
     "craftedAt": [
       "Butchery Bench"
     ],
-    "image": "fish_chunks.png",
-    "source": "icarus_wiki"
+    "image": "fish_chunks.png"
   },
   {
     "id": "fish_pie",
@@ -1679,8 +1833,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "fish_pie.png",
-    "source": "icarus_wiki"
+    "image": "fish_pie.png"
   },
   {
     "id": "flatbread",
@@ -1707,8 +1860,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "flatbread.png",
-    "source": "icarus_wiki"
+    "image": "flatbread.png"
   },
   {
     "id": "freshwater_fillet_curry",
@@ -1732,8 +1884,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "freshwater_fillet_curry.png",
-    "source": "icarus_wiki"
+    "image": "freshwater_fillet_curry.png"
   },
   {
     "id": "freshwater_fish_fillet",
@@ -1751,8 +1902,7 @@
       "Basic Fishing Bench",
       "Butchery Bench"
     ],
-    "image": "freshwater_fish_fillet.png",
-    "source": "icarus_wiki"
+    "image": "freshwater_fish_fillet.png"
   },
   {
     "id": "fried_chicken",
@@ -1787,8 +1937,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "fried_chicken.png",
-    "source": "icarus_wiki"
+    "image": "fried_chicken.png"
   },
   {
     "id": "fried_chunky_vegetables",
@@ -1820,8 +1969,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "fried_chunky_vegetables.png",
-    "source": "icarus_wiki"
+    "image": "fried_chunky_vegetables.png"
   },
   {
     "id": "fried_eggs",
@@ -1856,8 +2004,7 @@
       "Potbelly Stove",
       "Wood Burner"
     ],
-    "image": "fried_eggs.png",
-    "source": "icarus_wiki"
+    "image": "fried_eggs.png"
   },
   {
     "id": "fried_fish_chunks",
@@ -1879,8 +2026,7 @@
     "craftedAt": [
       "Campfire"
     ],
-    "image": "fried_fish_chunks.png",
-    "source": "icarus_wiki"
+    "image": "fried_fish_chunks.png"
   },
   {
     "id": "fried_tomato",
@@ -1910,8 +2056,7 @@
       "Wood Burner",
       "MXC Campfire"
     ],
-    "image": "fried_tomato.png",
-    "source": "icarus_wiki"
+    "image": "fried_tomato.png"
   },
   {
     "id": "fruit_muffin",
@@ -1941,8 +2086,7 @@
     "craftedAt": [
       "Biofuel Stove"
     ],
-    "image": "fruit_muffin.png",
-    "source": "icarus_wiki"
+    "image": "fruit_muffin.png"
   },
   {
     "id": "fruit_pie",
@@ -1981,8 +2125,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "fruit_pie.png",
-    "source": "icarus_wiki"
+    "image": "fruit_pie.png"
   },
   {
     "id": "fruit_salad",
@@ -2018,8 +2161,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "fruit_salad.png",
-    "source": "icarus_wiki"
+    "image": "fruit_salad.png"
   },
   {
     "id": "fruit_snack_pack",
@@ -2059,8 +2201,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "fruit_snack_pack.png",
-    "source": "icarus_wiki"
+    "image": "fruit_snack_pack.png"
   },
   {
     "id": "go",
@@ -2084,8 +2225,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "go.png",
-    "source": "icarus_wiki"
+    "image": "go.png"
   },
   {
     "id": "gorse_smoked_gamey_meat",
@@ -2119,8 +2259,7 @@
     "craftedAt": [
       "Smoker"
     ],
-    "image": "gorse_smoked_gamey_meat.png",
-    "source": "icarus_wiki"
+    "image": "gorse_smoked_gamey_meat.png"
   },
   {
     "id": "grilled_freshwater_fillet",
@@ -2142,8 +2281,7 @@
     "craftedAt": [
       "Campfire"
     ],
-    "image": "grilled_freshwater_fillet.png",
-    "source": "icarus_wiki"
+    "image": "grilled_freshwater_fillet.png"
   },
   {
     "id": "grilled_pumpkin",
@@ -2169,8 +2307,7 @@
     "craftedAt": [
       "Campfire"
     ],
-    "image": "grilled_pumpkin.png",
-    "source": "icarus_wiki"
+    "image": "grilled_pumpkin.png"
   },
   {
     "id": "grilled_saltwater_fillet",
@@ -2196,8 +2333,7 @@
     "craftedAt": [
       "Campfire"
     ],
-    "image": "grilled_saltwater_fillet.png",
-    "source": "icarus_wiki"
+    "image": "grilled_saltwater_fillet.png"
   },
   {
     "id": "hearty_salad",
@@ -2220,8 +2356,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "hearty_salad.png",
-    "source": "icarus_wiki"
+    "image": "hearty_salad.png"
   },
   {
     "id": "honey",
@@ -2246,8 +2381,7 @@
       "Material Processor",
       "Windmill"
     ],
-    "image": "honey.png",
-    "source": "icarus_wiki"
+    "image": "honey.png"
   },
   {
     "id": "honey_glazed_pastry",
@@ -2274,8 +2408,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "honey_glazed_pastry.png",
-    "source": "icarus_wiki"
+    "image": "honey_glazed_pastry.png"
   },
   {
     "id": "honey_smoked_bacon",
@@ -2309,8 +2442,7 @@
     "craftedAt": [
       "Smoker"
     ],
-    "image": "honey_smoked_bacon.png",
-    "source": "icarus_wiki"
+    "image": "honey_smoked_bacon.png"
   },
   {
     "id": "honeycomb_bar",
@@ -2336,8 +2468,7 @@
     "craftedAt": [
       "Character Crafting"
     ],
-    "image": "honeycomb_bar.png",
-    "source": "icarus_wiki"
+    "image": "honeycomb_bar.png"
   },
   {
     "id": "jarred_honey",
@@ -2364,8 +2495,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "jarred_honey.png",
-    "source": "icarus_wiki"
+    "image": "jarred_honey.png"
   },
   {
     "id": "kiwifruit",
@@ -2393,8 +2523,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "kiwifruit.png",
-    "source": "icarus_wiki"
+    "image": "kiwifruit.png"
   },
   {
     "id": "kiwifruit_jam",
@@ -2425,8 +2554,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "kiwifruit_jam.png",
-    "source": "icarus_wiki"
+    "image": "kiwifruit_jam.png"
   },
   {
     "id": "kiwifruit_sorbet",
@@ -2460,8 +2588,7 @@
     "craftedAt": [
       "Marble Kitchen Bench"
     ],
-    "image": "kiwifruit_sorbet.png",
-    "source": "icarus_wiki"
+    "image": "kiwifruit_sorbet.png"
   },
   {
     "id": "kumara",
@@ -2481,8 +2608,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "kumara.png",
-    "source": "icarus_wiki"
+    "image": "kumara.png"
   },
   {
     "id": "mature_coconut",
@@ -2510,8 +2636,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "mature_coconut.png",
-    "source": "icarus_wiki"
+    "image": "mature_coconut.png"
   },
   {
     "id": "meat_pie",
@@ -2542,8 +2667,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "meat_pie.png",
-    "source": "icarus_wiki"
+    "image": "meat_pie.png"
   },
   {
     "id": "melon_smoked_giant_steak",
@@ -2577,8 +2701,7 @@
     "craftedAt": [
       "Smoker"
     ],
-    "image": "melon_smoked_giant_steak.png",
-    "source": "icarus_wiki"
+    "image": "melon_smoked_giant_steak.png"
   },
   {
     "id": "micromeal",
@@ -2606,8 +2729,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "micromeal.png",
-    "source": "icarus_wiki"
+    "image": "micromeal.png"
   },
   {
     "id": "mixed_berries",
@@ -2639,8 +2761,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "mixed_berries.png",
-    "source": "icarus_wiki"
+    "image": "mixed_berries.png"
   },
   {
     "id": "mushroom",
@@ -2660,8 +2781,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "mushroom.png",
-    "source": "icarus_wiki"
+    "image": "mushroom.png"
   },
   {
     "id": "mushroom_omelette",
@@ -2687,8 +2807,7 @@
     "craftedAt": [
       "Biofuel Stove"
     ],
-    "image": "mushroom_omelette.png",
-    "source": "icarus_wiki"
+    "image": "mushroom_omelette.png"
   },
   {
     "id": "mushroom_soup",
@@ -2712,8 +2831,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "mushroom_soup.png",
-    "source": "icarus_wiki"
+    "image": "mushroom_soup.png"
   },
   {
     "id": "oxygel",
@@ -2721,10 +2839,14 @@
     "stomachCost": 0,
     "durationSec": 0,
     "buffs": [],
-    "instantEffects": [],
+    "instantEffects": [
+      {
+        "id": "oxygen",
+        "value": 150
+      }
+    ],
     "craftedAt": [],
-    "image": "oxygel.png",
-    "source": "icarus_wiki"
+    "image": "oxygel.png"
   },
   {
     "id": "pavlova",
@@ -2766,8 +2888,7 @@
     "craftedAt": [
       "Electric Stove"
     ],
-    "image": "pavlova.png",
-    "source": "icarus_wiki"
+    "image": "pavlova.png"
   },
   {
     "id": "pickled_avocado",
@@ -2798,8 +2919,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "pickled_avocado.png",
-    "source": "icarus_wiki"
+    "image": "pickled_avocado.png"
   },
   {
     "id": "pickled_carrot",
@@ -2821,8 +2941,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "pickled_carrot.png",
-    "source": "icarus_wiki"
+    "image": "pickled_carrot.png"
   },
   {
     "id": "pickled_eggs",
@@ -2849,8 +2968,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "pickled_eggs.png",
-    "source": "icarus_wiki"
+    "image": "pickled_eggs.png"
   },
   {
     "id": "pickled_freshwater_fillet",
@@ -2873,8 +2991,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "pickled_freshwater_fillet.png",
-    "source": "icarus_wiki"
+    "image": "pickled_freshwater_fillet.png"
   },
   {
     "id": "pickled_tomato",
@@ -2901,8 +3018,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "pickled_tomato.png",
-    "source": "icarus_wiki"
+    "image": "pickled_tomato.png"
   },
   {
     "id": "plain_jerky",
@@ -2928,8 +3044,7 @@
     "craftedAt": [
       "Smoker"
     ],
-    "image": "plain_jerky.png",
-    "source": "icarus_wiki"
+    "image": "plain_jerky.png"
   },
   {
     "id": "potato_and_carrot_fries",
@@ -2955,8 +3070,7 @@
     "craftedAt": [
       "Biofuel Stove"
     ],
-    "image": "potato_and_carrot_fries.png",
-    "source": "icarus_wiki"
+    "image": "potato_and_carrot_fries.png"
   },
   {
     "id": "potato_bread",
@@ -2986,8 +3100,7 @@
     "craftedAt": [
       "Biofuel Stove"
     ],
-    "image": "potato_bread.png",
-    "source": "icarus_wiki"
+    "image": "potato_bread.png"
   },
   {
     "id": "pumpkin",
@@ -3007,8 +3120,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "pumpkin.png",
-    "source": "icarus_wiki"
+    "image": "pumpkin.png"
   },
   {
     "id": "pumpkin_bread",
@@ -3038,8 +3150,7 @@
     "craftedAt": [
       "Biofuel Stove"
     ],
-    "image": "pumpkin_bread.png",
-    "source": "icarus_wiki"
+    "image": "pumpkin_bread.png"
   },
   {
     "id": "raw_fatty_t_bone",
@@ -3049,8 +3160,7 @@
     "buffs": [],
     "instantEffects": [],
     "craftedAt": [],
-    "image": "raw_fatty_t_bone.png",
-    "source": "icarus_wiki"
+    "image": "raw_fatty_t_bone.png"
   },
   {
     "id": "raw_gamey_meat",
@@ -3060,8 +3170,7 @@
     "buffs": [],
     "instantEffects": [],
     "craftedAt": [],
-    "image": "raw_gamey_meat.png",
-    "source": "icarus_wiki"
+    "image": "raw_gamey_meat.png"
   },
   {
     "id": "raw_giant_steak",
@@ -3071,8 +3180,7 @@
     "buffs": [],
     "instantEffects": [],
     "craftedAt": [],
-    "image": "raw_giant_steak.png",
-    "source": "icarus_wiki"
+    "image": "raw_giant_steak.png"
   },
   {
     "id": "raw_soft_meat",
@@ -3087,8 +3195,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "raw_soft_meat.png",
-    "source": "icarus_wiki"
+    "image": "raw_soft_meat.png"
   },
   {
     "id": "raw_stringy_meat",
@@ -3098,8 +3205,7 @@
     "buffs": [],
     "instantEffects": [],
     "craftedAt": [],
-    "image": "raw_stringy_meat.png",
-    "source": "icarus_wiki"
+    "image": "raw_stringy_meat.png"
   },
   {
     "id": "raw_white_meat",
@@ -3109,8 +3215,7 @@
     "buffs": [],
     "instantEffects": [],
     "craftedAt": [],
-    "image": "raw_white_meat.png",
-    "source": "icarus_wiki"
+    "image": "raw_white_meat.png"
   },
   {
     "id": "rhubarb",
@@ -3130,8 +3235,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "rhubarb.png",
-    "source": "icarus_wiki"
+    "image": "rhubarb.png"
   },
   {
     "id": "rhubarb_stew",
@@ -3163,8 +3267,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "rhubarb_stew.png",
-    "source": "icarus_wiki"
+    "image": "rhubarb_stew.png"
   },
   {
     "id": "ripe_coconut",
@@ -3192,8 +3295,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "ripe_coconut.png",
-    "source": "icarus_wiki"
+    "image": "ripe_coconut.png"
   },
   {
     "id": "roast_chicken",
@@ -3230,8 +3332,7 @@
       "Potbelly Stove",
       "MXC Camping Cooker"
     ],
-    "image": "roast_chicken.png",
-    "source": "icarus_wiki"
+    "image": "roast_chicken.png"
   },
   {
     "id": "roast_squash",
@@ -3253,8 +3354,7 @@
     "craftedAt": [
       "Campfire"
     ],
-    "image": "roast_squash.png",
-    "source": "icarus_wiki"
+    "image": "roast_squash.png"
   },
   {
     "id": "roast_vegetables",
@@ -3280,8 +3380,7 @@
     "craftedAt": [
       "Potbelly Stove"
     ],
-    "image": "roast_vegetables.png",
-    "source": "icarus_wiki"
+    "image": "roast_vegetables.png"
   },
   {
     "id": "saltwater_fillet_sashimi",
@@ -3313,8 +3412,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "saltwater_fillet_sashimi.png",
-    "source": "icarus_wiki"
+    "image": "saltwater_fillet_sashimi.png"
   },
   {
     "id": "saltwater_fish_fillet",
@@ -3332,8 +3430,7 @@
       "Basic Fishing Bench",
       "Butchery Bench"
     ],
-    "image": "saltwater_fish_fillet.png",
-    "source": "icarus_wiki"
+    "image": "saltwater_fish_fillet.png"
   },
   {
     "id": "sauteed_rhubarb",
@@ -3359,8 +3456,7 @@
     "craftedAt": [
       "Campfire"
     ],
-    "image": "sauteed_rhubarb.png",
-    "source": "icarus_wiki"
+    "image": "sauteed_rhubarb.png"
   },
   {
     "id": "savory_roll",
@@ -3395,8 +3491,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "savory_roll.png",
-    "source": "icarus_wiki"
+    "image": "savory_roll.png"
   },
   {
     "id": "scrambled_eggs",
@@ -3431,8 +3526,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "scrambled_eggs.png",
-    "source": "icarus_wiki"
+    "image": "scrambled_eggs.png"
   },
   {
     "id": "seared_mushroom",
@@ -3454,8 +3548,7 @@
     "craftedAt": [
       "Campfire"
     ],
-    "image": "seared_mushroom.png",
-    "source": "icarus_wiki"
+    "image": "seared_mushroom.png"
   },
   {
     "id": "seed_bread",
@@ -3478,8 +3571,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "seed_bread.png",
-    "source": "icarus_wiki"
+    "image": "seed_bread.png"
   },
   {
     "id": "seed_cracker",
@@ -3501,8 +3593,7 @@
     "craftedAt": [
       "Cooking Station"
     ],
-    "image": "seed_cracker.png",
-    "source": "icarus_wiki"
+    "image": "seed_cracker.png"
   },
   {
     "id": "shepherd_s_pie",
@@ -3536,8 +3627,7 @@
     "craftedAt": [
       "Biofuel Stove"
     ],
-    "image": "shepherd_s_pie.png",
-    "source": "icarus_wiki"
+    "image": "shepherd_s_pie.png"
   },
   {
     "id": "shepherd_s_roll",
@@ -3567,8 +3657,7 @@
     "craftedAt": [
       "Biofuel Stove"
     ],
-    "image": "shepherd_s_roll.png",
-    "source": "icarus_wiki"
+    "image": "shepherd_s_roll.png"
   },
   {
     "id": "smashed_avocado_toast",
@@ -3603,8 +3692,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "smashed_avocado_toast.png",
-    "source": "icarus_wiki"
+    "image": "smashed_avocado_toast.png"
   },
   {
     "id": "soy_bean",
@@ -3624,8 +3712,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "soy_bean.png",
-    "source": "icarus_wiki"
+    "image": "soy_bean.png"
   },
   {
     "id": "soy_bean_stir_fry",
@@ -3651,8 +3738,7 @@
     "craftedAt": [
       "Potbelly Stove"
     ],
-    "image": "soy_bean_stir_fry.png",
-    "source": "icarus_wiki"
+    "image": "soy_bean_stir_fry.png"
   },
   {
     "id": "squash",
@@ -3672,8 +3758,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "squash.png",
-    "source": "icarus_wiki"
+    "image": "squash.png"
   },
   {
     "id": "steamed_fish",
@@ -3707,8 +3792,7 @@
       "Electric Stove",
       "Wood Burner"
     ],
-    "image": "steamed_fish.png",
-    "source": "icarus_wiki"
+    "image": "steamed_fish.png"
   },
   {
     "id": "stew",
@@ -3736,8 +3820,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "stew.png",
-    "source": "icarus_wiki"
+    "image": "stew.png"
   },
   {
     "id": "strawberries_cream",
@@ -3768,8 +3851,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "strawberries_cream.png",
-    "source": "icarus_wiki"
+    "image": "strawberries_cream.png"
   },
   {
     "id": "strawberry",
@@ -3789,8 +3871,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "strawberry.png",
-    "source": "icarus_wiki"
+    "image": "strawberry.png"
   },
   {
     "id": "strawberry_hard_candy",
@@ -3814,8 +3895,7 @@
       "Electric Stove",
       "Potbelly Stove"
     ],
-    "image": "strawberry_hard_candy.png",
-    "source": "icarus_wiki"
+    "image": "strawberry_hard_candy.png"
   },
   {
     "id": "strawberry_jam",
@@ -3842,8 +3922,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "strawberry_jam.png",
-    "source": "icarus_wiki"
+    "image": "strawberry_jam.png"
   },
   {
     "id": "stringy_jerky",
@@ -3873,8 +3952,7 @@
     "craftedAt": [
       "Smoker"
     ],
-    "image": "stringy_jerky.png",
-    "source": "icarus_wiki"
+    "image": "stringy_jerky.png"
   },
   {
     "id": "stuffed_avocado",
@@ -3904,8 +3982,7 @@
     "craftedAt": [
       "Cooking Station"
     ],
-    "image": "stuffed_avocado.png",
-    "source": "icarus_wiki"
+    "image": "stuffed_avocado.png"
   },
   {
     "id": "sweetcorn_soup",
@@ -3929,8 +4006,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "sweetcorn_soup.png",
-    "source": "icarus_wiki"
+    "image": "sweetcorn_soup.png"
   },
   {
     "id": "tea_smoked_freshwater_fillet",
@@ -3960,8 +4036,7 @@
     "craftedAt": [
       "Smoker"
     ],
-    "image": "tea_smoked_freshwater_fillet.png",
-    "source": "icarus_wiki"
+    "image": "tea_smoked_freshwater_fillet.png"
   },
   {
     "id": "tomato",
@@ -3985,8 +4060,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "tomato.png",
-    "source": "icarus_wiki"
+    "image": "tomato.png"
   },
   {
     "id": "tomato_egg_bowl",
@@ -4017,8 +4091,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "tomato_egg_bowl.png",
-    "source": "icarus_wiki"
+    "image": "tomato_egg_bowl.png"
   },
   {
     "id": "tomato_soup",
@@ -4046,8 +4119,7 @@
       "Electric Stove",
       "Potbelly Stove"
     ],
-    "image": "tomato_soup.png",
-    "source": "icarus_wiki"
+    "image": "tomato_soup.png"
   },
   {
     "id": "ultrameal",
@@ -4075,8 +4147,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "ultrameal.png",
-    "source": "icarus_wiki"
+    "image": "ultrameal.png"
   },
   {
     "id": "vegetable_pie",
@@ -4107,8 +4178,7 @@
       "Biofuel Stove",
       "Electric Stove"
     ],
-    "image": "vegetable_pie.png",
-    "source": "icarus_wiki"
+    "image": "vegetable_pie.png"
   },
   {
     "id": "vegetable_roll",
@@ -4146,8 +4216,7 @@
     "craftedAt": [
       "Biofuel Stove"
     ],
-    "image": "vegetable_roll.png",
-    "source": "icarus_wiki"
+    "image": "vegetable_roll.png"
   },
   {
     "id": "watermelon",
@@ -4175,8 +4244,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "watermelon.png",
-    "source": "icarus_wiki"
+    "image": "watermelon.png"
   },
   {
     "id": "watermelon_lollypop",
@@ -4200,8 +4268,7 @@
       "Electric Stove",
       "Potbelly Stove"
     ],
-    "image": "watermelon_lollypop.png",
-    "source": "icarus_wiki"
+    "image": "watermelon_lollypop.png"
   },
   {
     "id": "white_jerky",
@@ -4235,8 +4302,7 @@
     "craftedAt": [
       "Smoker"
     ],
-    "image": "white_jerky.png",
-    "source": "icarus_wiki"
+    "image": "white_jerky.png"
   },
   {
     "id": "wild_berry",
@@ -4264,8 +4330,7 @@
       }
     ],
     "craftedAt": [],
-    "image": "wild_berry.png",
-    "source": "icarus_wiki"
+    "image": "wild_berry.png"
   },
   {
     "id": "wild_salad",
@@ -4293,8 +4358,7 @@
       "Kitchen Bench",
       "Marble Kitchen Bench"
     ],
-    "image": "wild_salad.png",
-    "source": "icarus_wiki"
+    "image": "wild_salad.png"
   },
   {
     "id": "young_coconut",
@@ -4322,7 +4386,6 @@
       }
     ],
     "craftedAt": [],
-    "image": "young_coconut.png",
-    "source": "icarus_wiki"
+    "image": "young_coconut.png"
   }
 ]
