@@ -1,0 +1,27 @@
+import type { Food } from "@/types/food";
+import plainJerkyImg from "@/assets/foods/plain_jerky.png";
+
+const plainJerky: Food = {
+  id: "plain_jerky",
+  name: "Plain Jerky",
+  stomachCost: 1,
+  durationSec: 200,
+  buffs: [
+    { id: "health_when_consumed", value: 30 },
+    { id: "maximum_health", value: 150 },
+    { id: "health_regenration", value: 60 },
+  ],
+  instantEffects: [
+    { id: "nutrition", value: 200 },
+  ],
+  image: plainJerkyImg,
+  craftedAt: [
+    {
+      id: "smoker",
+      name: "Smoker",
+      image: "smoker.png"
+    },
+  ],
+};
+
+export default plainJerky;

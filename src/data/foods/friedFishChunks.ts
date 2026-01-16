@@ -1,0 +1,26 @@
+import type { Food } from "@/types/food";
+import friedFishChunksImg from "@/assets/foods/fried_fish_chunks.png";
+
+const friedFishChunks: Food = {
+  id: "fried_fish_chunks",
+  name: "Fried Fish Chunks",
+  stomachCost: 1,
+  durationSec: 600,
+  buffs: [
+    { id: "health_when_consumed", value: 15 },
+    { id: "maximum_health", value: 75 },
+  ],
+  instantEffects: [
+    { id: "nutrition", value: 80 },
+  ],
+  image: friedFishChunksImg,
+  craftedAt: [
+    {
+      id: "campfire",
+      name: "Campfire",
+      image: "campfire.png"
+    },
+  ],
+};
+
+export default friedFishChunks;
