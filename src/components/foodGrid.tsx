@@ -11,6 +11,25 @@ export default function FoodGrid() {
           </CardHeader>
           <CardContent>
             <img src={food.image} />
+            <ul>
+              {food.instantEffects?.map((effect) => {
+                return (
+                  <li key={effect.id}>
+                    {effect.id}:{effect.value}
+                  </li>
+                );
+              })}
+            </ul>
+
+            <ul>
+              {food.buffs?.map((buff) => {
+                return (
+                  <li key={buff.id}>
+                    {buff.id}:{buff.value}
+                  </li>
+                );
+              })}
+            </ul>
           </CardContent>
         </Card>
       ))}
