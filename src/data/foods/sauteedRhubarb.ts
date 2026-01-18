@@ -11,7 +11,7 @@ const sauteedRhubarb: Food = {
     { id: "oxygen_consumption", value: -10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 50 },
+    { id: "food_when_consumed", value: 50 },
   ],
   image: sauteedRhubarbImg,
   craftedAt: [

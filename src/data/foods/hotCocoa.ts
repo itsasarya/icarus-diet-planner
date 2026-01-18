@@ -7,9 +7,11 @@ const hotCocoa: Food = {
   stomachCost: 0,
   durationSec: 900,
   buffs: [
+    { id: "food_consumption", value: -25 },
+    { id: "c_to_temperature", value: 10 },
   ],
   instantEffects: [
-    { id: "hydration", value: 300 },
+    { id: "water_when_consumed", value: 300 },
   ],
   image: hotCocoaImg,
 };

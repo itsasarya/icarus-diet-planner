@@ -9,10 +9,12 @@ const driedSaltwaterFillet: Food = {
   buffs: [
     { id: "health_when_consumed", value: 30 },
     { id: "maximum_health", value: 75 },
+    { id: "stamina_regeneration", value: 15 },
     { id: "exposure_resistance", value: 5 },
+    { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: driedSaltwaterFilletImg,
   craftedAt: [

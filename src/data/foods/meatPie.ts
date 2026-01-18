@@ -9,11 +9,12 @@ const meatPie: Food = {
   buffs: [
     { id: "maximum_health", value: 225 },
     { id: "exposure_resistance", value: 15 },
-    { id: "health_regenration", value: 15 },
+    { id: "stamina_regeneration", value: 15 },
+    { id: "health_regeneration", value: 15 },
     { id: "experience_gained", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: meatPieImg,
   craftedAt: [

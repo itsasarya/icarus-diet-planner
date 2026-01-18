@@ -8,13 +8,14 @@ const chewyCoconutCookie: Food = {
   durationSec: 1200,
   buffs: [
     { id: "maximum_stamina", value: 175 },
+    { id: "food_consumption", value: -25 },
     { id: "charge_speed", value: 15 },
     { id: "reload_speed", value: 30 },
     { id: "crafting_speed", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 25 },
-    { id: "hydration", value: 50 },
+    { id: "food_when_consumed", value: 25 },
+    { id: "water_when_consumed", value: 50 },
   ],
   image: chewyCoconutCookieImg,
   craftedAt: [

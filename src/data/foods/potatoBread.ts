@@ -8,10 +8,11 @@ const potatoBread: Food = {
   durationSec: 200,
   buffs: [
     { id: "maximum_stamina", value: 150 },
+    { id: "food_consumption", value: -20 },
     { id: "experience_gained", value: 15 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: potatoBreadImg,
   craftedAt: [

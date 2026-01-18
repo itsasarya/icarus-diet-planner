@@ -8,10 +8,11 @@ const pickledEggs: Food = {
   durationSec: 200,
   buffs: [
     { id: "maximum_stamina", value: 150 },
+    { id: "chance_to_find_additional_stone", value: 20 },
     { id: "shared_experience_gained", value: 20 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: pickledEggsImg,
   craftedAt: [

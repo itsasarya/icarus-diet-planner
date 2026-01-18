@@ -10,10 +10,11 @@ const coffeeSmokedFattyTBone: Food = {
     { id: "health_when_consumed", value: 30 },
     { id: "maximum_health", value: 175 },
     { id: "yield_from_butchering_animals", value: 50 },
-    { id: "health_regenration", value: 20 },
+    { id: "food_consumption", value: -25 },
+    { id: "health_regeneration", value: 20 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 200 },
+    { id: "food_when_consumed", value: 200 },
   ],
   image: coffeeSmokedFattyTBoneImg,
   craftedAt: [

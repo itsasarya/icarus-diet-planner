@@ -9,9 +9,10 @@ const bread: Food = {
   buffs: [
     { id: "health_when_consumed", value: 10 },
     { id: "maximum_stamina", value: 125 },
+    { id: "experience_gained", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 80 },
+    { id: "food_when_consumed", value: 80 },
   ],
   image: breadImg,
   craftedAt: [

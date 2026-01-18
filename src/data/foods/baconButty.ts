@@ -9,12 +9,12 @@ const baconButty: Food = {
   buffs: [
     { id: "maximum_health", value: 150 },
     { id: "maximum_stamina", value: 125 },
-    { id: "health_regenration", value: 25 },
+    { id: "health_regeneration", value: 25 },
     { id: "experience_gained", value: 25 },
     { id: "critical_damage", value: 25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: baconButtyImg,
   craftedAt: [

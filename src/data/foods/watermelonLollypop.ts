@@ -7,9 +7,10 @@ const watermelonLollypop: Food = {
   stomachCost: 0,
   durationSec: 300,
   buffs: [
+    { id: "over_encumberance_penalty", value: -50 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 10 },
+    { id: "food_when_consumed", value: 10 },
   ],
   image: watermelonLollypopImg,
   craftedAt: [

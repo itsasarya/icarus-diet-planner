@@ -9,11 +9,12 @@ const cheeseRoll: Food = {
   buffs: [
     { id: "maximum_health", value: 150 },
     { id: "maximum_stamina", value: 125 },
+    { id: "shared_experience_gained", value: 10 },
     { id: "experience_gained", value: 10 },
-    { id: "health_regenration", value: 25 },
+    { id: "health_regeneration", value: 25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 120 },
+    { id: "food_when_consumed", value: 120 },
   ],
   image: cheeseRollImg,
   craftedAt: [

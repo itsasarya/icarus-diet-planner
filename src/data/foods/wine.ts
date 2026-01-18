@@ -7,10 +7,11 @@ const wine: Food = {
   stomachCost: 1,
   durationSec: 900,
   buffs: [
+    { id: "stamina_regeneration", value: 100 },
     { id: "maximum_stamina", value: 125 },
   ],
   instantEffects: [
-    { id: "hydration", value: 40 },
+    { id: "water_when_consumed", value: 40 },
   ],
   image: wineImg,
   craftedAt: [

@@ -10,10 +10,12 @@ const teaSmokedFreshwaterFillet: Food = {
     { id: "health_when_consumed", value: 30 },
     { id: "maximum_health", value: 75 },
     { id: "maximum_stamina", value: 75 },
-    { id: "health_regenration", value: 50 },
+    { id: "stamina_regeneration", value: 25 },
+    { id: "health_regeneration", value: 50 },
+    { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 200 },
+    { id: "food_when_consumed", value: 200 },
   ],
   image: teaSmokedFreshwaterFilletImg,
   craftedAt: [

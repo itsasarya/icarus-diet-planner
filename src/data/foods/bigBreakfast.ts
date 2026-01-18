@@ -9,11 +9,13 @@ const bigBreakfast: Food = {
   buffs: [
     { id: "maximum_health", value: 225 },
     { id: "maximum_stamina", value: 75 },
-    { id: "bonus_stone_chance_pct", value: 15 },
-    { id: "health_regenration", value: 15 },
+    { id: "chance_to_find_additional_stone", value: 15 },
+    { id: "food_consumption", value: -15 },
+    { id: "health_regeneration", value: 15 },
+    { id: "experience_gained", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: bigBreakfastImg,
   craftedAt: [

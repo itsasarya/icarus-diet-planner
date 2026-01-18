@@ -9,10 +9,11 @@ const plainJerky: Food = {
   buffs: [
     { id: "health_when_consumed", value: 30 },
     { id: "maximum_health", value: 150 },
-    { id: "health_regenration", value: 60 },
+    { id: "health_regeneration", value: 60 },
+    { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 200 },
+    { id: "food_when_consumed", value: 200 },
   ],
   image: plainJerkyImg,
   craftedAt: [

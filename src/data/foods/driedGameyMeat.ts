@@ -7,11 +7,13 @@ const driedGameyMeat: Food = {
   stomachCost: 1,
   durationSec: 200,
   buffs: [
+    { id: "health_when_consumed", value: 30 },
     { id: "maximum_health", value: 75 },
     { id: "melee_damage", value: 15 },
+    { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: driedGameyMeatImg,
   craftedAt: [

@@ -11,11 +11,11 @@ const vegetableRoll: Food = {
     { id: "maximum_stamina", value: 150 },
     { id: "oxygen_consumption", value: -30 },
     { id: "exposure_resistance", value: 15 },
-    { id: "health_regenration", value: 30 },
+    { id: "health_regeneration", value: 30 },
     { id: "experience_gained", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: vegetableRollImg,
   craftedAt: [

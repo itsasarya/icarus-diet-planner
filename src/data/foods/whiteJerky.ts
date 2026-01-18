@@ -11,10 +11,11 @@ const whiteJerky: Food = {
     { id: "maximum_health", value: 125 },
     { id: "maximum_stamina", value: 75 },
     { id: "exposure_resistance", value: 15 },
-    { id: "health_regenration", value: 50 },
+    { id: "food_consumption", value: -25 },
+    { id: "health_regeneration", value: 50 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 200 },
+    { id: "food_when_consumed", value: 200 },
   ],
   image: whiteJerkyImg,
   craftedAt: [

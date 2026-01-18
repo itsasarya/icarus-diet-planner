@@ -12,8 +12,8 @@ const honeycombBar: Food = {
     { id: "food_effects_duration", value: 15 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 50 },
-    { id: "hydration", value: 20 },
+    { id: "food_when_consumed", value: 50 },
+    { id: "water_when_consumed", value: 20 },
   ],
   image: honeycombBarImg,
   craftedAt: [

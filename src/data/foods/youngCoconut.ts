@@ -8,10 +8,11 @@ const youngCoconut: Food = {
   durationSec: 600,
   buffs: [
     { id: "maximum_health", value: 25 },
+    { id: "food_consumption", value: -10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 2 },
-    { id: "hydration", value: 10 },
+    { id: "food_when_consumed", value: 2 },
+    { id: "water_when_consumed", value: 10 },
   ],
   image: youngCoconutImg,
 };

@@ -11,9 +11,10 @@ const energyBar: Food = {
     { id: "stamina_consumed_by_tool_actions", value: -10 },
     { id: "charge_speed", value: 10 },
     { id: "reload_speed", value: 10 },
+    { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: energyBarImg,
 };

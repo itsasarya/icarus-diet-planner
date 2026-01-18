@@ -1,7 +1,9 @@
 import foods from "@/data/foods";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
+import { Separator } from "./ui/separator";
 
 export default function FoodGrid() {
+
   return (
     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
       {foods.map((food) => (
@@ -9,27 +11,9 @@ export default function FoodGrid() {
           <CardHeader>
             <CardTitle>{food.name}</CardTitle>
           </CardHeader>
+          <Separator />
           <CardContent>
             <img src={food.image} />
-            <ul>
-              {food.instantEffects?.map((effect) => {
-                return (
-                  <li key={effect.id}>
-                    {effect.id}:{effect.value}
-                  </li>
-                );
-              })}
-            </ul>
-
-            <ul>
-              {food.buffs?.map((buff) => {
-                return (
-                  <li key={buff.id}>
-                    {buff.id}:{buff.value}
-                  </li>
-                );
-              })}
-            </ul>
           </CardContent>
         </Card>
       ))}

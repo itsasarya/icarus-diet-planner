@@ -13,7 +13,7 @@ const friedChunkyVegetables: Food = {
     { id: "melee_attack_speed", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: friedChunkyVegetablesImg,
   craftedAt: [

@@ -9,11 +9,12 @@ const saltwaterFilletSashimi: Food = {
   buffs: [
     { id: "maximum_health", value: 75 },
     { id: "maximum_stamina", value: 75 },
+    { id: "stamina_regeneration", value: 15 },
     { id: "exposure_resistance", value: 5 },
     { id: "projectile_damage", value: 5 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: saltwaterFilletSashimiImg,
   craftedAt: [

@@ -10,11 +10,11 @@ const cookedGiantSteak: Food = {
     { id: "health_when_consumed", value: 30 },
     { id: "maximum_stamina", value: 100 },
     { id: "maximum_health", value: 150 },
-    { id: "health_regenration", value: 50 },
+    { id: "health_regeneration", value: 50 },
     { id: "experience_gained", value: 5 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: cookedGiantSteakImg,
   craftedAt: [

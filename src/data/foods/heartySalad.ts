@@ -9,7 +9,7 @@ const heartySalad: Food = {
   buffs: [
     { id: "maximum_health", value: 75 },
     { id: "maximum_stamina", value: 75 },
-    { id: "health_regenration", value: 20 },
+    { id: "health_regeneration", value: 20 },
   ],
   instantEffects: [
   ],

@@ -9,9 +9,10 @@ const friedFishChunks: Food = {
   buffs: [
     { id: "health_when_consumed", value: 15 },
     { id: "maximum_health", value: 75 },
+    { id: "stamina_regeneration", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 80 },
+    { id: "food_when_consumed", value: 80 },
   ],
   image: friedFishChunksImg,
   craftedAt: [

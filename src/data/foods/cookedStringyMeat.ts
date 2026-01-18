@@ -14,7 +14,7 @@ const cookedStringyMeat: Food = {
     { id: "experience_gained", value: 5 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: cookedStringyMeatImg,
   craftedAt: [

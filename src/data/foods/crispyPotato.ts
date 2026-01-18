@@ -8,10 +8,11 @@ const crispyPotato: Food = {
   durationSec: 600,
   buffs: [
     { id: "maximum_stamina", value: 75 },
+    { id: "food_consumption", value: -10 },
     { id: "melee_attack_speed", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 50 },
+    { id: "food_when_consumed", value: 50 },
   ],
   image: crispyPotatoImg,
   craftedAt: [

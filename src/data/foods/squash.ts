@@ -10,7 +10,7 @@ const squash: Food = {
     { id: "maximum_health", value: 30 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 20 },
+    { id: "food_when_consumed", value: 20 },
   ],
   image: squashImg,
 };

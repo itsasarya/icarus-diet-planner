@@ -12,7 +12,7 @@ const seedCracker: Food = {
     { id: "stamina_consumed_by_tool_actions", value: -15 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 50 },
+    { id: "food_when_consumed", value: 50 },
   ],
   image: seedCrackerImg,
   craftedAt: [

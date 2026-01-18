@@ -7,11 +7,13 @@ const driedStringyMeat: Food = {
   stomachCost: 1,
   durationSec: 200,
   buffs: [
+    { id: "health_when_consumed", value: 30 },
     { id: "maximum_stamina", value: 75 },
     { id: "melee_attack_speed", value: 15 },
+    { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: driedStringyMeatImg,
   craftedAt: [

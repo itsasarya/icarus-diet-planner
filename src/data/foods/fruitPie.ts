@@ -14,7 +14,7 @@ const fruitPie: Food = {
     { id: "experience_gained", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: fruitPieImg,
   craftedAt: [

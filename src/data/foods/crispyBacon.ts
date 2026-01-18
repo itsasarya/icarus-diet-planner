@@ -14,7 +14,7 @@ const crispyBacon: Food = {
     { id: "critical_damage", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: crispyBaconImg,
   craftedAt: [

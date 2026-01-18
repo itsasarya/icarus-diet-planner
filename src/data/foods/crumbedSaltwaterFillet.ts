@@ -9,11 +9,12 @@ const crumbedSaltwaterFillet: Food = {
   buffs: [
     { id: "maximum_health", value: 150 },
     { id: "maximum_stamina", value: 75 },
+    { id: "stamina_regeneration", value: 15 },
     { id: "exposure_resistance", value: 5 },
     { id: "experience_gained", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: crumbedSaltwaterFilletImg,
   craftedAt: [

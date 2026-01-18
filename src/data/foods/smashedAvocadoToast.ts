@@ -8,11 +8,12 @@ const smashedAvocadoToast: Food = {
   durationSec: 900,
   buffs: [
     { id: "maximum_stamina", value: 150 },
+    { id: "food_consumption", value: -25 },
     { id: "experience_gained", value: 15 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 20 },
-    { id: "hydration", value: 100 },
+    { id: "food_when_consumed", value: 20 },
+    { id: "water_when_consumed", value: 100 },
   ],
   image: smashedAvocadoToastImg,
   craftedAt: [

@@ -6,11 +6,12 @@ const honeyMead: Food = {
   name: "Honey Mead",
   stomachCost: 1,
   buffs: [
+    { id: "stamina_regeneration", value: 100 },
     { id: "maximum_stamina", value: 125 },
     { id: "food_effects_duration", value: 30 },
   ],
   instantEffects: [
-    { id: "hydration", value: 50 },
+    { id: "water_when_consumed", value: 50 },
   ],
   image: honeyMeadImg,
   craftedAt: [

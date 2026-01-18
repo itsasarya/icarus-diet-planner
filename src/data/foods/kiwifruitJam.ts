@@ -12,7 +12,7 @@ const kiwifruitJam: Food = {
     { id: "chance_to_resist_cave_sickness", value: 20 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 75 },
+    { id: "food_when_consumed", value: 75 },
   ],
   image: kiwifruitJamImg,
   craftedAt: [

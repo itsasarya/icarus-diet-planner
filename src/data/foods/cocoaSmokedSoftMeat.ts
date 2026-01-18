@@ -9,10 +9,12 @@ const cocoaSmokedSoftMeat: Food = {
   buffs: [
     { id: "health_when_consumed", value: 30 },
     { id: "maximum_stamina", value: 175 },
-    { id: "health_regenration", value: 20 },
+    { id: "stamina_regeneration", value: 100 },
+    { id: "food_consumption", value: -40 },
+    { id: "health_regeneration", value: 20 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 200 },
+    { id: "food_when_consumed", value: 200 },
   ],
   image: cocoaSmokedSoftMeatImg,
   craftedAt: [

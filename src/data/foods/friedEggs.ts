@@ -7,10 +7,10 @@ const friedEggs: Food = {
   stomachCost: 1,
   buffs: [
     { id: "maximum_health", value: 75 },
-    { id: "bonus_stone_chance_pct", value: 10 },
+    { id: "chance_to_find_additional_stone", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 50 },
+    { id: "food_when_consumed", value: 50 },
   ],
   image: friedEggsImg,
   craftedAt: [

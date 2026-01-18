@@ -11,7 +11,7 @@ const fruitSmoothie: Food = {
     { id: "chance_to_resist_cave_sickness", value: 30 },
   ],
   instantEffects: [
-    { id: "hydration", value: 300 },
+    { id: "water_when_consumed", value: 300 },
   ],
   image: fruitSmoothieImg,
   craftedAt: [

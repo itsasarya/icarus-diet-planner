@@ -7,12 +7,12 @@ const go: Food = {
   stomachCost: 1,
   durationSec: 200,
   buffs: [
-    { id: "health_regenration", value: 10 },
+    { id: "health_regeneration", value: 10 },
     { id: "water_consumption", value: -10 },
     { id: "oxygen_consumption", value: -10 },
   ],
   instantEffects: [
-    { id: "hydration", value: 100 },
+    { id: "water_when_consumed", value: 100 },
   ],
   image: goImg,
 };

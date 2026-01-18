@@ -9,10 +9,11 @@ const grilledFreshwaterFillet: Food = {
   buffs: [
     { id: "health_when_consumed", value: 15 },
     { id: "maximum_health", value: 75 },
-    { id: "health_regenration", value: 5 },
+    { id: "stamina_regeneration", value: 15 },
+    { id: "health_regeneration", value: 5 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 120 },
+    { id: "food_when_consumed", value: 120 },
   ],
   image: grilledFreshwaterFilletImg,
   craftedAt: [

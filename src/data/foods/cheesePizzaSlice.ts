@@ -11,9 +11,10 @@ const cheesePizzaSlice: Food = {
     { id: "maximum_stamina", value: 75 },
     { id: "shared_experience_gained", value: 10 },
     { id: "experience_gained", value: 5 },
+    { id: "stamina_regeneration", value: 50 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: cheesePizzaSliceImg,
   craftedAt: [

@@ -8,10 +8,11 @@ const freshwaterFilletCurry: Food = {
   durationSec: 900,
   buffs: [
     { id: "maximum_health", value: 225 },
-    { id: "health_regenration", value: 15 },
+    { id: "health_regeneration", value: 15 },
+    { id: "stamina_regeneration", value: 15 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: freshwaterFilletCurryImg,
   craftedAt: [

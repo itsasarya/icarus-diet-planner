@@ -12,7 +12,7 @@ const jarredHoney: Food = {
     { id: "shared_experience_gained", value: 20 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 40 },
+    { id: "food_when_consumed", value: 40 },
   ],
   image: jarredHoneyImg,
   craftedAt: [

@@ -8,7 +8,7 @@ const rawSoftMeat: Food = {
   buffs: [
   ],
   instantEffects: [
-    { id: "nutrition", value: 20 },
+    { id: "food_when_consumed", value: 20 },
   ],
   image: rawSoftMeatImg,
 };

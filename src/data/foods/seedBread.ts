@@ -10,9 +10,10 @@ const seedBread: Food = {
     { id: "health_when_consumed", value: 10 },
     { id: "maximum_stamina", value: 150 },
     { id: "stamina_consumed_by_tool_actions", value: -20 },
+    { id: "experience_gained", value: 15 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 80 },
+    { id: "food_when_consumed", value: 80 },
   ],
   image: seedBreadImg,
   craftedAt: [

@@ -8,10 +8,11 @@ const driedTomato: Food = {
   durationSec: 200,
   buffs: [
     { id: "maximum_stamina", value: 75 },
-    { id: "health_regenration", value: 30 },
+    { id: "health_regeneration", value: 30 },
+    { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 50 },
+    { id: "food_when_consumed", value: 50 },
   ],
   image: driedTomatoImg,
   craftedAt: [

@@ -9,10 +9,11 @@ const berrySeedBar: Food = {
   buffs: [
     { id: "maximum_stamina", value: 75 },
     { id: "stamina_consumed_by_tool_actions", value: -10 },
+    { id: "water_effects_duration", value: 15 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 50 },
-    { id: "hydration", value: 20 },
+    { id: "food_when_consumed", value: 50 },
+    { id: "water_when_consumed", value: 20 },
   ],
   image: berrySeedBarImg,
   craftedAt: [

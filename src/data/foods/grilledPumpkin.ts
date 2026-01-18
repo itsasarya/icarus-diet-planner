@@ -11,7 +11,7 @@ const grilledPumpkin: Food = {
     { id: "exposure_resistance", value: 5 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 50 },
+    { id: "food_when_consumed", value: 50 },
   ],
   image: grilledPumpkinImg,
   craftedAt: [

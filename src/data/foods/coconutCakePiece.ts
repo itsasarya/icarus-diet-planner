@@ -11,11 +11,11 @@ const coconutCakePiece: Food = {
     { id: "maximum_stamina", value: 250 },
     { id: "experience_gained", value: 25 },
     { id: "stamina_consumed_by_tool_actions", value: -40 },
-    { id: "health_regenration", value: 50 },
+    { id: "health_regeneration", value: 50 },
     { id: "crafting_speed", value: 50 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 200 },
+    { id: "food_when_consumed", value: 200 },
   ],
   image: coconutCakePieceImg,
 };

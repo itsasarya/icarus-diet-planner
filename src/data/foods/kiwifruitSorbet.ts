@@ -12,8 +12,8 @@ const kiwifruitSorbet: Food = {
     { id: "chance_to_resist_cave_sickness", value: 45 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
-    { id: "hydration", value: 100 },
+    { id: "food_when_consumed", value: 100 },
+    { id: "water_when_consumed", value: 100 },
   ],
   image: kiwifruitSorbetImg,
   craftedAt: [

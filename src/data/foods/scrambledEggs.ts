@@ -10,11 +10,11 @@ const scrambledEggs: Food = {
     { id: "health_when_consumed", value: 10 },
     { id: "maximum_health", value: 50 },
     { id: "maximum_stamina", value: 100 },
-    { id: "bonus_stone_chance_pct", value: 25 },
+    { id: "chance_to_find_additional_stone", value: 25 },
     { id: "experience_gained", value: 20 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: scrambledEggsImg,
   craftedAt: [

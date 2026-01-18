@@ -7,10 +7,13 @@ const driedSoftMeat: Food = {
   stomachCost: 1,
   durationSec: 200,
   buffs: [
+    { id: "health_when_consumed", value: 30 },
     { id: "maximum_stamina", value: 100 },
+    { id: "stamina_regeneration", value: 15 },
+    { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: driedSoftMeatImg,
   craftedAt: [

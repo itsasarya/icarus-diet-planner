@@ -9,10 +9,11 @@ const basicDriedMeat: Food = {
   buffs: [
     { id: "health_when_consumed", value: 200 },
     { id: "maximum_health", value: 75 },
-    { id: "health_regenration", value: 20 },
+    { id: "health_regeneration", value: 20 },
+    { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: basicDriedMeatImg,
   craftedAt: [

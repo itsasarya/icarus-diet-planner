@@ -10,10 +10,10 @@ const roastChicken: Food = {
     { id: "maximum_health", value: 250 },
     { id: "maximum_stamina", value: 200 },
     { id: "exposure_resistance", value: 25 },
-    { id: "bonus_stone_chance_pct", value: 25 },
+    { id: "chance_to_find_additional_stone", value: 25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: roastChickenImg,
   craftedAt: [

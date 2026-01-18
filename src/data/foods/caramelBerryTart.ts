@@ -12,10 +12,10 @@ const caramelBerryTart: Food = {
     { id: "reload_speed", value: 15 },
     { id: "chance_to_resist_cave_sickness", value: 15 },
     { id: "water_consumption", value: -35 },
-    { id: "bonus_stone_chance_pct", value: 10 },
+    { id: "chance_to_find_additional_stone", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 50 },
+    { id: "food_when_consumed", value: 50 },
   ],
   image: caramelBerryTartImg,
   craftedAt: [

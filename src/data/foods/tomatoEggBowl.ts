@@ -9,11 +9,11 @@ const tomatoEggBowl: Food = {
   buffs: [
     { id: "maximum_health", value: 75 },
     { id: "maximum_stamina", value: 75 },
-    { id: "bonus_stone_chance_pct", value: 15 },
+    { id: "chance_to_find_additional_stone", value: 15 },
     { id: "projectile_damage", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: tomatoEggBowlImg,
   craftedAt: [

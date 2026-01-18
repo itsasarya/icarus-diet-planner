@@ -11,11 +11,12 @@ const gorseSmokedGameyMeat: Food = {
     { id: "maximum_health", value: 100 },
     { id: "maximum_stamina", value: 100 },
     { id: "melee_damage", value: 25 },
-    { id: "health_regenration", value: 20 },
+    { id: "health_regeneration", value: 20 },
+    { id: "food_consumption", value: -25 },
     { id: "water_consumption", value: -25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 200 },
+    { id: "food_when_consumed", value: 200 },
   ],
   image: gorseSmokedGameyMeatImg,
   craftedAt: [

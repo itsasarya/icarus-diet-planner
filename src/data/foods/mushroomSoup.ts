@@ -8,9 +8,10 @@ const mushroomSoup: Food = {
   durationSec: 900,
   buffs: [
     { id: "maximum_health", value: 75 },
+    { id: "stamina_regeneration", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: mushroomSoupImg,
   craftedAt: [

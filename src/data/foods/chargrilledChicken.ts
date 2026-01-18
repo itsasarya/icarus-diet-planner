@@ -10,10 +10,10 @@ const chargrilledChicken: Food = {
     { id: "maximum_health", value: 150 },
     { id: "maximum_stamina", value: 100 },
     { id: "exposure_resistance", value: 10 },
-    { id: "bonus_stone_chance_pct", value: 10 },
+    { id: "chance_to_find_additional_stone", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 50 },
+    { id: "food_when_consumed", value: 50 },
   ],
   image: chargrilledChickenImg,
   craftedAt: [

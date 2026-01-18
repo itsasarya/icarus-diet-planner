@@ -10,10 +10,12 @@ const chocolateCakePiece: Food = {
     { id: "maximum_health", value: 300 },
     { id: "maximum_stamina", value: 200 },
     { id: "experience_gained", value: 25 },
-    { id: "health_regenration", value: 200 },
+    { id: "stamina_regeneration", value: 200 },
+    { id: "health_regeneration", value: 200 },
+    { id: "food_consumption", value: 15 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 200 },
+    { id: "food_when_consumed", value: 200 },
   ],
   image: chocolateCakePieceImg,
 };

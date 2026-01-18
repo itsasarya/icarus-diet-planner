@@ -11,11 +11,11 @@ const vegetablePie: Food = {
     { id: "maximum_stamina", value: 150 },
     { id: "stamina_consumed_by_actions", value: -15 },
     { id: "melee_damage", value: 15 },
-    { id: "health_regenration", value: 15 },
+    { id: "health_regeneration", value: 15 },
     { id: "experience_gained", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: vegetablePieImg,
   craftedAt: [

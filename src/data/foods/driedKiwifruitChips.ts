@@ -8,9 +8,10 @@ const driedKiwifruitChips: Food = {
   buffs: [
     { id: "maximum_stamina", value: 75 },
     { id: "chance_to_resist_cave_sickness", value: 10 },
+    { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 50 },
+    { id: "food_when_consumed", value: 50 },
   ],
   image: driedKiwifruitChipsImg,
   craftedAt: [

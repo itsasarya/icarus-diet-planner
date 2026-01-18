@@ -8,11 +8,11 @@ const pickledTomato: Food = {
   durationSec: 200,
   buffs: [
     { id: "maximum_stamina", value: 150 },
-    { id: "health_regenration", value: 20 },
+    { id: "health_regeneration", value: 20 },
     { id: "shared_experience_gained", value: 20 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: pickledTomatoImg,
   craftedAt: [

@@ -8,11 +8,11 @@ const tomatoSoup: Food = {
   durationSec: 900,
   buffs: [
     { id: "maximum_stamina", value: 100 },
-    { id: "health_regenration", value: 20 },
+    { id: "health_regeneration", value: 20 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
-    { id: "hydration", value: 25 },
+    { id: "food_when_consumed", value: 100 },
+    { id: "water_when_consumed", value: 25 },
   ],
   image: tomatoSoupImg,
   craftedAt: [

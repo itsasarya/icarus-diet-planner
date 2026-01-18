@@ -13,7 +13,7 @@ const cookedBacon: Food = {
     { id: "maximum_stamina", value: 75 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: cookedBaconImg,
   craftedAt: [

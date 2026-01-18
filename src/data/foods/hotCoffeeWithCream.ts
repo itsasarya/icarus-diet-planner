@@ -7,7 +7,9 @@ const hotCoffeeWithCream: Food = {
   stomachCost: 0,
   durationSec: 300,
   buffs: [
+    { id: "c_to_temperature", value: 10 },
     { id: "maximum_stamina", value: 25 },
+    { id: "stamina_regeneration", value: 25 },
   ],
   instantEffects: [
   ],

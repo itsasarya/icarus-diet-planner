@@ -10,10 +10,11 @@ const soyBeanStirFry: Food = {
     { id: "maximum_health", value: 150 },
     { id: "maximum_stamina", value: 75 },
     { id: "projectile_damage", value: 10 },
-    { id: "health_regenration", value: 10 },
+    { id: "stamina_regeneration", value: 10 },
+    { id: "health_regeneration", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: soyBeanStirFryImg,
   craftedAt: [

@@ -11,7 +11,7 @@ const roastSquash: Food = {
     { id: "melee_damage", value: 5 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 50 },
+    { id: "food_when_consumed", value: 50 },
   ],
   image: roastSquashImg,
   craftedAt: [

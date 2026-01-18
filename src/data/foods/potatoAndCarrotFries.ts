@@ -8,11 +8,13 @@ const potatoAndCarrotFries: Food = {
   durationSec: 600,
   buffs: [
     { id: "maximum_stamina", value: 75 },
-    { id: "health_regenration", value: 10 },
+    { id: "maximum_health", value: 150 },
+    { id: "health_regeneration", value: 10 },
+    { id: "food_consumption", value: -10 },
     { id: "projectile_damage", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: potatoAndCarrotFriesImg,
   craftedAt: [

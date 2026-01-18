@@ -13,7 +13,7 @@ const fruitSalad: Food = {
     { id: "water_consumption", value: -10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: fruitSaladImg,
   craftedAt: [

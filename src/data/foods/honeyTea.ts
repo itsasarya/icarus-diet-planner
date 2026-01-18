@@ -7,7 +7,9 @@ const honeyTea: Food = {
   stomachCost: 0,
   durationSec: 300,
   buffs: [
+    { id: "c_to_temperature", value: 10 },
     { id: "parasitic_afflictions_duration", value: -25 },
+    { id: "bacterial_afflictions_duration", value: -25 },
     { id: "food_effects_duration", value: 20 },
   ],
   instantEffects: [

@@ -10,11 +10,12 @@ const melonSmokedGiantSteak: Food = {
     { id: "health_when_consumed", value: 30 },
     { id: "maximum_health", value: 125 },
     { id: "maximum_stamina", value: 75 },
-    { id: "health_regenration", value: 100 },
+    { id: "health_regeneration", value: 100 },
+    { id: "food_consumption", value: -25 },
     { id: "oxygen_consumption", value: -25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 200 },
+    { id: "food_when_consumed", value: 200 },
   ],
   image: melonSmokedGiantSteakImg,
   craftedAt: [

@@ -8,7 +8,7 @@ const fishChunks: Food = {
   buffs: [
   ],
   instantEffects: [
-    { id: "nutrition", value: 15 },
+    { id: "food_when_consumed", value: 15 },
   ],
   image: fishChunksImg,
   craftedAt: [

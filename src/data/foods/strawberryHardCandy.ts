@@ -10,7 +10,7 @@ const strawberryHardCandy: Food = {
     { id: "movement_speed", value: 25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 10 },
+    { id: "food_when_consumed", value: 10 },
   ],
   image: strawberryHardCandyImg,
   craftedAt: [

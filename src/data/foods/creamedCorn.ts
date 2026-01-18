@@ -12,7 +12,7 @@ const creamedCorn: Food = {
     { id: "stamina_consumed_by_actions", value: -10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: creamedCornImg,
   craftedAt: [

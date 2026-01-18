@@ -10,9 +10,10 @@ const rhubarbStew: Food = {
     { id: "maximum_stamina", value: 225 },
     { id: "oxygen_consumption", value: -10 },
     { id: "water_consumption", value: -10 },
+    { id: "stamina_consumed_by_actions", value: -10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: rhubarbStewImg,
   craftedAt: [

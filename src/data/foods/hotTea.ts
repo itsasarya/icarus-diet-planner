@@ -7,10 +7,11 @@ const hotTea: Food = {
   stomachCost: 0,
   durationSec: 900,
   buffs: [
-    { id: "health_regenration", value: 25 },
+    { id: "health_regeneration", value: 25 },
+    { id: "c_to_temperature", value: 10 },
   ],
   instantEffects: [
-    { id: "hydration", value: 300 },
+    { id: "water_when_consumed", value: 300 },
   ],
   image: hotTeaImg,
 };

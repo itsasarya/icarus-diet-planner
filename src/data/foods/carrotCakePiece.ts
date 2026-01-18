@@ -12,11 +12,11 @@ const carrotCakePiece: Food = {
     { id: "experience_gained", value: 25 },
     { id: "charge_speed", value: 30 },
     { id: "reload_speed", value: 30 },
-    { id: "health_regenration", value: 50 },
+    { id: "health_regeneration", value: 50 },
     { id: "projectile_damage", value: 50 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 200 },
+    { id: "food_when_consumed", value: 200 },
   ],
   image: carrotCakePieceImg,
 };

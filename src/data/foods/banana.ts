@@ -7,6 +7,7 @@ const banana: Food = {
   stomachCost: 1,
   durationSec: 60,
   buffs: [
+    { id: "food_consumption", value: -10 },
     { id: "maximum_stamina", value: 100 },
   ],
   instantEffects: [

@@ -9,10 +9,12 @@ const fishChunkStew: Food = {
   buffs: [
     { id: "maximum_health", value: 150 },
     { id: "maximum_stamina", value: 75 },
+    { id: "stamina_regeneration", value: 10 },
+    { id: "stamina_consumed_by_actions", value: -10 },
     { id: "melee_damage", value: 5 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: fishChunkStewImg,
   craftedAt: [

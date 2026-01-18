@@ -8,10 +8,12 @@ const pickledFreshwaterFillet: Food = {
   durationSec: 200,
   buffs: [
     { id: "maximum_health", value: 150 },
-    { id: "health_regenration", value: 10 },
+    { id: "stamina_regeneration", value: 30 },
+    { id: "health_regeneration", value: 10 },
+    { id: "shared_experience_gained", value: 20 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: pickledFreshwaterFilletImg,
   craftedAt: [

@@ -12,7 +12,7 @@ const fruitMuffin: Food = {
     { id: "experience_gained", value: 35 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: fruitMuffinImg,
   craftedAt: [

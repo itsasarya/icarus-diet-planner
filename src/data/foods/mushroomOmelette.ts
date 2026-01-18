@@ -8,10 +8,11 @@ const mushroomOmelette: Food = {
   durationSec: 990,
   buffs: [
     { id: "maximum_health", value: 150 },
-    { id: "bonus_stone_chance_pct", value: 15 },
+    { id: "chance_to_find_additional_stone", value: 15 },
+    { id: "stamina_regeneration", value: 15 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: mushroomOmeletteImg,
   craftedAt: [

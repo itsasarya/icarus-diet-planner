@@ -13,8 +13,8 @@ const fruitSnackPack: Food = {
     { id: "water_consumption", value: -10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 25 },
-    { id: "hydration", value: 50 },
+    { id: "food_when_consumed", value: 25 },
+    { id: "water_when_consumed", value: 50 },
   ],
   image: fruitSnackPackImg,
   craftedAt: [

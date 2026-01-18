@@ -8,13 +8,14 @@ const chocChipCookie: Food = {
   durationSec: 200,
   buffs: [
     { id: "maximum_stamina", value: 175 },
+    { id: "food_consumption", value: -25 },
     { id: "charge_speed", value: 30 },
     { id: "reload_speed", value: 15 },
-    { id: "bonus_stone_chance_pct", value: 10 },
+    { id: "chance_to_find_additional_stone", value: 10 },
     { id: "experience_gained", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 75 },
+    { id: "food_when_consumed", value: 75 },
   ],
   image: chocChipCookieImg,
   craftedAt: [

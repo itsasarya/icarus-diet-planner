@@ -6,11 +6,13 @@ const driedGiantSteak: Food = {
   name: "Dried Giant Steak",
   stomachCost: 1,
   buffs: [
+    { id: "health_when_consumed", value: 30 },
     { id: "maximum_health", value: 100 },
-    { id: "health_regenration", value: 25 },
+    { id: "health_regeneration", value: 25 },
+    { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: driedGiantSteakImg,
   craftedAt: [

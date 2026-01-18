@@ -9,9 +9,10 @@ const berryJam: Food = {
   buffs: [
     { id: "maximum_stamina", value: 125 },
     { id: "water_consumption", value: -20 },
+    { id: "shared_experience_gained", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 40 },
+    { id: "food_when_consumed", value: 40 },
   ],
   image: berryJamImg,
   craftedAt: [

@@ -12,7 +12,7 @@ const roastVegetables: Food = {
     { id: "melee_damage", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: roastVegetablesImg,
   craftedAt: [

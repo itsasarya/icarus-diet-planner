@@ -8,7 +8,7 @@ const oxygel: Food = {
   buffs: [
   ],
   instantEffects: [
-    { id: "oxygen", value: 150 },
+    { id: "oxygen_when_consumed", value: 150 },
   ],
   image: oxygelImg,
 };

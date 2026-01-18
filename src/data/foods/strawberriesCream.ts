@@ -12,7 +12,7 @@ const strawberriesCream: Food = {
     { id: "experience_gained", value: 30 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 50 },
+    { id: "food_when_consumed", value: 50 },
   ],
   image: strawberriesCreamImg,
   craftedAt: [

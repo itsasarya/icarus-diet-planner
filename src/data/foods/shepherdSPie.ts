@@ -9,11 +9,12 @@ const shepherdSPie: Food = {
   buffs: [
     { id: "maximum_health", value: 225 },
     { id: "maximum_stamina", value: 75 },
-    { id: "health_regenration", value: 40 },
+    { id: "health_regeneration", value: 40 },
+    { id: "food_consumption", value: -20 },
     { id: "experience_gained", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 150 },
+    { id: "food_when_consumed", value: 150 },
   ],
   image: shepherdSPieImg,
   craftedAt: [

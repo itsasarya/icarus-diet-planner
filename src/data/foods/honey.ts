@@ -11,7 +11,7 @@ const honey: Food = {
     { id: "food_effects_duration", value: 10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 20 },
+    { id: "food_when_consumed", value: 20 },
   ],
   image: honeyImg,
   craftedAt: [

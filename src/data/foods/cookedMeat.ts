@@ -9,10 +9,10 @@ const cookedMeat: Food = {
   buffs: [
     { id: "health_when_consumed", value: 20 },
     { id: "maximum_health", value: 75 },
-    { id: "health_regenration", value: 20 },
+    { id: "health_regeneration", value: 20 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: cookedMeatImg,
   craftedAt: [

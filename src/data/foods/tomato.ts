@@ -10,8 +10,8 @@ const tomato: Food = {
     { id: "maximum_health", value: 30 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 20 },
-    { id: "hydration", value: 10 },
+    { id: "food_when_consumed", value: 20 },
+    { id: "water_when_consumed", value: 10 },
   ],
   image: tomatoImg,
 };

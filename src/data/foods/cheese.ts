@@ -8,10 +8,11 @@ const cheese: Food = {
   durationSec: 200,
   buffs: [
     { id: "maximum_health", value: 100 },
-    { id: "health_regenration", value: 25 },
+    { id: "shared_experience_gained", value: 10 },
+    { id: "health_regeneration", value: 25 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 100 },
+    { id: "food_when_consumed", value: 100 },
   ],
   image: cheeseImg,
   craftedAt: [

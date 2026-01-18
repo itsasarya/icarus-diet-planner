@@ -11,7 +11,7 @@ const charredCorn: Food = {
     { id: "stamina_consumed_by_actions", value: -10 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 50 },
+    { id: "food_when_consumed", value: 50 },
   ],
   image: charredCornImg,
   craftedAt: [

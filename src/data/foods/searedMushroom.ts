@@ -8,9 +8,10 @@ const searedMushroom: Food = {
   durationSec: 600,
   buffs: [
     { id: "maximum_health", value: 75 },
+    { id: "stamina_regeneration", value: 5 },
   ],
   instantEffects: [
-    { id: "nutrition", value: 50 },
+    { id: "food_when_consumed", value: 50 },
   ],
   image: searedMushroomImg,
   craftedAt: [

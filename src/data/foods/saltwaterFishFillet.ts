@@ -8,7 +8,7 @@ const saltwaterFishFillet: Food = {
   buffs: [
   ],
   instantEffects: [
-    { id: "nutrition", value: 15 },
+    { id: "food_when_consumed", value: 15 },
   ],
   image: saltwaterFishFilletImg,
   craftedAt: [
