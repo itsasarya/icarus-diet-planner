@@ -5,7 +5,7 @@ const bigBreakfast: Food = {
   id: "big_breakfast",
   name: "Big Breakfast",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_health", value: 225 },
     { id: "maximum_stamina", value: 75 },
