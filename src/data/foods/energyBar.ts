@@ -5,7 +5,7 @@ const energyBar: Food = {
   id: "energy_bar",
   name: "Energy Bar",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_health", value: 100 },
     { id: "stamina_consumed_by_tool_actions", value: -10 },

@@ -5,7 +5,7 @@ const carrotCakePiece: Food = {
   id: "carrot_cake_piece",
   name: "Carrot Cake Piece",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_health", value: 100 },
     { id: "maximum_stamina", value: 100 },

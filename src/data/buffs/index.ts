@@ -11,11 +11,11 @@ export const Buffs: Record<BuffId, BuffDefinition> = {
   },
   chance_to_find_additional_stone: {
     id: "chance_to_find_additional_stone",
-    name: "% Chance to find additional stone",
+    name: "% Chance to find additional stone while mining",
   },
   chance_to_resist_cave_sickness: {
     id: "chance_to_resist_cave_sickness",
-    name: "% Chance to find resist cave stone",
+    name: "% Chance to resist cave sickness",
   },
   charge_speed: {
     id: "charge_speed",
@@ -135,10 +135,10 @@ export const Buffs: Record<BuffId, BuffDefinition> = {
   },
   stamina_regeneration: {
     id: "stamina_regeneration",
-    name: " Stamina regeneration",
+    name: "% Stamina regeneration",
   },
   water_effects_duration: {
     id: "water_effects_duration",
-    name: " Water effects duration",
+    name: "% Water effects duration",
   },
 };

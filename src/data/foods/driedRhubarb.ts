@@ -1,20 +1,20 @@
 import type { Food } from "@/types/food";
-import driedTomatoImg from "@/assets/foods/dried_tomato.png";
+import driedRhubarbImg from "@/assets/foods/dried_rhubarb.png";
 
-const driedTomato: Food = {
-  id: "dried_tomato",
-  name: "Dried Tomato",
+const driedRhubarb: Food = {
+  id: "dried_rhubarb",
+  name: "Dried Rhubarb",
   stomachCost: 1,
-  durationSec: 1200,
+  durationSec:1200,
   buffs: [
     { id: "maximum_stamina", value: 75 },
-    { id: "health_regeneration", value: 30 },
+    { id: "oxygen_consumption", value: -30 },
     { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 50 },
   ],
-  image: driedTomatoImg,
+  image: driedRhubarbImg,
   craftedAt: [
     {
       id: "drying_rack",
@@ -29,4 +29,4 @@ const driedTomato: Food = {
   ],
 };
 
-export default driedTomato;
+export default driedRhubarb;

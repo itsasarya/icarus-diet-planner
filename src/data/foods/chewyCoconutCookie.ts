@@ -14,8 +14,7 @@ const chewyCoconutCookie: Food = {
     { id: "crafting_speed", value: 10 },
   ],
   instantEffects: [
-    { id: "food_when_consumed", value: 25 },
-    { id: "water_when_consumed", value: 50 },
+    { id: "food_when_consumed", value: 75 },
   ],
   image: chewyCoconutCookieImg,
   craftedAt: [

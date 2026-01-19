@@ -5,7 +5,7 @@ const chocChipCookie: Food = {
   id: "choc_chip_cookie",
   name: "Choc-Chip Cookie",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_stamina", value: 175 },
     { id: "food_consumption", value: -25 },

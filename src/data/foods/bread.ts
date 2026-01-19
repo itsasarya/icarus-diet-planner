@@ -7,12 +7,12 @@ const bread: Food = {
   stomachCost: 1,
   durationSec: 900,
   buffs: [
-    { id: "health_when_consumed", value: 10 },
     { id: "maximum_stamina", value: 125 },
     { id: "experience_gained", value: 10 },
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 80 },
+    { id: "health_when_consumed", value: 10 },
   ],
   image: breadImg,
   craftedAt: [

@@ -5,7 +5,7 @@ const potatoBread: Food = {
   id: "potato_bread",
   name: "Potato Bread",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_stamina", value: 150 },
     { id: "food_consumption", value: -20 },

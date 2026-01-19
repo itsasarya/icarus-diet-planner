@@ -4,8 +4,8 @@ import pickledFreshwaterFilletImg from "@/assets/foods/pickled_freshwater_fillet
 const pickledFreshwaterFillet: Food = {
   id: "pickled_freshwater_fillet",
   name: "Pickled Freshwater Fillet",
-  stomachCost: 0,
-  durationSec: 200,
+  stomachCost: 1,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_health", value: 150 },
     { id: "stamina_regeneration", value: 30 },

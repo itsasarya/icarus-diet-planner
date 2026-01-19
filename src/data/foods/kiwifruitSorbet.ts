@@ -5,7 +5,7 @@ const kiwifruitSorbet: Food = {
   id: "kiwifruit_sorbet",
   name: "Kiwifruit Sorbet",
   stomachCost: 1,
-  durationSec: 800,
+  durationSec: 1800,
   buffs: [
     { id: "maximum_stamina", value: 150 },
     { id: "experience_gained", value: 30 },

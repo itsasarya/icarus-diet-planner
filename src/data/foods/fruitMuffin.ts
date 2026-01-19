@@ -5,7 +5,7 @@ const fruitMuffin: Food = {
   id: "fruit_muffin",
   name: "Fruit Muffin",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_stamina", value: 225 },
     { id: "water_consumption", value: -20 },

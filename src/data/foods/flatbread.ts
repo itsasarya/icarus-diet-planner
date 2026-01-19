@@ -7,13 +7,13 @@ const flatbread: Food = {
   stomachCost: 1,
   durationSec: 900,
   buffs: [
-    { id: "health_when_consumed", value: 10 },
     { id: "stamina_regeneration", value: 100 },
     { id: "water_consumption", value: 10 },
     { id: "experience_gained", value: 5 },
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 50 },
+    { id: "health_when_consumed", value: 10 },
   ],
   image: flatbreadImg,
   craftedAt: [

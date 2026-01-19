@@ -5,9 +5,8 @@ const teaSmokedFreshwaterFillet: Food = {
   id: "tea_smoked_freshwater_fillet",
   name: "Tea Smoked Freshwater Fillet",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
-    { id: "health_when_consumed", value: 30 },
     { id: "maximum_health", value: 75 },
     { id: "maximum_stamina", value: 75 },
     { id: "stamina_regeneration", value: 25 },
@@ -16,6 +15,7 @@ const teaSmokedFreshwaterFillet: Food = {
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 200 },
+    { id: "health_when_consumed", value: 30 },
   ],
   image: teaSmokedFreshwaterFilletImg,
   craftedAt: [

@@ -4,8 +4,8 @@ import pickledEggsImg from "@/assets/foods/pickled_eggs.png";
 const pickledEggs: Food = {
   id: "pickled_eggs",
   name: "Pickled Eggs",
-  stomachCost: 0,
-  durationSec: 200,
+  stomachCost: 1,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_stamina", value: 150 },
     { id: "chance_to_find_additional_stone", value: 20 },

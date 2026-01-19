@@ -9,7 +9,7 @@ const bigBreakfast: Food = {
   buffs: [
     { id: "maximum_health", value: 225 },
     { id: "maximum_stamina", value: 75 },
-    { id: "chance_to_find_additional_stone", value: 15 },
+    { id: "chance_to_find_additional_stone", value: 25 },
     { id: "food_consumption", value: -15 },
     { id: "health_regeneration", value: 15 },
     { id: "experience_gained", value: 10 },

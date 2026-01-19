@@ -5,7 +5,7 @@ const roastChicken: Food = {
   id: "roast_chicken",
   name: "Roast Chicken",
   stomachCost: 1,
-  durationSec: 3000,
+  durationSec: 1500,
   buffs: [
     { id: "maximum_health", value: 250 },
     { id: "maximum_stamina", value: 200 },

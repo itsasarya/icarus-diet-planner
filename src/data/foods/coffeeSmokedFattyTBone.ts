@@ -5,9 +5,8 @@ const coffeeSmokedFattyTBone: Food = {
   id: "coffee_smoked_fatty_t_bone",
   name: "Coffee Smoked Fatty T-bone",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
-    { id: "health_when_consumed", value: 30 },
     { id: "maximum_health", value: 175 },
     { id: "yield_from_butchering_animals", value: 50 },
     { id: "food_consumption", value: -25 },
@@ -15,6 +14,7 @@ const coffeeSmokedFattyTBone: Food = {
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 200 },
+    { id: "health_when_consumed", value: 30 },
   ],
   image: coffeeSmokedFattyTBoneImg,
   craftedAt: [

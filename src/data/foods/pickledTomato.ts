@@ -4,8 +4,8 @@ import pickledTomatoImg from "@/assets/foods/pickled_tomato.png";
 const pickledTomato: Food = {
   id: "pickled_tomato",
   name: "Pickled Tomato",
-  stomachCost: 0,
-  durationSec: 200,
+  stomachCost: 1,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_stamina", value: 150 },
     { id: "health_regeneration", value: 20 },

@@ -7,13 +7,13 @@ const grilledFreshwaterFillet: Food = {
   stomachCost: 1,
   durationSec: 600,
   buffs: [
-    { id: "health_when_consumed", value: 15 },
     { id: "maximum_health", value: 75 },
     { id: "stamina_regeneration", value: 15 },
     { id: "health_regeneration", value: 5 },
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 120 },
+    { id: "health_when_consumed", value: 15 },
   ],
   image: grilledFreshwaterFilletImg,
   craftedAt: [

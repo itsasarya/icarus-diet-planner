@@ -5,7 +5,7 @@ const chargrilledChicken: Food = {
   id: "chargrilled_chicken",
   name: "Chargrilled Chicken",
   stomachCost: 1,
-  durationSec: 1800,
+  durationSec: 900,
   buffs: [
     { id: "maximum_health", value: 150 },
     { id: "maximum_stamina", value: 100 },

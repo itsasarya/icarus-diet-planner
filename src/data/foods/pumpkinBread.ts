@@ -5,7 +5,7 @@ const pumpkinBread: Food = {
   id: "pumpkin_bread",
   name: "Pumpkin Bread",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_stamina", value: 150 },
     { id: "exposure_resistance", value: 15 },

@@ -7,7 +7,6 @@ const whiteJerky: Food = {
   stomachCost: 1,
   durationSec: 200,
   buffs: [
-    { id: "health_when_consumed", value: 30 },
     { id: "maximum_health", value: 125 },
     { id: "maximum_stamina", value: 75 },
     { id: "exposure_resistance", value: 15 },
@@ -16,6 +15,7 @@ const whiteJerky: Food = {
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 200 },
+    { id: "health_when_consumed", value: 30 },
   ],
   image: whiteJerkyImg,
   craftedAt: [

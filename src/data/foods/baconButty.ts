@@ -5,7 +5,7 @@ const baconButty: Food = {
   id: "bacon_butty",
   name: "Bacon Butty",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_health", value: 150 },
     { id: "maximum_stamina", value: 125 },

@@ -15,6 +15,7 @@ const stew: Food = {
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 100 },
+    { id:"water_when_consumed", value: 25}
   ],
   image: stewImg,
   craftedAt: [

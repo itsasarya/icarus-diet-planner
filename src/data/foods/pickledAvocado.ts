@@ -4,8 +4,8 @@ import pickledAvocadoImg from "@/assets/foods/pickled_avocado.png";
 const pickledAvocado: Food = {
   id: "pickled_avocado",
   name: "Pickled Avocado",
-  stomachCost: 0,
-  durationSec: 200,
+  stomachCost: 1,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_stamina", value: 150 },
     { id: "food_consumption", value: -20 },

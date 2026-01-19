@@ -5,6 +5,7 @@ const driedKiwifruitChips: Food = {
   id: "dried_kiwifruit_chips",
   name: "Dried Kiwifruit Chips",
   stomachCost: 1,
+  durationSec:1200,
   buffs: [
     { id: "maximum_stamina", value: 75 },
     { id: "chance_to_resist_cave_sickness", value: 10 },

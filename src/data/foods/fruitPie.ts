@@ -5,7 +5,7 @@ const fruitPie: Food = {
   id: "fruit_pie",
   name: "Fruit Pie",
   stomachCost: 0,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_health", value: 75 },
     { id: "maximum_stamina", value: 150 },

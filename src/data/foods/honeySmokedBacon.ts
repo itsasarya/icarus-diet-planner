@@ -5,9 +5,8 @@ const honeySmokedBacon: Food = {
   id: "honey_smoked_bacon",
   name: "Honey Smoked Bacon",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
-    { id: "health_when_consumed", value: 30 },
     { id: "maximum_stamina", value: 75 },
     { id: "maximum_health", value: 75 },
     { id: "health_regeneration", value: 20 },
@@ -17,6 +16,7 @@ const honeySmokedBacon: Food = {
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 200 },
+    { id: "health_when_consumed", value: 30 },
   ],
   image: honeySmokedBaconImg,
   craftedAt: [

@@ -5,14 +5,15 @@ const driedWhiteMeat: Food = {
   id: "dried_white_meat",
   name: "Dried White Meat",
   stomachCost: 1,
+  durationSec:1200,
   buffs: [
-    { id: "health_when_consumed", value: 30 },
     { id: "maximum_stamina", value: 75 },
     { id: "exposure_resistance", value: 10 },
     { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 150 },
+    { id: "health_when_consumed", value: 30 },
   ],
   image: driedWhiteMeatImg,
   craftedAt: [

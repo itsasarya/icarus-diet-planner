@@ -4,7 +4,7 @@ import kiwifruitJamImg from "@/assets/foods/kiwifruit_jam.png";
 const kiwifruitJam: Food = {
   id: "kiwifruit_jam",
   name: "Kiwifruit Jam",
-  stomachCost: 0,
+  stomachCost: 1,
   durationSec: 900,
   buffs: [
     { id: "maximum_stamina", value: 125 },

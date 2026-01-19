@@ -5,7 +5,7 @@ const pavlova: Food = {
   id: "pavlova",
   name: "Pavlova",
   stomachCost: 1,
-  durationSec: 800,
+  durationSec: 1800,
   buffs: [
     { id: "maximum_health", value: 125 },
     { id: "maximum_stamina", value: 75 },

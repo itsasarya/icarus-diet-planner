@@ -5,7 +5,7 @@ const rhubarbStew: Food = {
   id: "rhubarb_stew",
   name: "Rhubarb Stew",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 900,
   buffs: [
     { id: "maximum_stamina", value: 225 },
     { id: "oxygen_consumption", value: -10 },
@@ -14,6 +14,7 @@ const rhubarbStew: Food = {
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 100 },
+    { id: "water_when_consumed", value: 25 },
   ],
   image: rhubarbStewImg,
   craftedAt: [

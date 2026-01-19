@@ -5,7 +5,7 @@ const chocolateCakePiece: Food = {
   id: "chocolate_cake_piece",
   name: "Chocolate Cake Piece",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_health", value: 300 },
     { id: "maximum_stamina", value: 200 },

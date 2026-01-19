@@ -7,12 +7,12 @@ const cookedMeat: Food = {
   stomachCost: 1,
   durationSec: 900,
   buffs: [
-    { id: "health_when_consumed", value: 20 },
     { id: "maximum_health", value: 75 },
     { id: "health_regeneration", value: 20 },
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 100 },
+    { id: "health_when_consumed", value: 20 },
   ],
   image: cookedMeatImg,
   craftedAt: [

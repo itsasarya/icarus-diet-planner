@@ -5,7 +5,7 @@ const cheeseRoll: Food = {
   id: "cheese_roll",
   name: "Cheese Roll",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_health", value: 150 },
     { id: "maximum_stamina", value: 125 },

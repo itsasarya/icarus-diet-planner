@@ -5,7 +5,7 @@ const crumbedSaltwaterFillet: Food = {
   id: "crumbed_saltwater_fillet",
   name: "Crumbed Saltwater Fillet",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_health", value: 150 },
     { id: "maximum_stamina", value: 75 },

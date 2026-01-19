@@ -7,14 +7,14 @@ const scrambledEggs: Food = {
   stomachCost: 1,
   durationSec: 900,
   buffs: [
-    { id: "health_when_consumed", value: 10 },
     { id: "maximum_health", value: 50 },
     { id: "maximum_stamina", value: 100 },
     { id: "chance_to_find_additional_stone", value: 25 },
-    { id: "experience_gained", value: 20 },
+    { id: "experience_gained", value: 15 },
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 100 },
+    { id: "health_when_consumed", value: 20 },
   ],
   image: scrambledEggsImg,
   craftedAt: [

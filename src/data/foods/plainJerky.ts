@@ -5,15 +5,15 @@ const plainJerky: Food = {
   id: "plain_jerky",
   name: "Plain Jerky",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
-    { id: "health_when_consumed", value: 30 },
     { id: "maximum_health", value: 150 },
     { id: "health_regeneration", value: 60 },
     { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 200 },
+    { id: "health_when_consumed", value: 30 },
   ],
   image: plainJerkyImg,
   craftedAt: [

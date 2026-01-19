@@ -7,11 +7,12 @@ const sweetcornSoup: Food = {
   stomachCost: 1,
   durationSec: 900,
   buffs: [
-    { id: "maximum_stamina", value: 75 },
+    { id: "maximum_stamina", value: 100 },
     { id: "stamina_consumed_by_actions", value: -20 },
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 100 },
+    { id: "water_when_consumed", value:25}
   ],
   image: sweetcornSoupImg,
   craftedAt: [

@@ -5,6 +5,7 @@ const friedEggs: Food = {
   id: "fried_eggs",
   name: "Fried Eggs",
   stomachCost: 1,
+  durationSec:600,
   buffs: [
     { id: "maximum_health", value: 75 },
     { id: "chance_to_find_additional_stone", value: 10 },

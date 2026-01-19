@@ -5,9 +5,8 @@ const crispyBacon: Food = {
   id: "crispy_bacon",
   name: "Crispy Bacon",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
-    { id: "health_when_consumed", value: 30 },
     { id: "experience_gained", value: 15 },
     { id: "maximum_health", value: 90 },
     { id: "maximum_stamina", value: 90 },
@@ -15,6 +14,7 @@ const crispyBacon: Food = {
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 150 },
+    { id: "health_when_consumed", value: 30 },
   ],
   image: crispyBaconImg,
   craftedAt: [

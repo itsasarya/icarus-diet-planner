@@ -5,15 +5,15 @@ const basicDriedMeat: Food = {
   id: "basic_dried_meat",
   name: "Basic Dried Meat",
   stomachCost: 1,
-  durationSec: 320,
+  durationSec: 1200,
   buffs: [
-    { id: "health_when_consumed", value: 200 },
     { id: "maximum_health", value: 75 },
     { id: "health_regeneration", value: 20 },
     { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 100 },
+    { id: "health_when_consumed", value: 20 },
   ],
   image: basicDriedMeatImg,
   craftedAt: [

@@ -10,6 +10,7 @@ const roastVegetables: Food = {
     { id: "maximum_stamina", value: 225 },
     { id: "exposure_resistance", value: 10 },
     { id: "melee_damage", value: 10 },
+    {id:"projectile_damage", value:10}
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 100 },

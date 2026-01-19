@@ -4,7 +4,7 @@ import stuffedAvocadoImg from "@/assets/foods/stuffed_avocado.png";
 const stuffedAvocado: Food = {
   id: "stuffed_avocado",
   name: "Stuffed Avocado",
-  stomachCost: 0,
+  stomachCost: 1,
   durationSec: 900,
   buffs: [
     { id: "maximum_health", value: 75 },

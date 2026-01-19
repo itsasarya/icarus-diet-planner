@@ -5,15 +5,15 @@ const cookedBacon: Food = {
   id: "cooked_bacon",
   name: "Cooked Bacon",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
-    { id: "health_when_consumed", value: 30 },
     { id: "experience_gained", value: 15 },
     { id: "maximum_health", value: 75 },
     { id: "maximum_stamina", value: 75 },
   ],
   instantEffects: [
-    { id: "food_when_consumed", value: 150 },
+    { id: "food_when_consumed", value: 150 },    
+    { id: "health_when_consumed", value: 30 },
   ],
   image: cookedBaconImg,
   craftedAt: [

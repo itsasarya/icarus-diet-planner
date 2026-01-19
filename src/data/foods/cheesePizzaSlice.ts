@@ -5,7 +5,7 @@ const cheesePizzaSlice: Food = {
   id: "cheese_pizza_slice",
   name: "Cheese Pizza Slice",
   stomachCost: 1,
-  durationSec: 500,
+  durationSec: 1500,
   buffs: [
     { id: "maximum_health", value: 125 },
     { id: "maximum_stamina", value: 75 },

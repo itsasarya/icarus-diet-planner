@@ -5,7 +5,7 @@ const potatoAndCarrotFries: Food = {
   id: "potato_and_carrot_fries",
   name: "Potato and Carrot Fries",
   stomachCost: 1,
-  durationSec: 600,
+  durationSec: 900,
   buffs: [
     { id: "maximum_stamina", value: 75 },
     { id: "maximum_health", value: 150 },

@@ -5,15 +5,15 @@ const driedGameyMeat: Food = {
   id: "dried_gamey_meat",
   name: "Dried Gamey Meat",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
-    { id: "health_when_consumed", value: 30 },
     { id: "maximum_health", value: 75 },
     { id: "melee_damage", value: 15 },
     { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 150 },
+    { id: "health_when_consumed", value: 30 },
   ],
   image: driedGameyMeatImg,
   craftedAt: [

@@ -5,15 +5,15 @@ const driedStringyMeat: Food = {
   id: "dried_stringy_meat",
   name: "Dried Stringy Meat",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
-    { id: "health_when_consumed", value: 30 },
     { id: "maximum_stamina", value: 75 },
     { id: "melee_attack_speed", value: 15 },
     { id: "food_consumption", value: -25 },
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 150 },
+    { id: "health_when_consumed", value: 30 },
   ],
   image: driedStringyMeatImg,
   craftedAt: [

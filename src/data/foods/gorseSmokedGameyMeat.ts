@@ -5,9 +5,8 @@ const gorseSmokedGameyMeat: Food = {
   id: "gorse_smoked_gamey_meat",
   name: "Gorse Smoked Gamey Meat",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
-    { id: "health_when_consumed", value: 30 },
     { id: "maximum_health", value: 100 },
     { id: "maximum_stamina", value: 100 },
     { id: "melee_damage", value: 25 },
@@ -17,6 +16,7 @@ const gorseSmokedGameyMeat: Food = {
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 200 },
+    { id: "health_when_consumed", value: 30 },
   ],
   image: gorseSmokedGameyMeatImg,
   craftedAt: [

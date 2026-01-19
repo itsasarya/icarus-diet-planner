@@ -7,13 +7,13 @@ const seedBread: Food = {
   stomachCost: 1,
   durationSec: 900,
   buffs: [
-    { id: "health_when_consumed", value: 10 },
     { id: "maximum_stamina", value: 150 },
     { id: "stamina_consumed_by_tool_actions", value: -20 },
     { id: "experience_gained", value: 15 },
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 80 },
+    { id: "health_when_consumed", value: 10 },
   ],
   image: seedBreadImg,
   craftedAt: [

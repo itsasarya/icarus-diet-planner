@@ -7,14 +7,14 @@ const cookedStringyMeat: Food = {
   stomachCost: 1,
   durationSec: 600,
   buffs: [
-    { id: "health_when_consumed", value: 30 },
     { id: "maximum_stamina", value: 100 },
     { id: "maximum_health", value: 150 },
     { id: "melee_attack_speed", value: 20 },
     { id: "experience_gained", value: 5 },
   ],
   instantEffects: [
-    { id: "food_when_consumed", value: 150 },
+    { id: "food_when_consumed", value: 150 },    
+    { id: "health_when_consumed", value: 30 },
   ],
   image: cookedStringyMeatImg,
   craftedAt: [

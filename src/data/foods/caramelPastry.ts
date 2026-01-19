@@ -5,7 +5,7 @@ const caramelPastry: Food = {
   id: "caramel_pastry",
   name: "Caramel Pastry",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_stamina", value: 150 },
     { id: "charge_speed", value: 25 },

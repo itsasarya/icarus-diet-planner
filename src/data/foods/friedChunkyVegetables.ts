@@ -5,7 +5,7 @@ const friedChunkyVegetables: Food = {
   id: "fried_chunky_vegetables",
   name: "Fried Chunky Vegetables",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 900,
   buffs: [
     { id: "maximum_health", value: 75 },
     { id: "maximum_stamina", value: 150 },

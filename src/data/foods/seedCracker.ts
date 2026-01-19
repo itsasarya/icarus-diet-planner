@@ -7,12 +7,12 @@ const seedCracker: Food = {
   stomachCost: 1,
   durationSec: 900,
   buffs: [
-    { id: "health_when_consumed", value: 10 },
     { id: "maximum_stamina", value: 100 },
     { id: "stamina_consumed_by_tool_actions", value: -15 },
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 50 },
+    { id: "health_when_consumed", value: 10 },
   ],
   image: seedCrackerImg,
   craftedAt: [

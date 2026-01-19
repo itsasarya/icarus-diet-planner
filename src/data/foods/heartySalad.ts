@@ -12,6 +12,7 @@ const heartySalad: Food = {
     { id: "health_regeneration", value: 20 },
   ],
   instantEffects: [
+    { id: "food_when_consumed", value: 100 },
   ],
   image: heartySaladImg,
   craftedAt: [

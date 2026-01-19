@@ -7,7 +7,6 @@ const cookedSoftMeat: Food = {
   stomachCost: 1,
   durationSec: 600,
   buffs: [
-    { id: "health_when_consumed", value: 30 },
     { id: "maximum_stamina", value: 100 },
     { id: "maximum_health", value: 150 },
     { id: "stamina_regeneration", value: 50 },
@@ -15,6 +14,7 @@ const cookedSoftMeat: Food = {
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 150 },
+    { id: "health_when_consumed", value: 30 },
   ],
   image: cookedSoftMeatImg,
   craftedAt: [

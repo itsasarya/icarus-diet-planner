@@ -7,7 +7,6 @@ const cookedFattyTBone: Food = {
   stomachCost: 1,
   durationSec: 600,
   buffs: [
-    { id: "health_when_consumed", value: 30 },
     { id: "maximum_stamina", value: 100 },
     { id: "maximum_health", value: 150 },
     { id: "yield_from_butchering_animals", value: 40 },
@@ -15,6 +14,7 @@ const cookedFattyTBone: Food = {
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 150 },
+    { id: "health_when_consumed", value: 30 },
   ],
   image: cookedFattyTBoneImg,
   craftedAt: [

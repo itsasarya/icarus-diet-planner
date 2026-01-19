@@ -4,7 +4,7 @@ import mushroomSoupImg from "@/assets/foods/mushroom_soup.png";
 const mushroomSoup: Food = {
   id: "mushroom_soup",
   name: "Mushroom Soup",
-  stomachCost: 0,
+  stomachCost: 1,
   durationSec: 900,
   buffs: [
     { id: "maximum_health", value: 75 },
@@ -12,6 +12,7 @@ const mushroomSoup: Food = {
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 100 },
+    {id:"water_when_consumed",value: 25}
   ],
   image: mushroomSoupImg,
   craftedAt: [

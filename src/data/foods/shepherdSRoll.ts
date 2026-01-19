@@ -5,7 +5,7 @@ const shepherdSRoll: Food = {
   id: "shepherd_s_roll",
   name: "Shepherd's Roll",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_health", value: 150 },
     { id: "maximum_stamina", value: 150 },

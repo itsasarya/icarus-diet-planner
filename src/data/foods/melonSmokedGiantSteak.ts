@@ -5,9 +5,8 @@ const melonSmokedGiantSteak: Food = {
   id: "melon_smoked_giant_steak",
   name: "Melon Smoked Giant Steak",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
-    { id: "health_when_consumed", value: 30 },
     { id: "maximum_health", value: 125 },
     { id: "maximum_stamina", value: 75 },
     { id: "health_regeneration", value: 100 },
@@ -16,6 +15,7 @@ const melonSmokedGiantSteak: Food = {
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 200 },
+    { id: "health_when_consumed", value: 30 },
   ],
   image: melonSmokedGiantSteakImg,
   craftedAt: [

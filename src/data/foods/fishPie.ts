@@ -5,7 +5,7 @@ const fishPie: Food = {
   id: "fish_pie",
   name: "Fish Pie",
   stomachCost: 0,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_health", value: 225 },
     { id: "health_regeneration", value: 5 },

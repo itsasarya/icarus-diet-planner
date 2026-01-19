@@ -5,7 +5,7 @@ const cheese: Food = {
   id: "cheese",
   name: "Cheese",
   stomachCost: 1,
-  durationSec: 200,
+  durationSec: 1200,
   buffs: [
     { id: "maximum_health", value: 100 },
     { id: "shared_experience_gained", value: 10 },

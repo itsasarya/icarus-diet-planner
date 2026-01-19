@@ -4,7 +4,8 @@ import mixedBerriesImg from "@/assets/foods/mixed_berries.png";
 const mixedBerries: Food = {
   id: "mixed_berries",
   name: "Mixed Berries",
-  stomachCost: 0,
+  stomachCost: 1,
+  durationSec: 900,
   buffs: [
     { id: "maximum_stamina", value: 150 },
     { id: "water_consumption", value: -10 },

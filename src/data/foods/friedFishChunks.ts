@@ -7,12 +7,12 @@ const friedFishChunks: Food = {
   stomachCost: 1,
   durationSec: 600,
   buffs: [
-    { id: "health_when_consumed", value: 15 },
     { id: "maximum_health", value: 75 },
     { id: "stamina_regeneration", value: 10 },
   ],
   instantEffects: [
     { id: "food_when_consumed", value: 80 },
+    { id: "health_when_consumed", value: 15 },
   ],
   image: friedFishChunksImg,
   craftedAt: [
