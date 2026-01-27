@@ -11,6 +11,7 @@ import FoodGrid from "@/components/foodGrid";
 import BuffFilter from "@/components/buffFilter";
 import PlayerSetup from "@/components/playerSetup";
 import Navbar from "@/components/navbar";
+import Footer from "@/components/footer";
 import { useLocalStoragge } from "./lib/useLocalStorage";
 
 function App() {
@@ -79,6 +80,7 @@ function App() {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 }
