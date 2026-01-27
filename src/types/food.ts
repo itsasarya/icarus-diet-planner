@@ -1,5 +1,5 @@
 import type { Buff } from "@/types/buff";
-import type { instantEffect } from "@/types/buff";
+import type { InstantEffect } from "@/types/buff";
 import type { station } from "@/types/station";
 
 export interface Food {
@@ -8,7 +8,7 @@ export interface Food {
   stomachCost: 1 | 0;
   durationSec?: number;
   buffs?: Buff[];
-  instantEffects?: instantEffect[];
+  instantEffects?: InstantEffect[];
   image: string;
   craftedAt?: station[];
 }

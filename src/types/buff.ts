@@ -10,42 +10,47 @@ export type BuffId =
   | "exposure_resistance"
   | "falling_resistance"
   | "food_consumption"
-  | "food_when_consumed"
   | "food_effects_duration"
   | "health_regeneration"
-  | "health_when_consumed"
   | "maximum_health"
   | "maximum_stamina"
   | "melee_attack_speed"
   | "melee_damage"
   | "movement_speed"
-  | "over_encumberance_penalty"
+  | "over_encumbrance_penalty"
   | "oxygen_consumption"
-  | "oxygen_when_consumed"
   | "parasitic_afflictions_duration"
   | "projectile_damage"
   | "reload_speed"
   | "shared_experience_gained"
   | "stamina_consumed_by_actions"
   | "stamina_consumed_by_tool_actions"
-  | "stamina_when_consumed"
   | "water_consumption"
-  | "water_when_consumed"
   | "yield_from_butchering_animals"
   | "stamina_regeneration"
   | "water_effects_duration";
+
+export type EffectId =
+  | "food_when_consumed"
+  | "health_when_consumed"
+  | "stamina_when_consumed"
+  | "water_when_consumed"
+  | "oxygen_when_consumed"
 
 export interface Buff {
   id: BuffId;
   value: number;
 }
 
-export interface instantEffect {
-  id: BuffId;
+export interface InstantEffect {
+  id: EffectId;
   value: number;
 }
 
+export type BuffUnit = "percent" | "flat";
+
 export interface BuffDefinition {
-  id: BuffId;
+  id: BuffId | EffectId;
   name: string;
+  buffUnit: BuffUnit
 }
