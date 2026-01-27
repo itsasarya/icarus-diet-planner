@@ -6,94 +6,94 @@ import {
   FieldGroup,
   FieldLabel,
   FieldLegend,
+  FieldSet,
 } from "./ui/field";
-import { Separator } from "./ui/separator";
-import {
-  Item,
-  ItemActions,
-  ItemContent,
-  ItemMedia,
-  ItemTitle,
-} from "./ui/item";
+import { Separator } from "@/components/ui/separator";
 import type { Food } from "@/types/food";
-import { X } from "lucide-react";
+import type { ExtraStomachSlot } from "@/types/extraSlots";
+import FoodBuffSummery from "@/components/foodBuffSummary";
+import SelectedFoodList from "@/components/selectedFoodList";
+import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { TabsContent } from "@radix-ui/react-tabs";
 
 type PlayerSetupProp = {
   selectedFoods: Food[];
   onRemoveFood: (id: string) => void;
   slots: number;
-  setSlots: Dispatch<SetStateAction<number>>;
+  extraSlot: ExtraStomachSlot;
+  setExtraSlot: Dispatch<SetStateAction<ExtraStomachSlot>>;
+  onClearFoods: () => void;
 };
 
 export default function PlayerSetup({
   selectedFoods,
   onRemoveFood,
+  extraSlot,
   slots,
-  setSlots,
+  setExtraSlot,
+  onClearFoods,
 }: PlayerSetupProp) {
   return (
-    <div>
-      <FieldGroup className="p-2">
-        <FieldLegend>Player Setup</FieldLegend>
-        <FieldDescription>
-          Add talent and armor mod slot here. <br />
-          Max slots: {slots}
-        </FieldDescription>
-        <Separator />
-        <FieldGroup>
-          <Field orientation="horizontal">
-            <Checkbox
-              id="talent-slot"
-              name="talent-slot"
-              onCheckedChange={(checked) => {
-                checked
-                  ? setSlots((prev) => prev + 1)
-                  : setSlots((prev) => prev - 1);
-              }}
-            />
-            <FieldLabel htmlFor="talent-slot">Talent Slot</FieldLabel>
-          </Field>
-          <Field orientation="horizontal">
-            <Checkbox
-              id="mod-slot"
-              name="mod-slot"
-              onCheckedChange={(checked) => {
-                checked
-                  ? setSlots((prev) => prev + 1)
-                  : setSlots((prev) => prev - 1);
-              }}
-            />
-            <FieldLabel htmlFor="mod-slot">Armor mod Slot</FieldLabel>
-          </Field>
-        </FieldGroup>
+    <>
+      <FieldGroup>
+        <FieldSet>
+          <FieldLegend>Player Setup</FieldLegend>
+          <FieldDescription>
+            Add talent and armor mod slot here. Max slots: {slots}
+          </FieldDescription>
+          <FieldGroup>
+            <Field orientation="horizontal">
+              <Checkbox
+                id="talent-slot"
+                name="talent-slot"
+                checked={extraSlot.talent}
+                onCheckedChange={(checked) =>
+                  setExtraSlot((prev) => ({
+                    ...prev,
+                    talent: Boolean(checked),
+                  }))
+                }
+              />
+              <FieldLabel htmlFor="talent-slot">Talent Slot</FieldLabel>
+            </Field>
+            <Field orientation="horizontal">
+              <Checkbox
+                id="mod-slot"
+                name="mod-slot"
+                checked={extraSlot.mod}
+                onCheckedChange={(checked) =>
+                  setExtraSlot((prev) => ({
+                    ...prev,
+                    mod: Boolean(checked),
+                  }))
+                }
+              />
+              <FieldLabel htmlFor="mod-slot">Armor mod Slot</FieldLabel>
+            </Field>
+          </FieldGroup>
+        </FieldSet>
       </FieldGroup>
-      <Separator />
       {selectedFoods.length > 0 && (
         <div className="m-2">
-          Selected Food
-          {selectedFoods.map((food) => (
-            <Item key={food.id} variant="outline">
-              <ItemMedia>
-                <img src={food.image} width={24} height={24} alt={food.name} />
-              </ItemMedia>
-              <ItemContent>
-                <ItemTitle>{food.name}</ItemTitle>
-              </ItemContent>
-              <ItemActions>
-                <ItemActions>
-                  <button
-                    onClick={() => onRemoveFood(food.id)}
-                    className="rounded-md p-1 text-muted-foreground hover:bg-destructive hover:text-secondary-foreground"
-                    aria-label="Remove food"
-                  >
-                    <X className="h-4 w-4" />
-                  </button>
-                </ItemActions>
-              </ItemActions>
-            </Item>
-          ))}
+          <Separator />
+          <Tabs defaultValue="selectedFoods">
+            <TabsList className="w-full">
+              <TabsTrigger value="selectedFoods">Selected Foods</TabsTrigger>
+              <TabsTrigger value="modifiers">Modifiers</TabsTrigger>
+            </TabsList>
+            <TabsContent value="selectedFoods">
+              <SelectedFoodList
+                selectedFoods={selectedFoods}
+                onRemoveFood={onRemoveFood}
+                onClearFoods={onClearFoods}
+              />
+            </TabsContent>
+            <TabsContent value="modifiers">
+              <FoodBuffSummery selectedFoods={selectedFoods} />
+            </TabsContent>
+          </Tabs>
         </div>
       )}
-    </div>
+    </>
   );
 }
