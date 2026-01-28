@@ -8,18 +8,23 @@ type Props = {
   selectedFoods: Food[];
 };
 
-export default function FoodBuffSummery({ selectedFoods }: Props) {
+export default function FoodBuffSummary({ selectedFoods }: Props) {
   const combinedBuffs = useMemo(() => {
     const map = new Map<BuffId, number>();
 
-    selectedFoods.forEach((food) => {
-      food.buffs?.forEach((buff) => {
+    for (const food of selectedFoods) {
+      for (const buff of food.buffs ?? []) {
         map.set(buff.id, (map.get(buff.id) ?? 0) + buff.value);
-      });
-    });
-    return Array.from(map.entries());
+      }
+    }
+
+    return Array.from(map.entries())
+      .filter(([, value]) => value !== 0)
+      .sort(([a], [b]) => Buffs[a].name.localeCompare(Buffs[b].name));
   }, [selectedFoods]);
+
   if (combinedBuffs.length === 0) return null;
+
   return (
     <>
       <Separator className="my-3" />
@@ -27,10 +32,11 @@ export default function FoodBuffSummery({ selectedFoods }: Props) {
       <div className="space-y-1">
         {combinedBuffs.map(([buffId, value]) => {
           const buff = Buffs[buffId];
+          if (!buff) return null;
 
           return (
             <div key={buffId} className="flex justify-between text-sm">
-              <span className="text-muted-foreground">{buff.name}:</span>
+              <span className="text-muted-foreground">{buff.name}</span>
               <span className="font-medium">
                 {value > 0 && "+"}
                 {value}

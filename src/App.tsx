@@ -12,10 +12,10 @@ import BuffFilter from "@/components/buffFilter";
 import PlayerSetup from "@/components/playerSetup";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import { useLocalStoragge } from "./lib/useLocalStorage";
+import { useLocalStorage } from "./lib/useLocalStorage";
 
 function App() {
-  const [extraSlot, setExtraSlot] = useLocalStoragge<ExtraStomachSlot>(
+  const [extraSlot, setExtraSlot] = useLocalStorage<ExtraStomachSlot>(
     "player-slots",
     {
       talent: false,
@@ -23,11 +23,16 @@ function App() {
     },
   );
 
-  const BASE_Slots = 3;
-  const slots = BASE_Slots + Number(extraSlot.talent) + Number(extraSlot.mod);
+  const [selectedFoods, setSelectedFoods] = useLocalStorage<Food[]>(
+    "selected-foods",
+    [],
+  );
+
+  const BASE_SLOTS = 3;
+  const slots = BASE_SLOTS + Number(extraSlot.talent) + Number(extraSlot.mod);
 
   const [filter, setFilter] = useState<Set<BuffId | EffectId>>(new Set());
-  const [selectedFoods, setSelectedFoods] = useState<Food[]>([]);
+
   const addFood = (food: Food) => {
     setSelectedFoods((prev) =>
       prev.length < slots && !prev.some((f) => f.id === food.id)
@@ -36,40 +41,43 @@ function App() {
     );
   };
 
-  const handleClearFoods = () => {
-    setSelectedFoods([]);
-  };
-
   const removeFood = (id: string) => {
     setSelectedFoods((prev) => prev.filter((f) => f.id !== id));
+  };
+
+  const handleClearFoods = () => {
+    setSelectedFoods([]);
   };
 
   return (
     <>
       <Navbar />
-      <div
+
+      <main
         className="
-    grid
-    grid-cols-1
-    gap-4
-    lg:grid-cols-[380px_minmax(0,1fr)_380px]
-    lg:gap-6
-    min-h-dvh
-    p-4
-  "
+          grid
+          grid-cols-1
+          gap-4
+          lg:grid-cols-[380px_minmax(0,1fr)_380px]
+          lg:gap-6
+          min-h-screen
+          p-4
+        "
       >
-        <div className="order-1 lg:order-0">
-          <BuffFilter onFilterChange={setFilter} activeFilter={filter} />
-        </div>
-        <div className="order-2 lg:order-0">
+        <section>
+          <BuffFilter activeFilter={filter} onFilterChange={setFilter} />
+        </section>
+
+        <section>
           <FoodGrid
             activeFilter={filter}
             selectedFoods={selectedFoods}
             maxSlots={slots}
             onAddFood={addFood}
           />
-        </div>
-        <div className="order-3 lg:order-0">
+        </section>
+
+        <section>
           <PlayerSetup
             selectedFoods={selectedFoods}
             onRemoveFood={removeFood}
@@ -78,8 +86,9 @@ function App() {
             setExtraSlot={setExtraSlot}
             onClearFoods={handleClearFoods}
           />
-        </div>
-      </div>
+        </section>
+      </main>
+
       <Footer />
     </>
   );

@@ -20,6 +20,7 @@ import { Separator } from "@/components/ui/separator";
 import type { Food } from "@/types/food";
 import { BadgeCheck } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { useMemo } from "react";
 
 type Props = {
   activeFilter: Set<BuffId | EffectId>;
@@ -34,88 +35,115 @@ export default function FoodGrid({
   selectedFoods,
   onAddFood,
 }: Props) {
-  const filteredFoods =
-    activeFilter.size === 0
-      ? foods
-      : foods.filter((food) =>
-          food.buffs?.some((buff) => activeFilter.has(buff.id)),
-        );
+  const filteredFoods = useMemo(() => {
+    if (activeFilter.size === 0) return foods;
+
+    return foods.filter((food) =>
+      food.buffs?.some((buff) => activeFilter.has(buff.id)),
+    );
+  }, [activeFilter]);
 
   const isLimitReached = selectedFoods.length >= maxSlots;
   const isAlreadySelected = (id: string) =>
     selectedFoods.some((f) => f.id === id);
-  return (
-    <>
-      <FieldGroup>
-        <FieldSet>
-          <FieldLegend>Foods</FieldLegend>
-          <FieldDescription></FieldDescription>
-          <FieldGroup>
-            <ScrollArea className="h-dvh p-2">
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                {filteredFoods.map((food) => (
-                  <FieldGroup key={food.id}>
-                    <Field className="flex flex-col items-center gap-1">
-                      <Popover>
-                        <PopoverTrigger asChild>
-                          <Button
-                            variant="outline"
-                            size="icon"
-                            className="h-48 w-48 overflow-hidden"
-                          >
-                            <img src={food.image} alt={food.name} />
-                          </Button>
-                        </PopoverTrigger>
 
-                        <PopoverContent className="w-64">
-                          <h4 className="font-medium">{food.name}</h4>
-                          <Separator />
-                          <div className="mt-2 space-y-1 text-sm">
-                            {food.buffs?.map((buff) => (
-                              <div key={buff.id}>
-                                {buff.value > 0
-                                  ? `+${buff.value}`
-                                  : `${buff.value}`}
-                                {Buffs[buff.id].buffUnit === "percent" && `%`}{" "}
-                                {Buffs[buff.id].name}
-                                {activeFilter.has(buff.id) && (
-                                  <Badge variant="ghost">
-                                    <BadgeCheck />
-                                  </Badge>
-                                )}
-                              </div>
-                            ))}
-                          </div>
-                          <Button
-                            variant="secondary"
-                            disabled={
-                              isLimitReached || isAlreadySelected(food.id)
-                            }
-                            onClick={() => onAddFood(food)}
-                            className="mt-2"
-                          >
-                            {isAlreadySelected(food.id)
-                              ? "Added"
-                              : isLimitReached
-                                ? "Slots Full"
-                                : "Add to diet"}
-                          </Button>
-                        </PopoverContent>
-                      </Popover>
-                      <FieldLabel
-                        htmlFor={food.id}
-                        className="w-full text-center"
+  return (
+    <FieldGroup>
+      <FieldSet>
+        <FieldLegend>Foods</FieldLegend>
+        <FieldDescription>
+          Click a food to view buffs and add it to your diet
+        </FieldDescription>
+
+        <ScrollArea className="h-[75vh] p-2">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {filteredFoods.map((food) => {
+              const alreadyAdded = isAlreadySelected(food.id);
+
+              return (
+                <Field
+                  key={food.id}
+                  className="flex flex-col items-center gap-2"
+                >
+                  <Popover>
+                    <PopoverTrigger asChild>
+                      <Button
+                        variant="outline"
+                        className="relative h-48 w-48 overflow-hidden p-0"
+                        aria-label={`View buffs for ${food.name}`}
                       >
-                        {food.name}
-                      </FieldLabel>
-                    </Field>
-                  </FieldGroup>
-                ))}
-              </div>
-            </ScrollArea>
-          </FieldGroup>
-        </FieldSet>
-      </FieldGroup>
-    </>
+                        <img
+                          src={food.image}
+                          alt={food.name}
+                          className="h-full w-full object-cover"
+                        />
+
+                        {alreadyAdded && (
+                          <Badge
+                            variant="secondary"
+                            className="absolute right-2 top-2"
+                          >
+                            <BadgeCheck className="h-4 w-4" />
+                          </Badge>
+                        )}
+                      </Button>
+                    </PopoverTrigger>
+
+                    <PopoverContent className="w-64">
+                      <h4 className="font-medium">{food.name}</h4>
+                      <Separator />
+
+                      <div className="mt-2 space-y-1 text-sm">
+                        {food.buffs?.map((buff) => {
+                          const buffMeta = Buffs[buff.id];
+                          const isActive = activeFilter.has(buff.id);
+
+                          return (
+                            <div
+                              key={buff.id}
+                              className="flex items-center justify-between"
+                            >
+                              <span>
+                                {buff.value > 0 ? "+" : ""}
+                                {buff.value}
+                                {buffMeta.buffUnit === "percent" && "%"}{" "}
+                                {buffMeta.name}
+                              </span>
+
+                              {isActive && (
+                                <Badge variant="ghost">
+                                  <BadgeCheck className="h-4 w-4" />
+                                </Badge>
+                              )}
+                            </div>
+                          );
+                        })}
+                      </div>
+
+                      <Button
+                        variant="secondary"
+                        disabled={alreadyAdded || isLimitReached}
+                        onClick={() => onAddFood(food)}
+                        className="mt-3 w-full"
+                      >
+                        {alreadyAdded
+                          ? "Added"
+                          : isLimitReached
+                            ? "Slots Full"
+                            : "Add to diet"}
+                      </Button>
+                    </PopoverContent>
+                  </Popover>
+
+                  <FieldLabel className="w-full text-center text-sm">
+                    {food.name}
+                  </FieldLabel>
+                </Field>
+              );
+            })}
+          </div>
+        </ScrollArea>
+      </FieldSet>
+    </FieldGroup>
   );
 }

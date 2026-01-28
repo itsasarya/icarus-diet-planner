@@ -19,40 +19,43 @@ type Props = {
 
 export default function BuffFilter({ activeFilter, onFilterChange }: Props) {
   return (
-    <>
-      <FieldGroup>
-        <FieldSet>
-          <FieldLegend>Buff Filter</FieldLegend>
-          <FieldDescription></FieldDescription>
-          <FieldGroup>
-            <ScrollArea className="h-dvh">
-              {Object.values(Buffs).map((buff) => (
-                <div
-                  key={buff.id}
-                  className="flex items-center justify-between m-2"
-                >
-                  <FieldGroup>
-                    <Field orientation="horizontal">
-                      <Switch
-                        name={buff.id}
-                        checked={activeFilter.has(buff.id)}
-                        onCheckedChange={(checked) => {
-                          onFilterChange((prev) => {
-                            const next = new Set(prev);
-                            checked ? next.add(buff.id) : next.delete(buff.id);
-                            return next;
-                          });
-                        }}
-                      />
-                      <FieldLabel htmlFor={buff.id}>{buff.name}</FieldLabel>
-                    </Field>
-                  </FieldGroup>
-                </div>
-              ))}
-            </ScrollArea>
-          </FieldGroup>
-        </FieldSet>
-      </FieldGroup>
-    </>
+    <FieldGroup>
+      <FieldSet>
+        <FieldLegend>Buff Filter</FieldLegend>
+        <FieldDescription>
+          Toggle buffs to filter available food items
+        </FieldDescription>
+
+        <ScrollArea className="h-[70vh] pr-2">
+          {Object.values(Buffs).map((buff) => {
+            const isChecked = activeFilter.has(buff.id);
+
+            return (
+              <Field
+                key={buff.id}
+                orientation="horizontal"
+                className="flex items-center justify-between px-2 py-1"
+              >
+                <FieldLabel htmlFor={buff.id} className="cursor-pointer">
+                  {buff.name}
+                </FieldLabel>
+
+                <Switch
+                  id={buff.id}
+                  checked={isChecked}
+                  onCheckedChange={(checked) => {
+                    onFilterChange((prev) => {
+                      const next = new Set(prev);
+                      checked ? next.add(buff.id) : next.delete(buff.id);
+                      return next;
+                    });
+                  }}
+                />
+              </Field>
+            );
+          })}
+        </ScrollArea>
+      </FieldSet>
+    </FieldGroup>
   );
 }
