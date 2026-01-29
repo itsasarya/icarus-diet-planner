@@ -13,6 +13,9 @@ import PlayerSetup from "@/components/playerSetup";
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import { useLocalStorage } from "./lib/useLocalStorage";
+import { Drawer, DrawerContent, DrawerTrigger } from "./components/ui/drawer";
+import { Button } from "./components/ui/button";
+import { trackEvent } from "@/lib/analytics";
 
 function App() {
   const [extraSlot, setExtraSlot] = useLocalStorage<ExtraStomachSlot>(
@@ -57,18 +60,54 @@ function App() {
         className="
           grid
           grid-cols-1
-          gap-4
+          gap-3
+          p-3
+          md:gap-4
+          md:p-4
           lg:grid-cols-[380px_minmax(0,1fr)_380px]
           lg:gap-6
+          lg:p-4
           min-h-screen
-          p-4
         "
       >
-        <section>
-          <BuffFilter activeFilter={filter} onFilterChange={setFilter} />
-        </section>
+        {/* Mobile */}
+        <section className="lg:hidden ">
+          <div className="flex justify-between">
+            <Drawer direction="left">
+              <DrawerTrigger asChild className="lg:hidden">
+                <Button
+                  variant="outline"
+                  onClick={() => trackEvent("open-drawer:filters")}
+                >
+                  Buff Filter
+                </Button>
+              </DrawerTrigger>
+              <DrawerContent className="p-8 ">
+                <BuffFilter activeFilter={filter} onFilterChange={setFilter} />
+              </DrawerContent>
+            </Drawer>
+            <Drawer direction="right">
+              <DrawerTrigger asChild className="lg:hidden">
+                <Button
+                  variant="outline"
+                  onClick={() => trackEvent("open-drawer:setup")}
+                >
+                  Player Setup
+                </Button>
+              </DrawerTrigger>
+              <DrawerContent className="p-8">
+                <PlayerSetup
+                  selectedFoods={selectedFoods}
+                  onRemoveFood={removeFood}
+                  slots={slots}
+                  extraSlot={extraSlot}
+                  setExtraSlot={setExtraSlot}
+                  onClearFoods={handleClearFoods}
+                />
+              </DrawerContent>
+            </Drawer>
+          </div>
 
-        <section>
           <FoodGrid
             activeFilter={filter}
             selectedFoods={selectedFoods}
@@ -76,16 +115,32 @@ function App() {
             onAddFood={addFood}
           />
         </section>
-
+        {/* destop */}
         <section>
-          <PlayerSetup
+          <div className="hidden lg:block">
+            <BuffFilter activeFilter={filter} onFilterChange={setFilter} />
+          </div>
+        </section>
+
+        <div className="hidden lg:block">
+          <FoodGrid
+            activeFilter={filter}
             selectedFoods={selectedFoods}
-            onRemoveFood={removeFood}
-            slots={slots}
-            extraSlot={extraSlot}
-            setExtraSlot={setExtraSlot}
-            onClearFoods={handleClearFoods}
+            maxSlots={slots}
+            onAddFood={addFood}
           />
+        </div>
+        <section>
+          <div className="hidden lg:block">
+            <PlayerSetup
+              selectedFoods={selectedFoods}
+              onRemoveFood={removeFood}
+              slots={slots}
+              extraSlot={extraSlot}
+              setExtraSlot={setExtraSlot}
+              onClearFoods={handleClearFoods}
+            />
+          </div>
         </section>
       </main>
 

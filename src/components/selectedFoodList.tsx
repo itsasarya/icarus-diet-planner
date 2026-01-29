@@ -6,6 +6,7 @@ import {
   ItemTitle,
 } from "./ui/item";
 import { X } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 import type { Food } from "@/types/food";
 import { Separator } from "./ui/separator";
 import { Button } from "./ui/button";
@@ -35,7 +36,10 @@ export default function SelectedFoodList({
             </ItemContent>
             <ItemActions>
               <button
-                onClick={() => onRemoveFood(food.id)}
+                onClick={() => {
+                  trackEvent(`remove-food:${food.id}`);
+                  onRemoveFood(food.id);
+                }}
                 className="rounded-md p-1 text-muted-foreground hover:bg-destructive hover:text-secondary-foreground"
                 aria-label="Remove food"
               >
@@ -52,7 +56,10 @@ export default function SelectedFoodList({
           <Button
             variant="destructive"
             className="w-full"
-            onClick={onClearFoods}
+            onClick={() => {
+              trackEvent("remove-all-foods");
+              onClearFoods();
+            }}
             disabled={selectedFoods.length === 0}
           >
             Remove All

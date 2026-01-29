@@ -1,5 +1,6 @@
 import type { Dispatch, SetStateAction } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
+import { trackEvent } from "@/lib/analytics";
 import {
   Field,
   FieldDescription,
@@ -33,7 +34,7 @@ export default function PlayerSetup({
   onClearFoods,
 }: PlayerSetupProps) {
   return (
-    <>
+    <div className="px-4">
       <FieldGroup>
         <FieldSet>
           <FieldLegend>Player Setup</FieldLegend>
@@ -46,12 +47,13 @@ export default function PlayerSetup({
               <Checkbox
                 id="talent-slot"
                 checked={extraSlot.talent}
-                onCheckedChange={(checked) =>
+                onCheckedChange={(checked) => {
                   setExtraSlot((prev) => ({
                     ...prev,
                     talent: Boolean(checked),
-                  }))
-                }
+                  }));
+                  trackEvent(`toggle-slot:talent:${checked ? "on" : "off"}`);
+                }}
               />
               <FieldLabel htmlFor="talent-slot">Talent Slot</FieldLabel>
             </Field>
@@ -60,12 +62,13 @@ export default function PlayerSetup({
               <Checkbox
                 id="mod-slot"
                 checked={extraSlot.mod}
-                onCheckedChange={(checked) =>
+                onCheckedChange={(checked) => {
                   setExtraSlot((prev) => ({
                     ...prev,
                     mod: Boolean(checked),
-                  }))
-                }
+                  }));
+                  trackEvent(`toggle-slot:mod:${checked ? "on" : "off"}`);
+                }}
               />
               <FieldLabel htmlFor="mod-slot">Armor Mod Slot</FieldLabel>
             </Field>
@@ -97,6 +100,6 @@ export default function PlayerSetup({
           </Tabs>
         </div>
       )}
-    </>
+    </div>
   );
 }

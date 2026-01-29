@@ -11,6 +11,7 @@ import {
   FieldSet,
 } from "@/components/ui/field";
 import { ScrollArea } from "@/components/ui/scroll-area";
+import { trackEvent } from "@/lib/analytics";
 
 type Props = {
   activeFilter: Set<BuffId | EffectId>;
@@ -26,7 +27,7 @@ export default function BuffFilter({ activeFilter, onFilterChange }: Props) {
           Toggle buffs to filter available food items
         </FieldDescription>
 
-        <ScrollArea className="h-[70vh] pr-2">
+        <ScrollArea className="h-[40vh] sm:h-[70vh] pr-2">
           {Object.values(Buffs).map((buff) => {
             const isChecked = activeFilter.has(buff.id);
 
@@ -49,6 +50,9 @@ export default function BuffFilter({ activeFilter, onFilterChange }: Props) {
                       checked ? next.add(buff.id) : next.delete(buff.id);
                       return next;
                     });
+                    trackEvent(
+                      `toggle-buff:${buff.id}:${checked ? "on" : "off"}`,
+                    );
                   }}
                 />
               </Field>

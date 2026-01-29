@@ -20,6 +20,7 @@ import { Separator } from "@/components/ui/separator";
 import type { Food } from "@/types/food";
 import { BadgeCheck } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { trackEvent } from "@/lib/analytics";
 import { useMemo } from "react";
 
 type Props = {
@@ -55,8 +56,8 @@ export default function FoodGrid({
           Click a food to view buffs and add it to your diet
         </FieldDescription>
 
-        <ScrollArea className="h-[75vh] p-2">
-          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        <ScrollArea className="h-[60vh] sm:h-[75vh] p-2">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-2 md:gap-4 lg:grid-cols-3 xl:grid-cols-4">
             {filteredFoods.map((food) => {
               const alreadyAdded = isAlreadySelected(food.id);
 
@@ -69,7 +70,7 @@ export default function FoodGrid({
                     <PopoverTrigger asChild>
                       <Button
                         variant="outline"
-                        className="relative h-48 w-48 overflow-hidden p-0"
+                        className="relative h-24 w-24 overflow-hidden p-0 sm:h-32 sm:w-32 md:h-40 md:w-40 lg:h-48 lg:w-48"
                         aria-label={`View buffs for ${food.name}`}
                       >
                         <img
@@ -89,8 +90,10 @@ export default function FoodGrid({
                       </Button>
                     </PopoverTrigger>
 
-                    <PopoverContent className="w-64">
-                      <h4 className="font-medium">{food.name}</h4>
+                    <PopoverContent className="w-full sm:w-56 md:w-64">
+                      <h4 className="font-medium text-sm sm:text-base">
+                        {food.name}
+                      </h4>
                       <Separator />
 
                       <div className="mt-2 space-y-1 text-sm">
@@ -123,7 +126,10 @@ export default function FoodGrid({
                       <Button
                         variant="secondary"
                         disabled={alreadyAdded || isLimitReached}
-                        onClick={() => onAddFood(food)}
+                        onClick={() => {
+                          trackEvent(`add-food:${food.id}`);
+                          onAddFood(food);
+                        }}
                         className="mt-3 w-full"
                       >
                         {alreadyAdded
