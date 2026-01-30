@@ -2,6 +2,7 @@
 import "./App.css";
 
 import { useState } from "react";
+import { Analytics } from "@vercel/analytics/react";
 
 import type { BuffId, EffectId } from "@/types/buff";
 import type { Food } from "@/types/food";
@@ -145,6 +146,7 @@ function App() {
       </main>
 
       <Footer />
+      <Analytics />
     </>
   );
 }
