@@ -16,6 +16,7 @@ import { useLocalStorage } from "./lib/useLocalStorage";
 import { Drawer, DrawerContent, DrawerTrigger } from "./components/ui/drawer";
 import { Button } from "./components/ui/button";
 import { trackEvent } from "@/lib/analytics";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 
 function App() {
   const [extraSlot, setExtraSlot] = useLocalStorage<ExtraStomachSlot>(
@@ -145,6 +146,7 @@ function App() {
       </main>
 
       <Footer />
+      <SpeedInsights />
     </>
   );
 }
