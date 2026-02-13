@@ -59,13 +59,14 @@ function App() {
 
       <main
         className="
+          w-full
           grid
           grid-cols-1
           gap-3
           p-3
           md:gap-4
           md:p-4
-          lg:grid-cols-[380px_minmax(0,1fr)_380px]
+          lg:grid-cols-[280px_minmax(0,1fr)_320px]
           lg:gap-6
           lg:p-4
           min-h-screen

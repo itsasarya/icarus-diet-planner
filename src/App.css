@@ -49,3 +49,15 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Responsive base font sizing for better scaling on small devices */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 640px) {
+  html {
+    /* Increase base font-size on small screens for readability */
+    font-size: 18px;
+  }
+}

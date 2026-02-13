@@ -7,7 +7,7 @@ export default function Footer({ repoUrl }: Props) {
 
   return (
     <footer className="w-full border-t border-neutral-200 dark:border-neutral-800 bg-transparent py-4">
-      <div className="max-w-6xl mx-auto px-4 text-center text-sm text-neutral-600 dark:text-neutral-400">
+      <div className="w-full px-4 lg:px-8 text-center text-sm text-neutral-600 dark:text-neutral-400">
         <span className="text-muted-foreground">
           This site is not affiliated with RocketWerkz or any of its
           subsidiaries.
