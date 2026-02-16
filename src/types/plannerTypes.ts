@@ -1,10 +1,10 @@
-import type { BuffId,EffectId } from "@/types/buff";
+import type { BuffId, EffectId } from "@/types/buff";
 import type { Food } from "@/types/food";
 
 export type PlannerFilters = {
     active: Set<BuffId | EffectId>
     toggle: (id: BuffId | EffectId) => void
-    clear: ()=>void
+    clear: () => void
 }
 
 export type PlannerFoods = {

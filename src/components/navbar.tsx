@@ -1,5 +1,7 @@
 import { ModeToggle } from "@/components/ui/mode-toggle";
 import { Separator } from "@/components/ui/separator";
+import { Link } from "react-router-dom";
+import { Button } from "./ui/button";
 
 export default function Navbar() {
   return (
@@ -8,7 +10,11 @@ export default function Navbar() {
         <h1 className="text-base font-semibold sm:text-lg">
           Icarus Food Planner
         </h1>
-        <ModeToggle />
+        <div className="flex gap-2">
+          <Button asChild variant="ghost"><Link to="/" className="px-4">Home</Link></Button>
+          <Button asChild variant="ghost"><Link to="/saved-diets" className="px-4">Saved Diets</Link></Button>          
+          <ModeToggle />
+        </div>
       </nav>
       <Separator />
     </header>

@@ -1,4 +1,4 @@
- export type ExtraStomachSlot = {
-    talent: boolean;
-    mod: boolean;
-  };
+export type ExtraStomachSlot = {
+  talent: boolean;
+  mod: boolean;
+};

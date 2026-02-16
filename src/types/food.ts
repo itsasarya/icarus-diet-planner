@@ -11,4 +11,5 @@ export interface Food {
   instantEffects?: InstantEffect[];
   image: string;
   craftedAt?: station[];
+  ingredients?: []
 }

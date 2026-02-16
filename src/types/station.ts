@@ -1,4 +1,4 @@
-export interface station{
+export interface station {
     id: string
     name: string
     image: string
