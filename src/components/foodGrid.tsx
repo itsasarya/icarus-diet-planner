@@ -22,6 +22,7 @@ import { BadgeCheck } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { trackEvent } from "@/lib/analytics";
 import { useMemo } from "react";
+import { useSearch } from "@/context/search-context";
 
 type Props = {
   activeFilter: Set<BuffId | EffectId>;
@@ -36,13 +37,33 @@ export default function FoodGrid({
   selectedFoods,
   onAddFood,
 }: Props) {
-  const filteredFoods = useMemo(() => {
-    if (activeFilter.size === 0) return foods;
+  const { query } = useSearch();
 
-    return foods.filter((food) =>
-      food.buffs?.some((buff) => activeFilter.has(buff.id)),
-    );
-  }, [activeFilter]);
+  const filteredFoods = useMemo(() => {
+  const normalized = query.toLowerCase().trim();
+
+  return foods.filter(food => {
+
+    // buff filter
+    const matchesBuff =
+      activeFilter.size === 0 ||
+      food.buffs?.some(buff => activeFilter.has(buff.id));
+
+    // search filter
+    const matchesSearch =
+      !normalized ||
+      food.name.toLowerCase().includes(normalized) ||
+      food.ingredients?.some(i =>
+        i.toLowerCase().includes(normalized)
+      ) ||
+      food.buffs?.some(b =>
+        Buffs[b.id].name.toLowerCase().includes(normalized)
+      );
+
+    return matchesBuff && matchesSearch;
+  });
+
+}, [activeFilter, query]);
 
   const isLimitReached = selectedFoods.length >= maxSlots;
   const isAlreadySelected = (id: string) =>

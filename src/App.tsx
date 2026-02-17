@@ -15,7 +15,7 @@ function App() {
       <Routes>
         <Route element={<MainLayout />}>
           <Route path="/" element={<Home />} />
-        <Route path="/saved-diets/" element={<SavedDiets/>}/>
+          <Route path="/saved-diets/" element={<SavedDiets/>}/>
         </Route>
       </Routes>
       <SpeedInsights />

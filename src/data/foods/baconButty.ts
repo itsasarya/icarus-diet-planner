@@ -29,6 +29,9 @@ const baconButty: Food = {
       image: "marble_kitchen_bench.png"
     },
   ],
+  ingredients: [
+
+  ]
 };
 
 export default baconButty;
