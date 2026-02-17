@@ -7,13 +7,13 @@ import PlayerSetup from "@/components/playerSetup";
 import { useLocalStorage } from "@/lib/useLocalStorage";
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
-import usePlannerController from "@/types/usePlannerController";
+import usePlannerController from "@/lib/usePlannerController";
 
 export default function Home() {
   const planner = usePlannerController();
   const [extraSlot, setExtraSlot] = useLocalStorage<ExtraStomachSlot>(
     "player-slots",
-    { talent: false, mod: false }
+    { talent: false, mod: false },
   );
   const BASE_SLOTS = 3;
   const slots = BASE_SLOTS + Number(extraSlot.talent) + Number(extraSlot.mod);
@@ -23,12 +23,9 @@ export default function Home() {
       {/* MOBILE */}
       <section className="lg:hidden">
         <div className="flex justify-between">
-
           <Drawer direction="left">
             <DrawerTrigger asChild>
-              <Button variant="outline">
-                Buff Filter
-              </Button>
+              <Button variant="outline">Buff Filter</Button>
             </DrawerTrigger>
             <DrawerContent className="p-8">
               <BuffFilter
@@ -39,9 +36,7 @@ export default function Home() {
           </Drawer>
           <Drawer direction="right">
             <DrawerTrigger asChild>
-              <Button variant="outline">
-                Player Setup
-              </Button>
+              <Button variant="outline">Player Setup</Button>
             </DrawerTrigger>
             <DrawerContent className="p-8">
               <PlayerSetup
@@ -50,7 +45,11 @@ export default function Home() {
                 slots={slots}
                 extraSlot={extraSlot}
                 setExtraSlot={setExtraSlot}
-                onClearFoods={() => planner.foods.selected.forEach(f => planner.foods.remove(f.id))}
+                onClearFoods={() =>
+                  planner.foods.selected.forEach((f) =>
+                    planner.foods.remove(f.id),
+                  )
+                }
                 onSaveDiet={planner.diets.save}
               />
             </DrawerContent>
@@ -87,7 +86,9 @@ export default function Home() {
           slots={slots}
           extraSlot={extraSlot}
           setExtraSlot={setExtraSlot}
-          onClearFoods={() => planner.foods.selected.forEach(f => planner.foods.remove(f.id))}
+          onClearFoods={() =>
+            planner.foods.selected.forEach((f) => planner.foods.remove(f.id))
+          }
           onSaveDiet={planner.diets.save}
         />
       </section>
