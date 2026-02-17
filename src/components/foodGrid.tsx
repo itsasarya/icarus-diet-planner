@@ -40,30 +40,26 @@ export default function FoodGrid({
   const { query } = useSearch();
 
   const filteredFoods = useMemo(() => {
-  const normalized = query.toLowerCase().trim();
+    const normalized = query.toLowerCase().trim();
 
-  return foods.filter(food => {
+    return foods.filter((food) => {
+      // buff filter
+      const matchesBuff =
+        activeFilter.size === 0 ||
+        food.buffs?.some((buff) => activeFilter.has(buff.id));
 
-    // buff filter
-    const matchesBuff =
-      activeFilter.size === 0 ||
-      food.buffs?.some(buff => activeFilter.has(buff.id));
+      // search filter
+      const matchesSearch =
+        !normalized ||
+        food.name.toLowerCase().includes(normalized) ||
+        food.ingredients?.some((i) => i.toLowerCase().includes(normalized)) ||
+        food.buffs?.some((b) =>
+          Buffs[b.id].name.toLowerCase().includes(normalized),
+        );
 
-    // search filter
-    const matchesSearch =
-      !normalized ||
-      food.name.toLowerCase().includes(normalized) ||
-      food.ingredients?.some(i =>
-        i.toLowerCase().includes(normalized)
-      ) ||
-      food.buffs?.some(b =>
-        Buffs[b.id].name.toLowerCase().includes(normalized)
-      );
-
-    return matchesBuff && matchesSearch;
-  });
-
-}, [activeFilter, query]);
+      return matchesBuff && matchesSearch;
+    });
+  }, [activeFilter, query]);
 
   const isLimitReached = selectedFoods.length >= maxSlots;
   const isAlreadySelected = (id: string) =>
