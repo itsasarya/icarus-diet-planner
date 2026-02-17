@@ -23,6 +23,7 @@ type PlayerSetupProps = {
   extraSlot: ExtraStomachSlot;
   setExtraSlot: Dispatch<SetStateAction<ExtraStomachSlot>>;
   onClearFoods: () => void;
+  onSaveDiet: (name: string) => void
 };
 
 export default function PlayerSetup({
@@ -32,6 +33,7 @@ export default function PlayerSetup({
   slots,
   setExtraSlot,
   onClearFoods,
+  onSaveDiet,
 }: PlayerSetupProps) {
   return (
     <div className="px-4">
@@ -91,6 +93,7 @@ export default function PlayerSetup({
                 selectedFoods={selectedFoods}
                 onRemoveFood={onRemoveFood}
                 onClearFoods={onClearFoods}
+                onSaveDiet={onSaveDiet}
               />
             </TabsContent>
 

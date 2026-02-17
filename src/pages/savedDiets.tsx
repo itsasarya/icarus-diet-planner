@@ -1,3 +1,3 @@
 export default function SavedDiets() {
-    return<h1>Saved Diet Page</h1>
+    return <h1>Saved Diet Page</h1>
 }

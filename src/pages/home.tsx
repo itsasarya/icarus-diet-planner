@@ -1,9 +1,4 @@
 "use client";
-
-import { useState } from "react";
-
-import type { BuffId, EffectId } from "@/types/buff";
-import type { Food } from "@/types/food";
 import type { ExtraStomachSlot } from "@/types/extraSlots";
 
 import FoodGrid from "@/components/foodGrid";
@@ -12,121 +7,90 @@ import PlayerSetup from "@/components/playerSetup";
 import { useLocalStorage } from "@/lib/useLocalStorage";
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
 import { Button } from "@/components/ui/button";
-import { trackEvent } from "@/lib/analytics";
+import usePlannerController from "@/types/usePlannerController";
 
-function Home() {
+export default function Home() {
+  const planner = usePlannerController();
   const [extraSlot, setExtraSlot] = useLocalStorage<ExtraStomachSlot>(
     "player-slots",
-    {
-      talent: false,
-      mod: false,
-    },
+    { talent: false, mod: false }
   );
-
-  const [selectedFoods, setSelectedFoods] = useLocalStorage<Food[]>(
-    "selected-foods",
-    [],
-  );
-
   const BASE_SLOTS = 3;
   const slots = BASE_SLOTS + Number(extraSlot.talent) + Number(extraSlot.mod);
 
-  const [filter, setFilter] = useState<Set<BuffId | EffectId>>(new Set());
-
-  const addFood = (food: Food) => {
-    setSelectedFoods((prev) =>
-      prev.length < slots && !prev.some((f) => f.id === food.id)
-        ? [...prev, food]
-        : prev,
-    );
-  };
-
-  const removeFood = (id: string) => {
-    setSelectedFoods((prev) => prev.filter((f) => f.id !== id));
-  };
-
-  const handleClearFoods = () => {
-    setSelectedFoods([]);
-  };
-
   return (
-    <>
-      <main className="w-full grid grid-cols-1 gap-3 p-3 md:gap-4 md:p-4 lg:grid-cols-[280px_minmax(0,1fr)_320px] lg:gap-6 lg:p-4">
-        {/* Mobile */}
-        <section className="lg:hidden ">
-          <div className="flex justify-between">
-            <Drawer direction="left">
-              <DrawerTrigger asChild className="lg:hidden">
-                <Button
-                  variant="outline"
-                  onClick={() => trackEvent("open-drawer:filters")}
-                >
-                  Buff Filter
-                </Button>
-              </DrawerTrigger>
-              <DrawerContent className="p-8 ">
-                <BuffFilter activeFilter={filter} onFilterChange={setFilter} />
-              </DrawerContent>
-            </Drawer>
-            <Drawer direction="right">
-              <DrawerTrigger asChild className="lg:hidden">
-                <Button
-                  variant="outline"
-                  onClick={() => trackEvent("open-drawer:setup")}
-                >
-                  Player Setup
-                </Button>
-              </DrawerTrigger>
-              <DrawerContent className="p-8">
-                <PlayerSetup
-                  selectedFoods={selectedFoods}
-                  onRemoveFood={removeFood}
-                  slots={slots}
-                  extraSlot={extraSlot}
-                  setExtraSlot={setExtraSlot}
-                  onClearFoods={handleClearFoods}
-                />
-              </DrawerContent>
-            </Drawer>
-          </div>
+    <main className="w-full grid grid-cols-1 gap-3 p-3 md:gap-4 md:p-4 lg:grid-cols-[280px_minmax(0,1fr)_320px] lg:gap-6 lg:p-4">
+      {/* MOBILE */}
+      <section className="lg:hidden">
+        <div className="flex justify-between">
 
-          <FoodGrid
-            activeFilter={filter}
-            selectedFoods={selectedFoods}
-            maxSlots={slots}
-            onAddFood={addFood}
-          />
-        </section>
-        {/* destop */}
-        <section>
-          <div className="hidden lg:block">
-            <BuffFilter activeFilter={filter} onFilterChange={setFilter} />
-          </div>
-        </section>
-
-        <div className="hidden lg:block">
-          <FoodGrid
-            activeFilter={filter}
-            selectedFoods={selectedFoods}
-            maxSlots={slots}
-            onAddFood={addFood}
-          />
+          <Drawer direction="left">
+            <DrawerTrigger asChild>
+              <Button variant="outline">
+                Buff Filter
+              </Button>
+            </DrawerTrigger>
+            <DrawerContent className="p-8">
+              <BuffFilter
+                activeFilter={planner.filters.active}
+                onFilterChange={planner.filters.toggle}
+              />
+            </DrawerContent>
+          </Drawer>
+          <Drawer direction="right">
+            <DrawerTrigger asChild>
+              <Button variant="outline">
+                Player Setup
+              </Button>
+            </DrawerTrigger>
+            <DrawerContent className="p-8">
+              <PlayerSetup
+                selectedFoods={planner.foods.selected}
+                onRemoveFood={planner.foods.remove}
+                slots={slots}
+                extraSlot={extraSlot}
+                setExtraSlot={setExtraSlot}
+                onClearFoods={() => planner.foods.selected.forEach(f => planner.foods.remove(f.id))}
+                onSaveDiet={planner.diets.save}
+              />
+            </DrawerContent>
+          </Drawer>
         </div>
-        <section>
-          <div className="hidden lg:block">
-            <PlayerSetup
-              selectedFoods={selectedFoods}
-              onRemoveFood={removeFood}
-              slots={slots}
-              extraSlot={extraSlot}
-              setExtraSlot={setExtraSlot}
-              onClearFoods={handleClearFoods}
-            />
-          </div>
-        </section>
-      </main>
-    </>
+        <FoodGrid
+          activeFilter={planner.filters.active}
+          selectedFoods={planner.foods.selected}
+          maxSlots={slots}
+          onAddFood={planner.foods.add}
+        />
+      </section>
+      {/* DESKTOP FILTER */}
+      <section className="hidden lg:block">
+        <BuffFilter
+          activeFilter={planner.filters.active}
+          onFilterChange={planner.filters.toggle}
+        />
+      </section>
+      {/* DESKTOP GRID */}
+      <div className="hidden lg:block">
+        <FoodGrid
+          activeFilter={planner.filters.active}
+          selectedFoods={planner.foods.selected}
+          maxSlots={slots}
+          onAddFood={planner.foods.add}
+        />
+      </div>
+      {/* DESKTOP PLAYER SETUP */}
+      <section className="hidden lg:block">
+        <PlayerSetup
+          selectedFoods={planner.foods.selected}
+          onRemoveFood={planner.foods.remove}
+          slots={slots}
+          extraSlot={extraSlot}
+          setExtraSlot={setExtraSlot}
+          onClearFoods={() => planner.foods.selected.forEach(f => planner.foods.remove(f.id))}
+          onSaveDiet={planner.diets.save}
+        />
+      </section>
+    </main>
   );
 }
-
-export default Home;

@@ -8,20 +8,29 @@ import {
 import { X } from "lucide-react";
 import { trackEvent } from "@/lib/analytics";
 import type { Food } from "@/types/food";
-import { Separator } from "./ui/separator";
-import { Button } from "./ui/button";
+import { Separator } from "@/components/ui/separator";
+import { Button } from "@/components/ui/button";
+import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { Input } from "@/components/ui/input";
+import { useState } from "react";
 
 type PlayerSetupProp = {
   selectedFoods: Food[];
   onRemoveFood: (id: string) => void;
   onClearFoods: () => void;
+  onSaveDiet: (name: string) => void
 };
 
 export default function SelectedFoodList({
   selectedFoods,
   onRemoveFood,
   onClearFoods,
+  onSaveDiet,
 }: PlayerSetupProp) {
+
+  const [name, setName] = useState("");
+  const [open, setOpen] = useState(false);
+
   return (
     <>
       <Separator className="my-3" />
@@ -41,7 +50,6 @@ export default function SelectedFoodList({
                   onRemoveFood(food.id);
                 }}
                 className="rounded-md p-1 text-muted-foreground hover:bg-destructive hover:text-secondary-foreground"
-                aria-label="Remove food"
               >
                 <X className="h-4 w-4" />
               </button>
@@ -49,21 +57,62 @@ export default function SelectedFoodList({
           </Item>
         ))}
         <Separator />
-        <div className="flex justify-around m-2">
-          {/* <Button variant="default" className="w-5/12">
-            Save
-          </Button> */}
+        <div className="flex gap-2 m-2">
+          <Dialog open={open} onOpenChange={setOpen}>
+
+            <DialogTrigger asChild>
+              <Button
+                className="w-1/2"
+                disabled={selectedFoods.length === 0}
+              >
+                Save
+              </Button>
+            </DialogTrigger>
+            <DialogContent>
+              <DialogHeader>
+                <DialogTitle>Save Diet</DialogTitle>
+              </DialogHeader>
+
+              <Input
+                placeholder="Diet name..."
+                value={name}
+                onChange={(e) => setName(e.target.value)}
+                autoFocus
+              />
+
+              <DialogFooter>
+                <Button
+                  variant="ghost"
+                  onClick={() => setOpen(false)}
+                >
+                  Cancel
+                </Button>
+                <Button
+                  disabled={!name.trim()}
+                  onClick={() => {
+                    trackEvent(`save-diet:${name}`);
+                    onSaveDiet(name.trim());
+                    setName("");
+                    setOpen(false);
+                  }}
+                >
+                  Save
+                </Button>
+              </DialogFooter>
+            </DialogContent>
+          </Dialog>
           <Button
             variant="destructive"
-            className="w-full"
+            className="w-1/2"
+            disabled={selectedFoods.length === 0}
             onClick={() => {
               trackEvent("remove-all-foods");
               onClearFoods();
             }}
-            disabled={selectedFoods.length === 0}
           >
             Remove All
           </Button>
+
         </div>
       </div>
     </>

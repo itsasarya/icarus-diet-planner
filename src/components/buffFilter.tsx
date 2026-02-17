@@ -10,11 +10,10 @@ import {
   FieldSet,
 } from "@/components/ui/field";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { trackEvent } from "@/lib/analytics";
 
 type Props = {
   activeFilter: Set<BuffId | EffectId>;
-  onFilterChange: React.Dispatch<React.SetStateAction<Set<BuffId | EffectId>>>;
+  onFilterChange: (id: BuffId | EffectId) => void;
 };
 
 export default function BuffFilter({ activeFilter, onFilterChange }: Props) {
@@ -44,15 +43,8 @@ export default function BuffFilter({ activeFilter, onFilterChange }: Props) {
                 <Switch
                   id={buff.id}
                   checked={isChecked}
-                  onCheckedChange={(checked) => {
-                    onFilterChange((prev) => {
-                      const next = new Set(prev);
-                      checked ? next.add(buff.id) : next.delete(buff.id);
-                      return next;
-                    });
-                    trackEvent(
-                      `toggle-buff:${buff.id}:${checked ? "on" : "off"}`,
-                    );
+                  onCheckedChange={() => {
+                    onFilterChange(buff.id);
                   }}
                 />
               </Field>
