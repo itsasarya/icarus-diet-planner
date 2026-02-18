@@ -1,6 +1,5 @@
 import type { Dispatch, SetStateAction } from "react";
 import { Checkbox } from "@/components/ui/checkbox";
-import { trackEvent } from "@/lib/analytics";
 import {
   Field,
   FieldDescription,
@@ -12,7 +11,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 import type { Food } from "@/types/food";
 import type { ExtraStomachSlot } from "@/types/extraSlots";
-import FoodBuffSummary from "@/components/foodBuffSummary";
+import FoodBuffSummary from "@/components/buffs/buffSummary";
 import SelectedFoodList from "@/components/selectedFoodList";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
@@ -23,7 +22,7 @@ type PlayerSetupProps = {
   extraSlot: ExtraStomachSlot;
   setExtraSlot: Dispatch<SetStateAction<ExtraStomachSlot>>;
   onClearFoods: () => void;
-  onSaveDiet: (name: string) => void
+  onSaveDiet: (name: string) => void;
 };
 
 export default function PlayerSetup({
@@ -54,7 +53,6 @@ export default function PlayerSetup({
                     ...prev,
                     talent: Boolean(checked),
                   }));
-                  trackEvent(`toggle-slot:talent:${checked ? "on" : "off"}`);
                 }}
               />
               <FieldLabel htmlFor="talent-slot">Talent Slot</FieldLabel>
@@ -69,7 +67,6 @@ export default function PlayerSetup({
                     ...prev,
                     mod: Boolean(checked),
                   }));
-                  trackEvent(`toggle-slot:mod:${checked ? "on" : "off"}`);
                 }}
               />
               <FieldLabel htmlFor="mod-slot">Armor Mod Slot</FieldLabel>

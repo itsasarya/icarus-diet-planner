@@ -35,7 +35,24 @@ export type EffectId =
   | "health_when_consumed"
   | "stamina_when_consumed"
   | "water_when_consumed"
-  | "oxygen_when_consumed"
+  | "oxygen_when_consumed";
+
+export type Tag =
+  | "cave sick res"
+  | "charge spd"
+  | "craft spd"
+  | "crit dmg"
+  | "exp gain"
+  | "expo res"
+  | "hp regen"
+  | "hp max"
+  | "stm max"
+  | "atk spd"
+  | "melee dmg"
+  | "proj dmg"
+  | "relod spd"
+  | "stm cons"
+  | "stm regen";
 
 export interface Buff {
   id: BuffId;
@@ -52,5 +69,6 @@ export type BuffUnit = "percent" | "flat";
 export interface BuffDefinition {
   id: BuffId | EffectId;
   name: string;
-  buffUnit: BuffUnit
+  buffUnit: BuffUnit;
+  tag?: Tag;
 }

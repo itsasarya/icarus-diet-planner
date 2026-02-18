@@ -6,19 +6,25 @@ import {
   ItemTitle,
 } from "./ui/item";
 import { X } from "lucide-react";
-import { trackEvent } from "@/lib/analytics";
 import type { Food } from "@/types/food";
 import { Separator } from "@/components/ui/separator";
 import { Button } from "@/components/ui/button";
-import { Dialog, DialogContent, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import {
+  Dialog,
+  DialogContent,
+  DialogFooter,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
 
 type PlayerSetupProp = {
-  selectedFoods: Food[];
+  selectedFoods: Food[]; 
   onRemoveFood: (id: string) => void;
   onClearFoods: () => void;
-  onSaveDiet: (name: string) => void
+  onSaveDiet: (name: string) => void;
 };
 
 export default function SelectedFoodList({
@@ -27,7 +33,6 @@ export default function SelectedFoodList({
   onClearFoods,
   onSaveDiet,
 }: PlayerSetupProp) {
-
   const [name, setName] = useState("");
   const [open, setOpen] = useState(false);
 
@@ -46,7 +51,6 @@ export default function SelectedFoodList({
             <ItemActions>
               <button
                 onClick={() => {
-                  trackEvent(`remove-food:${food.id}`);
                   onRemoveFood(food.id);
                 }}
                 className="rounded-md p-1 text-muted-foreground hover:bg-destructive hover:text-secondary-foreground"
@@ -57,14 +61,10 @@ export default function SelectedFoodList({
           </Item>
         ))}
         <Separator />
-        <div className="flex gap-2 m-2">
+        <div className="flex flex-col m-2 gap-2">
           <Dialog open={open} onOpenChange={setOpen}>
-
             <DialogTrigger asChild>
-              <Button
-                className="w-1/2"
-                disabled={selectedFoods.length === 0}
-              >
+              <Button className="w-full" disabled={selectedFoods.length === 0}>
                 Save
               </Button>
             </DialogTrigger>
@@ -81,16 +81,12 @@ export default function SelectedFoodList({
               />
 
               <DialogFooter>
-                <Button
-                  variant="ghost"
-                  onClick={() => setOpen(false)}
-                >
+                <Button variant="ghost" onClick={() => setOpen(false)}>
                   Cancel
                 </Button>
                 <Button
                   disabled={!name.trim()}
                   onClick={() => {
-                    trackEvent(`save-diet:${name}`);
                     onSaveDiet(name.trim());
                     setName("");
                     setOpen(false);
@@ -103,16 +99,14 @@ export default function SelectedFoodList({
           </Dialog>
           <Button
             variant="destructive"
-            className="w-1/2"
+            className="w-full"
             disabled={selectedFoods.length === 0}
             onClick={() => {
-              trackEvent("remove-all-foods");
               onClearFoods();
             }}
           >
             Remove All
           </Button>
-
         </div>
       </div>
     </>

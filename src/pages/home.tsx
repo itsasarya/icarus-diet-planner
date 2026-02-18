@@ -2,7 +2,7 @@
 import type { ExtraStomachSlot } from "@/types/extraSlots";
 
 import FoodGrid from "@/components/foodGrid";
-import BuffFilter from "@/components/buffFilter";
+import BuffFilter from "@/components/buffs/buffFilter";
 import PlayerSetup from "@/components/playerSetup";
 import { useLocalStorage } from "@/lib/useLocalStorage";
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";

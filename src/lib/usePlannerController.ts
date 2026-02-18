@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import type { BuffId, EffectId } from "@/types/buff";
 import type { Food } from "@/types/food";
 import type { PlannerController } from "@/types/plannerTypes";
-import type { SavedDiet } from "../types/diet";
+import type { SavedDiet } from "@/types/diet";
 import { deleteDiet, getDiets, saveDiet } from "@/lib/dietStorage";
 
 export default function usePlannerController(): PlannerController {

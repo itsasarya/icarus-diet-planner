@@ -1,12 +1,27 @@
 import { useEffect, useState } from "react";
 import { getDiets, deleteDiet } from "@/lib/dietStorage";
 import type { SavedDiet } from "@/types/diet";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Trash2 } from "lucide-react";
 import { motion } from "framer-motion";
 import { Separator } from "@/components/ui/separator";
+import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import FoodBuffSummary from "@/components/buffs/buffSummary";
 
 export default function SavedDietsPage() {
   const [diets, setDiets] = useState<SavedDiet[]>([]);
@@ -42,7 +57,6 @@ export default function SavedDietsPage() {
                   <CardTitle className="text-base">
                     {diet.name || "Unnamed Diet"}
                   </CardTitle>
-
                   <Button
                     size="icon"
                     variant="destructive"
@@ -68,6 +82,21 @@ export default function SavedDietsPage() {
                     </div>
                   ))}
                 </CardContent>
+                <CardFooter>
+                  <Sheet>
+                    <SheetTrigger className="w-full">
+                      <Button>Details</Button>
+                    </SheetTrigger>
+                    <SheetContent>
+                      <SheetHeader>
+                        <SheetTitle>{diet.name}</SheetTitle>
+                        <SheetDescription className="p-4">
+                          <FoodBuffSummary selectedFoods={diet.foods} />
+                        </SheetDescription>
+                      </SheetHeader>
+                    </SheetContent>
+                  </Sheet>
+                </CardFooter>
               </Card>
             </motion.div>
           ))}

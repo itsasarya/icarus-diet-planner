@@ -20,7 +20,6 @@ import { Separator } from "@/components/ui/separator";
 import type { Food } from "@/types/food";
 import { BadgeCheck } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import { trackEvent } from "@/lib/analytics";
 import { useMemo } from "react";
 import { useSearch } from "@/context/search-context";
 
@@ -74,7 +73,7 @@ export default function FoodGrid({
         </FieldDescription>
 
         <ScrollArea className="h-[60vh] sm:h-[75vh] p-2">
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
             {filteredFoods.map((food) => {
               const alreadyAdded = isAlreadySelected(food.id);
 
@@ -144,7 +143,6 @@ export default function FoodGrid({
                         variant="default"
                         disabled={alreadyAdded || isLimitReached}
                         onClick={() => {
-                          trackEvent(`add-food:${food.id}`);
                           onAddFood(food);
                         }}
                         className="mt-3 w-full"

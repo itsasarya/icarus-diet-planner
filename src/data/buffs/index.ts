@@ -14,12 +14,12 @@ export const Buffs: Record<BuffId | EffectId, BuffDefinition> = {
   chance_to_find_additional_stone: {
     id: "chance_to_find_additional_stone",
     name: "Chance to find additional stone while mining",
-    buffUnit: "percent"
+    buffUnit: "percent",
   },
   chance_to_resist_cave_sickness: {
     id: "chance_to_resist_cave_sickness",
     name: "Chance to resist cave sickness",
-    buffUnit: 'percent',
+    buffUnit: "percent",
   },
   charge_speed: {
     id: "charge_speed",
@@ -29,22 +29,26 @@ export const Buffs: Record<BuffId | EffectId, BuffDefinition> = {
   crafting_speed: {
     id: "crafting_speed",
     name: "Crafting Speed",
-    buffUnit: 'percent',
+    buffUnit: "percent",
+    tag: "craft spd",
   },
   critical_damage: {
     id: "critical_damage",
     name: "Critical damage",
-    buffUnit:"percent",
+    buffUnit: "percent",
+    tag: "crit dmg",
   },
   experience_gained: {
     id: "experience_gained",
     name: "Experience gained",
-    buffUnit:"percent",
+    buffUnit: "percent",
+    tag: "exp gain",
   },
   exposure_resistance: {
     id: "exposure_resistance",
     name: "Exposure resistance",
     buffUnit: "percent",
+    tag: "expo res",
   },
   falling_resistance: {
     id: "falling_resistance",
@@ -65,6 +69,7 @@ export const Buffs: Record<BuffId | EffectId, BuffDefinition> = {
     id: "health_regeneration",
     name: "Health regeneration",
     buffUnit: "percent",
+    tag: "hp regen",
   },
   health_when_consumed: {
     id: "health_when_consumed",
@@ -75,21 +80,25 @@ export const Buffs: Record<BuffId | EffectId, BuffDefinition> = {
     id: "maximum_health",
     name: " Maximum health",
     buffUnit: "flat",
+    tag: "hp max",
   },
   maximum_stamina: {
     id: "maximum_stamina",
     name: " Maximum stamina",
     buffUnit: "flat",
+    tag: "stm max",
   },
   melee_attack_speed: {
     id: "melee_attack_speed",
     name: "Melee attack speed",
     buffUnit: "percent",
+    tag: "atk spd",
   },
   melee_damage: {
     id: "melee_damage",
     name: "Melee damage",
     buffUnit: "percent",
+    tag: "melee dmg",
   },
   movement_speed: {
     id: "movement_speed",
@@ -109,7 +118,7 @@ export const Buffs: Record<BuffId | EffectId, BuffDefinition> = {
   oxygen_when_consumed: {
     id: "oxygen_when_consumed",
     name: "Oxygen when consumed",
-    buffUnit: "flat"
+    buffUnit: "flat",
   },
   parasitic_afflictions_duration: {
     id: "parasitic_afflictions_duration",
@@ -120,26 +129,31 @@ export const Buffs: Record<BuffId | EffectId, BuffDefinition> = {
     id: "projectile_damage",
     name: "Projectile damage",
     buffUnit: "percent",
+    tag: "proj dmg",
   },
   reload_speed: {
     id: "reload_speed",
     name: "Reload speed",
     buffUnit: "percent",
+    tag: "relod spd",
   },
   shared_experience_gained: {
     id: "shared_experience_gained",
     name: "Shared experience gained",
     buffUnit: "percent",
+    tag: "exp gain",
   },
   stamina_consumed_by_actions: {
     id: "stamina_consumed_by_actions",
     name: "Stamina consumed by actions",
     buffUnit: "percent",
+    tag: "stm cons",
   },
   stamina_consumed_by_tool_actions: {
     id: "stamina_consumed_by_tool_actions",
     name: "Stamina consumed by tool actions",
     buffUnit: "percent",
+    tag: "stm cons",
   },
   stamina_when_consumed: {
     id: "stamina_when_consumed",
@@ -164,12 +178,13 @@ export const Buffs: Record<BuffId | EffectId, BuffDefinition> = {
   food_when_consumed: {
     id: "food_when_consumed",
     name: "Food when consumed",
-    buffUnit:"flat"
+    buffUnit: "flat",
   },
   stamina_regeneration: {
     id: "stamina_regeneration",
     name: "Stamina regeneration",
     buffUnit: "percent",
+    tag: "stm regen",
   },
   water_effects_duration: {
     id: "water_effects_duration",
