@@ -4,5 +4,5 @@ export interface station {
   id: string;
   name: string;
   image: string;
-  tier: TechTier;
+  tier?: TechTier;
 }
