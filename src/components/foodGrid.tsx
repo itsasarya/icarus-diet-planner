@@ -41,7 +41,7 @@ export default function FoodGrid({
   const filteredFoods = useMemo(() => {
     const normalized = query.toLowerCase().trim();
 
-    return foods.filter((food) => {
+    const list = foods.filter((food) => {
       // buff filter
       const matchesBuff =
         activeFilter.size === 0 ||
@@ -58,6 +58,26 @@ export default function FoodGrid({
 
       return matchesBuff && matchesSearch;
     });
+
+    // If any active filter is set, sort by number of matching active buffs (desc).
+    if (activeFilter.size > 0) {
+      return list
+        .map((f) => {
+          const matched = f.buffs?.filter((b) => activeFilter.has(b.id)) ?? [];
+          const valueSum = matched.reduce((acc, b) => acc + (b.value ?? 0), 0);
+          const matches = matched.length;
+          return { f, matches, valueSum };
+        })
+        .sort((a, b) => {
+          if (b.valueSum !== a.valueSum) return b.valueSum - a.valueSum;
+          if (b.matches !== a.matches) return b.matches - a.matches;
+          return a.f.name.localeCompare(b.f.name);
+        })
+        .map((x) => x.f);
+    }
+
+    // Default: alphabetical
+    return list.slice().sort((a, b) => a.name.localeCompare(b.name));
   }, [activeFilter, query]);
 
   const isLimitReached = selectedFoods.length >= maxSlots;
@@ -94,7 +114,6 @@ export default function FoodGrid({
                           alt={food.name}
                           className="h-full w-full object-cover"
                         />
-
                         {alreadyAdded && (
                           <Badge
                             variant="secondary"
@@ -110,8 +129,7 @@ export default function FoodGrid({
                       <h4 className="font-medium text-sm sm:text-base">
                         {food.name}
                       </h4>
-                      <Separator />
-
+                      <Separator className="my-2" />
                       <div className="mt-2 space-y-1 text-sm">
                         {food.buffs?.map((buff) => {
                           const buffMeta = Buffs[buff.id];

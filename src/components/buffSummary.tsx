@@ -3,12 +3,19 @@ import type { BuffId } from "@/types/buff";
 import { Buffs } from "@/data/buffs";
 import { useMemo } from "react";
 import { Separator } from "@/components/ui/separator";
+import SaveControls from "@/components/saveControls";
 
 type Props = {
   selectedFoods: Food[];
+  onSaveDiet?: (name: string, id?: string, tags?: string[]) => void;
+  onClearFoods?: () => void;
 };
 
-export default function FoodBuffSummary({ selectedFoods }: Props) {
+export default function FoodBuffSummary({
+  selectedFoods,
+  onSaveDiet,
+  onClearFoods,
+}: Props) {
   const combinedBuffs = useMemo(() => {
     const map = new Map<BuffId, number>();
 
@@ -28,7 +35,6 @@ export default function FoodBuffSummary({ selectedFoods }: Props) {
   return (
     <>
       <Separator className="my-3" />
-
       <div className="space-y-1">
         {combinedBuffs.map(([buffId, value]) => {
           const buff = Buffs[buffId];
@@ -46,6 +52,14 @@ export default function FoodBuffSummary({ selectedFoods }: Props) {
           );
         })}
       </div>
+      <Separator className="my-3" />
+      {(onSaveDiet || onClearFoods) && (
+        <SaveControls
+          selectedFoods={selectedFoods}
+          onSaveDiet={onSaveDiet}
+          onClearFoods={onClearFoods}
+        />
+      )}
     </>
   );
 }

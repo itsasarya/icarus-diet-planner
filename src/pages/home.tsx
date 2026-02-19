@@ -1,8 +1,9 @@
 "use client";
+import { useEffect } from "react";
 import type { ExtraStomachSlot } from "@/types/extraSlots";
 
 import FoodGrid from "@/components/foodGrid";
-import BuffFilter from "@/components/buffs/buffFilter";
+import BuffFilter from "@/components/buffFilter";
 import PlayerSetup from "@/components/playerSetup";
 import { useLocalStorage } from "@/lib/useLocalStorage";
 import { Drawer, DrawerContent, DrawerTrigger } from "@/components/ui/drawer";
@@ -17,6 +18,17 @@ export default function Home() {
   );
   const BASE_SLOTS = 3;
   const slots = BASE_SLOTS + Number(extraSlot.talent) + Number(extraSlot.mod);
+
+  useEffect(() => {
+    try {
+      const params = new URLSearchParams(window.location.search);
+      const load = params.get("load");
+      if (load) planner.diets.load(load);
+    } catch (e) {
+      // ignore (server-side or invalid URL)
+    }
+    // depend only on the stable load function to avoid effect looping
+  }, [planner.diets.load]);
 
   return (
     <main className="w-full grid grid-cols-1 gap-3 p-3 md:gap-4 md:p-4 lg:grid-cols-[280px_minmax(0,1fr)_320px] lg:gap-6 lg:p-4">

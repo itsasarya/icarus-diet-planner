@@ -11,7 +11,7 @@ import {
 import { Separator } from "@/components/ui/separator";
 import type { Food } from "@/types/food";
 import type { ExtraStomachSlot } from "@/types/extraSlots";
-import FoodBuffSummary from "@/components/buffs/buffSummary";
+import FoodBuffSummary from "@/components/buffSummary";
 import SelectedFoodList from "@/components/selectedFoodList";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 
@@ -22,7 +22,7 @@ type PlayerSetupProps = {
   extraSlot: ExtraStomachSlot;
   setExtraSlot: Dispatch<SetStateAction<ExtraStomachSlot>>;
   onClearFoods: () => void;
-  onSaveDiet: (name: string) => void;
+  onSaveDiet: (name: string, id?: string, tags?: string[]) => void;
 };
 
 export default function PlayerSetup({
@@ -95,7 +95,11 @@ export default function PlayerSetup({
             </TabsContent>
 
             <TabsContent value="modifiers">
-              <FoodBuffSummary selectedFoods={selectedFoods} />
+              <FoodBuffSummary
+                selectedFoods={selectedFoods}
+                onSaveDiet={onSaveDiet}
+                onClearFoods={onClearFoods}
+              />
             </TabsContent>
           </Tabs>
         </div>
