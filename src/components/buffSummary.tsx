@@ -52,7 +52,7 @@ export default function FoodBuffSummary({
           );
         })}
       </div>
-      <Separator className="my-3" />
+
       {(onSaveDiet || onClearFoods) && (
         <SaveControls
           selectedFoods={selectedFoods}
