@@ -21,6 +21,15 @@ export default function Footer({ repoUrl }: Props) {
         >
           View source on GitHub
         </a>
+        <span className="mx-2">•</span>
+        <a
+          href="https://icarus.wiki.gg/wiki/Food"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="underline hover:text-neutral-900 dark:hover:text-neutral-100"
+        >
+          Food statistics from Icarus Wiki (CC BY-SA)
+        </a>
       </div>
     </footer>
   );

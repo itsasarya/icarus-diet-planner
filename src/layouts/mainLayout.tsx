@@ -6,10 +6,10 @@ export default function MainLayout() {
   return (
     <>
       <Navbar />
-      <main className="p-4">
+      <div className="min-h-[calc(100svh-8rem)]">
         <Outlet />
-      </main>
-      <Footer/>
+      </div>
+      <Footer />
     </>
   );
 }

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { getDiets, deleteDiet, saveDiet } from "@/lib/dietStorage";
 import TagBadge from "@/components/tagBadge";
 import { Buffs } from "@/data/buffs";
@@ -34,20 +34,17 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import FoodBuffSummary from "@/components/buffSummary";
-import { Share } from "lucide-react";
-import { toast } from "sonner";
+import DietShareSnapshot from "@/components/dietShareSnapshot";
+import foods from "@/data/foods";
+
+const catalogById = new Map(foods.map((food) => [food.id, food]));
 
 export default function SavedDietsPage() {
-  const [diets, setDiets] = useState<SavedDiet[]>([]);
+  const [diets, setDiets] = useState<SavedDiet[]>(getDiets);
   const [editOpen, setEditOpen] = useState(false);
   const [editId, setEditId] = useState<string | null>(null);
   const [editName, setEditName] = useState("");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
-  const [copiedId, setCopiedId] = useState<string | null>(null);
-
-  useEffect(() => {
-    setDiets(getDiets());
-  }, []);
 
   function handleDelete(id: string) {
     deleteDiet(id);
@@ -92,18 +89,6 @@ export default function SavedDietsPage() {
       if (prev.length >= 3) return prev;
       return [...prev, tag];
     });
-  }
-
-  function handleCopyLink(id: string) {
-    try {
-      const url = `${window.location.origin}/?load=${id}`;
-      navigator.clipboard.writeText(url);
-      setCopiedId(id);
-      toast.success("Copied", { position: "top-center" });
-      setTimeout(() => setCopiedId(null), 2000);
-    } catch (e) {
-      // ignore
-    }
   }
 
   return (
@@ -152,21 +137,33 @@ export default function SavedDietsPage() {
                   {diet.foods.map((food) => (
                     <div
                       key={food.id}
-                      className="flex items-center justify-left gap-2"
+                      className="flex min-w-0 items-center gap-2"
                     >
-                      <img
-                        src={food.image}
-                        alt={food.name}
-                        height="24px"
-                        width="24px"
-                      />
-                      <span>{food.name}</span>
+                      {(() => {
+                        const catalogFood = catalogById.get(food.id);
+                        const image = catalogFood?.image ?? food.image;
+                        const name = catalogFood?.name ?? food.name;
+                        return (
+                          <>
+                            {image && (
+                              <img
+                                src={image}
+                                alt={name}
+                                height={24}
+                                width={24}
+                                className="size-6 shrink-0 object-contain"
+                              />
+                            )}
+                            <span className="min-w-0 wrap-break-word">{name}</span>
+                          </>
+                        );
+                      })()}
                     </div>
                   ))}
                 </CardContent>
                 <CardFooter className="flex justify-between">
                   <Sheet>
-                    <SheetTrigger>
+                    <SheetTrigger asChild>
                       <Button>Details</Button>
                     </SheetTrigger>
                     <SheetContent>
@@ -187,14 +184,7 @@ export default function SavedDietsPage() {
                       <Pencil />
                     </Button>
 
-                    <Button
-                      size="icon"
-                      variant="secondary"
-                      onClick={() => handleCopyLink(diet.id)}
-                    >
-                      <Share />
-                    </Button>
-                    {copiedId === diet.id}
+                    <DietShareSnapshot diet={diet} catalogById={catalogById} />
                   </div>
                 </CardFooter>
               </Card>
@@ -228,13 +218,13 @@ export default function SavedDietsPage() {
                   const diet = diets.find((d) => d.id === editId);
                   const available = diet
                     ? (Array.from(
-                        new Set(
-                          diet.foods
-                            .flatMap((f) => f.buffs ?? [])
-                            .map((b) => Buffs[b.id]?.tag)
-                            .filter(Boolean),
-                        ),
-                      ) as string[])
+                      new Set(
+                        diet.foods
+                          .flatMap((f) => f.buffs ?? [])
+                          .map((b) => Buffs[b.id]?.tag)
+                          .filter(Boolean),
+                      ),
+                    ) as string[])
                     : [];
 
                   return (available.length ? available : selectedTags).map(

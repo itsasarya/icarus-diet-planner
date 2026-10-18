@@ -23,6 +23,7 @@ type PlayerSetupProps = {
   setExtraSlot: Dispatch<SetStateAction<ExtraStomachSlot>>;
   onClearFoods: () => void;
   onSaveDiet: (name: string, id?: string, tags?: string[]) => void;
+  idPrefix?: string;
 };
 
 export default function PlayerSetup({
@@ -33,20 +34,24 @@ export default function PlayerSetup({
   setExtraSlot,
   onClearFoods,
   onSaveDiet,
+  idPrefix = "player",
 }: PlayerSetupProps) {
+  const talentSlotId = `${idPrefix}-talent-slot`;
+  const modSlotId = `${idPrefix}-mod-slot`;
   return (
-    <div className="px-4">
+    <div className="h-full min-h-0 overflow-y-auto px-3">
       <FieldGroup>
         <FieldSet>
           <FieldLegend>Player Setup</FieldLegend>
           <FieldDescription>
-            Configure extra slots. Max slots: {slots}
+            Configure extra stomach slots.<br />
+            Max slots: {slots}
           </FieldDescription>
 
           <FieldGroup>
             <Field orientation="horizontal">
               <Checkbox
-                id="talent-slot"
+                id={talentSlotId}
                 checked={extraSlot.talent}
                 onCheckedChange={(checked) => {
                   setExtraSlot((prev) => ({
@@ -55,12 +60,12 @@ export default function PlayerSetup({
                   }));
                 }}
               />
-              <FieldLabel htmlFor="talent-slot">Talent Slot</FieldLabel>
+              <FieldLabel htmlFor={talentSlotId}>Talent Slot</FieldLabel>
             </Field>
 
             <Field orientation="horizontal">
               <Checkbox
-                id="mod-slot"
+                id={modSlotId}
                 checked={extraSlot.mod}
                 onCheckedChange={(checked) => {
                   setExtraSlot((prev) => ({
@@ -69,41 +74,43 @@ export default function PlayerSetup({
                   }));
                 }}
               />
-              <FieldLabel htmlFor="mod-slot">Armor Mod Slot</FieldLabel>
+              <FieldLabel htmlFor={modSlotId}>Armor Mod Slot</FieldLabel>
             </Field>
           </FieldGroup>
         </FieldSet>
       </FieldGroup>
 
-      {selectedFoods.length > 0 && (
-        <div className="m-2">
-          <Separator />
+      {
+        selectedFoods.length > 0 && (
+          <div className="m-2">
+            <Separator />
 
-          <Tabs defaultValue="selected">
-            <TabsList className="w-full">
-              <TabsTrigger value="selected">Selected Foods</TabsTrigger>
-              <TabsTrigger value="modifiers">Modifiers</TabsTrigger>
-            </TabsList>
+            <Tabs defaultValue="selected">
+              <TabsList className="w-full">
+                <TabsTrigger value="selected">Selected Foods</TabsTrigger>
+                <TabsTrigger value="modifiers">Modifiers</TabsTrigger>
+              </TabsList>
 
-            <TabsContent value="selected">
-              <SelectedFoodList
-                selectedFoods={selectedFoods}
-                onRemoveFood={onRemoveFood}
-                onClearFoods={onClearFoods}
-                onSaveDiet={onSaveDiet}
-              />
-            </TabsContent>
+              <TabsContent value="selected">
+                <SelectedFoodList
+                  selectedFoods={selectedFoods}
+                  onRemoveFood={onRemoveFood}
+                  onClearFoods={onClearFoods}
+                  onSaveDiet={onSaveDiet}
+                />
+              </TabsContent>
 
-            <TabsContent value="modifiers">
-              <FoodBuffSummary
-                selectedFoods={selectedFoods}
-                onSaveDiet={onSaveDiet}
-                onClearFoods={onClearFoods}
-              />
-            </TabsContent>
-          </Tabs>
-        </div>
-      )}
-    </div>
+              <TabsContent value="modifiers">
+                <FoodBuffSummary
+                  selectedFoods={selectedFoods}
+                  onSaveDiet={onSaveDiet}
+                  onClearFoods={onClearFoods}
+                />
+              </TabsContent>
+            </Tabs>
+          </div>
+        )
+      }
+    </div >
   );
 }

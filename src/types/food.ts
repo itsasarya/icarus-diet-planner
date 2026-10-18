@@ -9,7 +9,15 @@ export interface Food {
   durationSec?: number;
   buffs?: Buff[];
   instantEffects?: InstantEffect[];
-  image: string;
+  image?: string;
   craftedAt?: station[];
   ingredients?: string[]
+  wikiEffects?: WikiFoodEffect[];
+}
+
+export interface WikiFoodEffect {
+  id: string;
+  name: string;
+  value: number | null;
+  unit: "percent" | "flat" | "text";
 }

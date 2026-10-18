@@ -13,6 +13,7 @@ Icarus Diet Planner is a small web app that helps players compose and save optim
 - Quick Start
 - Usage
 - Data & Project Structure
+- Food Data Updates
 - Contributing
 - License
 
@@ -53,6 +54,20 @@ npm run build
 npm run preview
 ```
 
+## Food Data Updates
+
+Food statistics and miscellaneous effects are synced from the [Icarus Wiki Food statistics table](https://icarus.wiki.gg/wiki/Food). GitHub Actions checks weekly and can also be run manually from the Actions tab. A successful sync opens or updates a pull request for review; it does not push generated data directly to the default branch.
+
+To run the sync locally, install the Python dependencies and run:
+
+```bash
+python -m pip install -r requirements.txt
+npm run sync:foods
+npm run test:foods
+```
+
+The wiki's food data is available under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0); see the source link in the app footer.
+
 ## Usage
 
 - Open the app in your browser (Vite defaults to http://localhost:5173)
@@ -70,15 +85,15 @@ Key folders and files:
 - `src/` – application source code
   - `src/pages/` – top-level pages like `home.tsx` and `savedDiets.tsx`
   - `src/components/` – reusable UI and feature components (e.g., `foodGrid.tsx`, `saveControls.tsx`)
-  - `src/data/foods/` – food definitions (one file per food)
+  - `src/data/foods/wiki-statistics.json` – the complete food catalog
   - `src/data/buffs/` – buff definitions and helpers
   - `src/lib/` – utilities, hooks, and local storage helpers
 
 Data format:
 
-- Foods are defined as TypeScript objects under `src/data/foods/` and include fields for name, tags, and buff arrays. Buff definitions are centralized under `src/data/buffs/`.
+- Food records and wiki statistics are stored in `src/data/foods/wiki-statistics.json`. Food images remain under `src/assets/foods/` and `public/food-images/`; buff definitions are centralized under `src/data/buffs/`.
 
-If you want to add new foods, add a new file to `src/data/foods/` following the existing examples.
+The app loads food data only from `src/data/foods/wiki-statistics.json`. Weekly wiki updates refresh statistics while retaining planner metadata such as stomach cost, crafting stations, ingredients, and local image references.
 
 ## Contributing
 

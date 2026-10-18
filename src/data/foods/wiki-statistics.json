@@ -1,0 +1,5242 @@
+{
+  "agave_syrup": {
+    "buffs": [
+      {
+        "id": "maximum_health",
+        "value": 50.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "agave_syrup",
+    "imageUrl": "/food-images/agave_syrup.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 35
+      },
+      {
+        "id": "water_when_consumed",
+        "value": 25
+      }
+    ],
+    "name": "Agave Syrup",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_explosive_damage",
+        "name": "Explosive Damage",
+        "unit": "percent",
+        "value": 5.0
+      }
+    ]
+  },
+  "bacon_butty": {
+    "buffs": [
+      {
+        "id": "critical_damage",
+        "value": 25.0
+      },
+      {
+        "id": "experience_gained",
+        "value": 25.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 25.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 125.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 25.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "bacon_butty",
+    "imageUrl": "/food-images/bacon_butty.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Bacon Butty",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "banana": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "banana",
+    "imageUrl": "/food-images/banana.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 10
+      }
+    ],
+    "name": "Banana",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "banana_bread": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 50.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 200.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 200.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 50.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "banana_bread",
+    "imageUrl": "/food-images/banana_bread.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 350
+      }
+    ],
+    "name": "Banana Bread",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_stamina_regeneration_delay",
+        "name": "Stamina Regeneration Delay",
+        "unit": "percent",
+        "value": -50.0
+      }
+    ]
+  },
+  "banana_porridge": {
+    "buffs": [
+      {
+        "id": "c_to_temperature",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "water_consumption",
+        "value": -10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "banana_porridge",
+    "imageUrl": "/food-images/banana_porridge.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      },
+      {
+        "id": "water_when_consumed",
+        "value": 25
+      }
+    ],
+    "name": "Banana Porridge",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_experience_gained_for_tamed_creatures",
+        "name": "Experience Gained for Tamed Creatures",
+        "unit": "percent",
+        "value": 10.0
+      }
+    ]
+  },
+  "banana_tart": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 125.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 125.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "banana_tart",
+    "imageUrl": "/food-images/banana_tart.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Banana Tart",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_experience_gained_for_tamed_creatures",
+        "name": "Experience Gained for Tamed Creatures",
+        "unit": "percent",
+        "value": 30.0
+      }
+    ]
+  },
+  "banana_toast": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 100.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 50.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "banana_toast",
+    "imageUrl": "/food-images/banana_toast.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Banana Toast",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_experience_gained_for_tamed_creatures",
+        "name": "Experience Gained for Tamed Creatures",
+        "unit": "percent",
+        "value": 15.0
+      }
+    ]
+  },
+  "barbecue_carrot": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "projectile_damage",
+        "value": 5.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "barbecue_carrot",
+    "imageUrl": "/food-images/barbecue_carrot.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Barbecue Carrot",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "basic_dried_meat": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 20.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "basic_dried_meat",
+    "imageUrl": "/food-images/basic_dried_meat.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 20
+      }
+    ],
+    "name": "Basic Dried Meat",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "beer": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 125.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 100.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "beer",
+    "imageUrl": "/food-images/beer.png",
+    "instantEffects": [
+      {
+        "id": "water_when_consumed",
+        "value": 40
+      }
+    ],
+    "name": "Beer",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "berry_jam": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 125.0
+      },
+      {
+        "id": "shared_experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "water_consumption",
+        "value": -20.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "berry_jam",
+    "imageUrl": "/food-images/berry_jam.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 40
+      }
+    ],
+    "name": "Berry Jam",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "berry_seed_bar": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "stamina_consumed_by_tool_actions",
+        "value": -10.0
+      },
+      {
+        "id": "water_consumption",
+        "value": -10.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "berry_seed_bar",
+    "imageUrl": "/food-images/berry_seed_bar.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      },
+      {
+        "id": "water_when_consumed",
+        "value": 20
+      }
+    ],
+    "name": "Berry & Seed Bar",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "berry_smoked_saltwater_fillet": {
+    "buffs": [
+      {
+        "id": "exposure_resistance",
+        "value": 5.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 25.0
+      },
+      {
+        "id": "water_consumption",
+        "value": -25.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "berry_smoked_saltwater_fillet",
+    "imageUrl": "/food-images/berry_smoked_saltwater_fillet.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      }
+    ],
+    "name": "Berry Smoked Saltwater Fillet",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "big_breakfast": {
+    "buffs": [
+      {
+        "id": "chance_to_find_additional_stone",
+        "value": 25.0
+      },
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -15.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 225.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "big_breakfast",
+    "imageUrl": "/food-images/big_breakfast.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Big Breakfast",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "bread": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 125.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "bread",
+    "imageUrl": "/food-images/bread.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 80
+      }
+    ],
+    "name": "Bread",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "broiled_kumara": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "melee_attack_speed",
+        "value": 5.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "broiled_kumara",
+    "imageUrl": "/food-images/broiled_kumara.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Broiled Kumara",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "caramel_berry_tart": {
+    "buffs": [
+      {
+        "id": "chance_to_find_additional_stone",
+        "value": 10.0
+      },
+      {
+        "id": "chance_to_resist_cave_sickness",
+        "value": 15.0
+      },
+      {
+        "id": "charge_speed",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      },
+      {
+        "id": "reload_speed",
+        "value": 15.0
+      },
+      {
+        "id": "water_consumption",
+        "value": -35.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "caramel_berry_tart",
+    "imageUrl": "/food-images/caramel_berry_tart.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Caramel Berry Tart",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "caramel_pastry": {
+    "buffs": [
+      {
+        "id": "charge_speed",
+        "value": 25.0
+      },
+      {
+        "id": "experience_gained",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      },
+      {
+        "id": "reload_speed",
+        "value": 25.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "caramel_pastry",
+    "imageUrl": "/food-images/caramel_pastry.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Caramel Pastry",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "caramelized_onions": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "caramelized_onions",
+    "imageUrl": "/food-images/caramelized_onions.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 75
+      }
+    ],
+    "name": "Caramelized Onions",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_perceived_threat",
+        "name": "Perceived Threat",
+        "unit": "percent",
+        "value": 10.0
+      },
+      {
+        "id": "wiki_yield_from_foraging",
+        "name": "Yield from Foraging",
+        "unit": "percent",
+        "value": 10.0
+      }
+    ]
+  },
+  "carrot_cake_piece": {
+    "buffs": [
+      {
+        "id": "charge_speed",
+        "value": 30.0
+      },
+      {
+        "id": "experience_gained",
+        "value": 25.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 50.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 100.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      },
+      {
+        "id": "projectile_damage",
+        "value": 30.0
+      },
+      {
+        "id": "reload_speed",
+        "value": 30.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "carrot_cake_piece",
+    "imageUrl": "/food-images/carrot_cake_piece.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      }
+    ],
+    "name": "Carrot Cake Piece",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "chargrilled_chicken": {
+    "buffs": [
+      {
+        "id": "chance_to_find_additional_stone",
+        "value": 10.0
+      },
+      {
+        "id": "exposure_resistance",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "chargrilled_chicken",
+    "imageUrl": "/food-images/chargrilled_chicken.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Chargrilled Chicken",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "charred_corn": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "stamina_consumed_by_actions",
+        "value": -10.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "charred_corn",
+    "imageUrl": "/food-images/charred_corn.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Charred Corn",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "cheese": {
+    "buffs": [
+      {
+        "id": "health_regeneration",
+        "value": 25.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 100.0
+      },
+      {
+        "id": "shared_experience_gained",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "cheese",
+    "imageUrl": "/food-images/cheese.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Cheese",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "cheese_pizza_slice": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 5.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 125.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "shared_experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 50.0
+      }
+    ],
+    "durationSec": 1500,
+    "id": "cheese_pizza_slice",
+    "imageUrl": "/food-images/cheese_pizza_slice.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Cheese Pizza Slice",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "cheese_roll": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 25.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 125.0
+      },
+      {
+        "id": "shared_experience_gained",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "cheese_roll",
+    "imageUrl": "/food-images/cheese_roll.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 120
+      }
+    ],
+    "name": "Cheese Roll",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "chewy_coconut_cookie": {
+    "buffs": [
+      {
+        "id": "charge_speed",
+        "value": 15.0
+      },
+      {
+        "id": "crafting_speed",
+        "value": 10.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 175.0
+      },
+      {
+        "id": "reload_speed",
+        "value": 30.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "chewy_coconut_cookie",
+    "imageUrl": "/food-images/chewy_coconut_cookie.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 75
+      }
+    ],
+    "name": "Chewy Coconut Cookie",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "choc_chip_cookie": {
+    "buffs": [
+      {
+        "id": "chance_to_find_additional_stone",
+        "value": 10.0
+      },
+      {
+        "id": "charge_speed",
+        "value": 30.0
+      },
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 175.0
+      },
+      {
+        "id": "reload_speed",
+        "value": 15.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "choc_chip_cookie",
+    "imageUrl": "/food-images/choc_chip_cookie.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 75
+      }
+    ],
+    "name": "Choc-Chip Cookie",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "chocolate_cake_piece": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 25.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -15.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 200.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 300.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 200.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 200.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "chocolate_cake_piece",
+    "imageUrl": "/food-images/chocolate_cake_piece.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      }
+    ],
+    "name": "Chocolate Cake Piece",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "cocoa_smoked_soft_meat": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -40.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 20.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 25.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "cocoa_smoked_soft_meat",
+    "imageUrl": "/food-images/cocoa_smoked_soft_meat.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Cocoa Smoked Soft Meat",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "coconut_cake_piece": {
+    "buffs": [
+      {
+        "id": "crafting_speed",
+        "value": 50.0
+      },
+      {
+        "id": "experience_gained",
+        "value": 25.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 50.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 250.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 250.0
+      },
+      {
+        "id": "stamina_consumed_by_tool_actions",
+        "value": -40.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "coconut_cake_piece",
+    "imageUrl": "/food-images/coconut_cake_piece.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      }
+    ],
+    "name": "Coconut Cake Piece",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "coffee_smoked_fatty_t_bone": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 20.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "yield_from_butchering_animals",
+        "value": 50.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "coffee_smoked_fatty_t_bone",
+    "imageUrl": "/food-images/coffee_smoked_fatty_t_bone.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Coffee Smoked Fatty T-bone",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "cooked_agave": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 50.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "cooked_agave",
+    "imageUrl": "/food-images/cooked_agave.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Cooked Agave",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_explosive_damage",
+        "name": "Explosive Damage",
+        "unit": "percent",
+        "value": 5.0
+      }
+    ]
+  },
+  "cooked_bacon": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "cooked_bacon",
+    "imageUrl": "/food-images/cooked_bacon.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Cooked Bacon",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "cooked_fatty_t_bone": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 5.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      },
+      {
+        "id": "yield_from_butchering_animals",
+        "value": 40.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "cooked_fatty_t_bone",
+    "imageUrl": "/food-images/cooked_fatty_t_bone.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Cooked Fatty T-Bone",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "cooked_gamey_meat": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 5.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      },
+      {
+        "id": "melee_damage",
+        "value": 15.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "cooked_gamey_meat",
+    "imageUrl": "/food-images/cooked_gamey_meat.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Cooked Gamey Meat",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "cooked_garlic": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 50.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "cooked_garlic",
+    "imageUrl": "/food-images/cooked_garlic.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Cooked Garlic",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_perceived_threat",
+        "name": "Perceived Threat",
+        "unit": "percent",
+        "value": 5.0
+      }
+    ]
+  },
+  "cooked_giant_steak": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 5.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 50.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "cooked_giant_steak",
+    "imageUrl": "/food-images/cooked_giant_steak.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Cooked Giant Steak",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "cooked_meat": {
+    "buffs": [
+      {
+        "id": "health_regeneration",
+        "value": 20.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "cooked_meat",
+    "imageUrl": "/food-images/cooked_meat.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 20
+      }
+    ],
+    "name": "Cooked Meat",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "cooked_onion": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "cooked_onion",
+    "imageUrl": "/food-images/cooked_onion.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Cooked Onion",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_yield_from_foraging",
+        "name": "Yield from Foraging",
+        "unit": "percent",
+        "value": 5.0
+      },
+      {
+        "id": "wiki_perceived_threat",
+        "name": "Perceived Threat",
+        "unit": "percent",
+        "value": 5.0
+      }
+    ]
+  },
+  "cooked_prickly_pear": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 50.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "cooked_prickly_pear",
+    "imageUrl": "/food-images/cooked_prickly_pear.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Cooked Prickly Pear",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_chance_to_return_melee_physical_damage_to_attacker",
+        "name": "Chance to Return Melee Physical Damage to Attacker",
+        "unit": "percent",
+        "value": 10.0
+      },
+      {
+        "id": "wiki_melee_physical_damage_returned",
+        "name": "Melee Physical Damage Returned",
+        "unit": "percent",
+        "value": 15.0
+      }
+    ]
+  },
+  "cooked_soft_meat": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 5.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 50.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "cooked_soft_meat",
+    "imageUrl": "/food-images/cooked_soft_meat.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Cooked Soft Meat",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "cooked_stringy_meat": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 5.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      },
+      {
+        "id": "melee_attack_speed",
+        "value": 20.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "cooked_stringy_meat",
+    "imageUrl": "/food-images/cooked_stringy_meat.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Cooked Stringy Meat",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "cooked_truffle": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "cooked_truffle",
+    "imageUrl": "/food-images/cooked_truffle.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 35
+      }
+    ],
+    "name": "Cooked Truffle",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_perceived_threat",
+        "name": "Perceived Threat",
+        "unit": "percent",
+        "value": -5.0
+      },
+      {
+        "id": "wiki_nearby_juveniles_tame_faster",
+        "name": "Nearby Juveniles Tame Faster",
+        "unit": "text",
+        "value": null
+      }
+    ]
+  },
+  "cooked_white_meat": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 5.0
+      },
+      {
+        "id": "exposure_resistance",
+        "value": 20.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "cooked_white_meat",
+    "imageUrl": "/food-images/cooked_white_meat.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Cooked White Meat",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "creamed_corn": {
+    "buffs": [
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "stamina_consumed_by_actions",
+        "value": -10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "creamed_corn",
+    "imageUrl": "/food-images/creamed_corn.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Creamed Corn",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "crispy_bacon": {
+    "buffs": [
+      {
+        "id": "critical_damage",
+        "value": 10.0
+      },
+      {
+        "id": "experience_gained",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 90.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 90.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "crispy_bacon",
+    "imageUrl": "/food-images/crispy_bacon.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Crispy Bacon",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "crispy_potato": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "crispy_potato",
+    "imageUrl": "/food-images/crispy_potato.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Crispy Potato",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "crumbed_saltwater_fillet": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "exposure_resistance",
+        "value": 5.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 15.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "crumbed_saltwater_fillet",
+    "imageUrl": "/food-images/crumbed_saltwater_fillet.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Crumbed Saltwater Fillet",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "crunchy_soy_bean": {
+    "buffs": [
+      {
+        "id": "health_regeneration",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "crunchy_soy_bean",
+    "imageUrl": "/food-images/crunchy_soy_bean.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Crunchy Soy Bean",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "dried_avocado": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -40.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "dried_avocado",
+    "imageUrl": "/food-images/dried_avocado.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Dried Avocado",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "dried_banana_chips": {
+    "buffs": [
+      {
+        "id": "maximum_health",
+        "value": 25.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 25.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "dried_banana_chips",
+    "imageUrl": "/food-images/dried_banana_chips.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Dried Banana Chips",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_experience_gained_for_tamed_creatures",
+        "name": "Experience Gained for Tamed Creatures",
+        "unit": "percent",
+        "value": 10.0
+      }
+    ]
+  },
+  "dried_fatty_t_bone": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "yield_from_butchering_animals",
+        "value": 25.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "dried_fatty_t_bone",
+    "imageUrl": "/food-images/dried_fatty_t_bone.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Dried Fatty T-Bone",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "dried_freshwater_fillet": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 5.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 15.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "dried_freshwater_fillet",
+    "imageUrl": "/food-images/dried_freshwater_fillet.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Dried Freshwater Fillet",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "dried_gamey_meat": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "melee_damage",
+        "value": 15.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "dried_gamey_meat",
+    "imageUrl": "/food-images/dried_gamey_meat.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Dried Gamey Meat",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "dried_giant_steak": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 25.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 100.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "dried_giant_steak",
+    "imageUrl": "/food-images/dried_giant_steak.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Dried Giant Steak",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "dried_kiwifruit_chips": {
+    "buffs": [
+      {
+        "id": "chance_to_resist_cave_sickness",
+        "value": 10.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "dried_kiwifruit_chips",
+    "imageUrl": "/food-images/dried_kiwifruit_chips.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Dried Kiwifruit Chips",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "dried_rhubarb": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "oxygen_consumption",
+        "value": -30.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "dried_rhubarb",
+    "imageUrl": "/food-images/dried_rhubarb.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Dried Rhubarb",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "dried_saltwater_fillet": {
+    "buffs": [
+      {
+        "id": "exposure_resistance",
+        "value": 5.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 15.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "dried_saltwater_fillet",
+    "imageUrl": "/food-images/dried_saltwater_fillet.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Dried Saltwater Fillet",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "dried_soft_meat": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 15.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "dried_soft_meat",
+    "imageUrl": "/food-images/dried_soft_meat.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Dried Soft Meat",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "dried_stringy_meat": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "melee_attack_speed",
+        "value": 15.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "dried_stringy_meat",
+    "imageUrl": "/food-images/dried_stringy_meat.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Dried Stringy Meat",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "dried_tomato": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 30.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "dried_tomato",
+    "imageUrl": "/food-images/dried_tomato.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Dried Tomato",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "dried_white_meat": {
+    "buffs": [
+      {
+        "id": "exposure_resistance",
+        "value": 10.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "dried_white_meat",
+    "imageUrl": "/food-images/dried_white_meat.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Dried White Meat",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "energy_bar": {
+    "buffs": [
+      {
+        "id": "charge_speed",
+        "value": 10.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      },
+      {
+        "id": "reload_speed",
+        "value": 10.0
+      },
+      {
+        "id": "stamina_consumed_by_tool_actions",
+        "value": -10.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "energy_bar",
+    "imageUrl": "/food-images/energy_bar.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Energy Bar",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "fish_chunk_stew": {
+    "buffs": [
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "melee_damage",
+        "value": 5.0
+      },
+      {
+        "id": "stamina_consumed_by_actions",
+        "value": -10.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "fish_chunk_stew",
+    "imageUrl": "/food-images/fish_chunk_stew.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Fish Chunk Stew",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_water",
+        "name": "Water",
+        "unit": "flat",
+        "value": 25.0
+      }
+    ]
+  },
+  "fish_pie": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "exposure_resistance",
+        "value": 5.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 5.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 225.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 30.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "fish_pie",
+    "imageUrl": "/food-images/fish_pie.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Fish Pie",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "flatbread": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 5.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 100.0
+      },
+      {
+        "id": "water_consumption",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "flatbread",
+    "imageUrl": "/food-images/flatbread.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 10
+      }
+    ],
+    "name": "Flatbread",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "french_onion_soup": {
+    "buffs": [
+      {
+        "id": "maximum_health",
+        "value": 50.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 50.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "french_onion_soup",
+    "imageUrl": "/food-images/french_onion_soup.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      },
+      {
+        "id": "water_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "French Onion Soup",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_perceived_threat",
+        "name": "Perceived Threat",
+        "unit": "percent",
+        "value": 10.0
+      },
+      {
+        "id": "wiki_yield_from_foraging",
+        "name": "Yield from Foraging",
+        "unit": "percent",
+        "value": 10.0
+      }
+    ]
+  },
+  "freshwater_fillet_curry": {
+    "buffs": [
+      {
+        "id": "health_regeneration",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 225.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 15.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "freshwater_fillet_curry",
+    "imageUrl": "/food-images/freshwater_fillet_curry.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Freshwater Fillet Curry",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "fried_chicken": {
+    "buffs": [
+      {
+        "id": "chance_to_find_additional_stone",
+        "value": 15.0
+      },
+      {
+        "id": "exposure_resistance",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 200.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "fried_chicken",
+    "imageUrl": "/food-images/fried_chicken.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Fried Chicken",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "fried_chunky_vegetables": {
+    "buffs": [
+      {
+        "id": "exposure_resistance",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      },
+      {
+        "id": "melee_attack_speed",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "fried_chunky_vegetables",
+    "imageUrl": "/food-images/fried_chunky_vegetables.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Fried Chunky Vegetables",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "fried_eggs": {
+    "buffs": [
+      {
+        "id": "chance_to_find_additional_stone",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "fried_eggs",
+    "imageUrl": "/food-images/fried_eggs.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Fried Eggs",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "fried_fish_chunks": {
+    "buffs": [
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "fried_fish_chunks",
+    "imageUrl": "/food-images/fried_fish_chunks.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 80
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 15
+      }
+    ],
+    "name": "Fried Fish Chunks",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "fried_tomato": {
+    "buffs": [
+      {
+        "id": "health_regeneration",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "fried_tomato",
+    "imageUrl": "/food-images/fried_tomato.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Fried Tomato",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "fruit_muffin": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 35.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 225.0
+      },
+      {
+        "id": "water_consumption",
+        "value": -20.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "fruit_muffin",
+    "imageUrl": "/food-images/fruit_muffin.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Fruit Muffin",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "fruit_pie": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      },
+      {
+        "id": "oxygen_consumption",
+        "value": -15.0
+      },
+      {
+        "id": "water_consumption",
+        "value": -15.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "fruit_pie",
+    "imageUrl": "/food-images/fruit_pie.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Fruit Pie",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "fruit_salad": {
+    "buffs": [
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "oxygen_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "water_consumption",
+        "value": -10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "fruit_salad",
+    "imageUrl": "/food-images/fruit_salad.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Fruit Salad",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "fruit_snack_pack": {
+    "buffs": [
+      {
+        "id": "chance_to_resist_cave_sickness",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "water_consumption",
+        "value": -10.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "fruit_snack_pack",
+    "imageUrl": "/food-images/fruit_snack_pack.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 25
+      }
+    ],
+    "name": "Fruit Snack Pack",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "garlic_bread": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 20.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 35.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 50.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "garlic_bread",
+    "imageUrl": "/food-images/garlic_bread.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      }
+    ],
+    "name": "Garlic Bread",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_perceived_threat",
+        "name": "Perceived Threat",
+        "unit": "percent",
+        "value": 10.0
+      }
+    ]
+  },
+  "garlic_butter": {
+    "buffs": [
+      {
+        "id": "health_regeneration",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 50.0
+      }
+    ],
+    "durationSec": 300,
+    "id": "garlic_butter",
+    "imageUrl": "/food-images/garlic_butter.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 35
+      }
+    ],
+    "name": "Garlic Butter",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_perceived_threat",
+        "name": "Perceived Threat",
+        "unit": "percent",
+        "value": 5.0
+      }
+    ]
+  },
+  "garlic_pizza": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 20.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 35.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 50.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "garlic_pizza",
+    "imageUrl": "/food-images/garlic_pizza.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      }
+    ],
+    "name": "Garlic Pizza",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_perceived_threat",
+        "name": "Perceived Threat",
+        "unit": "percent",
+        "value": 10.0
+      }
+    ]
+  },
+  "glazed_carrots": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 50.0
+      },
+      {
+        "id": "projectile_damage",
+        "value": 5.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "glazed_carrots",
+    "imageUrl": "/food-images/glazed_carrots.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Glazed Carrots",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_explosive_damage",
+        "name": "Explosive Damage",
+        "unit": "percent",
+        "value": 5.0
+      }
+    ]
+  },
+  "gorse_smoked_gamey_meat": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 20.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 100.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "melee_damage",
+        "value": 25.0
+      },
+      {
+        "id": "water_consumption",
+        "value": -25.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "gorse_smoked_gamey_meat",
+    "imageUrl": "/food-images/gorse_smoked_gamey_meat.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Gorse Smoked Gamey Meat",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "grilled_freshwater_fillet": {
+    "buffs": [
+      {
+        "id": "health_regeneration",
+        "value": 5.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 15.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "grilled_freshwater_fillet",
+    "imageUrl": "/food-images/grilled_freshwater_fillet.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 120
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 15
+      }
+    ],
+    "name": "Grilled Freshwater Fillet",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "grilled_pumpkin": {
+    "buffs": [
+      {
+        "id": "exposure_resistance",
+        "value": 5.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "grilled_pumpkin",
+    "imageUrl": "/food-images/grilled_pumpkin.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Grilled Pumpkin",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "grilled_saltwater_fillet": {
+    "buffs": [
+      {
+        "id": "exposure_resistance",
+        "value": 5.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 15.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "grilled_saltwater_fillet",
+    "imageUrl": "/food-images/grilled_saltwater_fillet.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 120
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 15
+      }
+    ],
+    "name": "Grilled Saltwater Fillet",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "hearty_salad": {
+    "buffs": [
+      {
+        "id": "health_regeneration",
+        "value": 20.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "hearty_salad",
+    "imageUrl": "/food-images/hearty_salad.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Hearty Salad",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "honey": {
+    "buffs": [
+      {
+        "id": "food_effects_duration",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 50.0
+      }
+    ],
+    "durationSec": 60,
+    "id": "honey",
+    "imageUrl": "/food-images/honey.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 20
+      }
+    ],
+    "name": "Honey",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "honey_glazed_pastry": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 15.0
+      },
+      {
+        "id": "food_effects_duration",
+        "value": 35.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "honey_glazed_pastry",
+    "imageUrl": "/food-images/honey_glazed_pastry.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Honey Glazed Pastry",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "honey_mead": {
+    "buffs": [
+      {
+        "id": "food_effects_duration",
+        "value": 30.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 125.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 100.0
+      }
+    ],
+    "durationSec": 1000,
+    "id": "honey_mead",
+    "imageUrl": "/food-images/honey_mead.png",
+    "instantEffects": [
+      {
+        "id": "water_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Honey Mead",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "honey_smoked_bacon": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 15.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "food_effects_duration",
+        "value": 20.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 20.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "honey_smoked_bacon",
+    "imageUrl": "/food-images/honey_smoked_bacon.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Honey Smoked Bacon",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "honeycomb_bar": {
+    "buffs": [
+      {
+        "id": "food_effects_duration",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "stamina_consumed_by_tool_actions",
+        "value": -10.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "honeycomb_bar",
+    "imageUrl": "/food-images/honeycomb_bar.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Honeycomb Bar",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "jarred_honey": {
+    "buffs": [
+      {
+        "id": "food_effects_duration",
+        "value": 20.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 125.0
+      },
+      {
+        "id": "shared_experience_gained",
+        "value": 20.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "jarred_honey",
+    "imageUrl": "/food-images/jarred_honey.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 40
+      }
+    ],
+    "name": "Jarred Honey",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "kiwifruit": {
+    "buffs": [
+      {
+        "id": "chance_to_resist_cave_sickness",
+        "value": 5.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 50.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "kiwifruit",
+    "imageUrl": "/food-images/kiwifruit.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      },
+      {
+        "id": "water_when_consumed",
+        "value": 60
+      }
+    ],
+    "name": "Kiwifruit",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "kiwifruit_jam": {
+    "buffs": [
+      {
+        "id": "chance_to_resist_cave_sickness",
+        "value": 20.0
+      },
+      {
+        "id": "experience_gained",
+        "value": 20.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 125.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "kiwifruit_jam",
+    "imageUrl": "/food-images/kiwifruit_jam.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 75
+      }
+    ],
+    "name": "Kiwifruit Jam",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "kiwifruit_sorbet": {
+    "buffs": [
+      {
+        "id": "chance_to_resist_cave_sickness",
+        "value": 45.0
+      },
+      {
+        "id": "experience_gained",
+        "value": 30.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      }
+    ],
+    "durationSec": 1800,
+    "id": "kiwifruit_sorbet",
+    "imageUrl": "/food-images/kiwifruit_sorbet.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      },
+      {
+        "id": "water_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Kiwifruit Sorbet",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "mature_coconut": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 50.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "mature_coconut",
+    "imageUrl": "/food-images/mature_coconut.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 10
+      }
+    ],
+    "name": "Mature Coconut",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "meat_pie": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "exposure_resistance",
+        "value": 15.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 225.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 15.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "meat_pie",
+    "imageUrl": "/food-images/meat_pie.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Meat Pie",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "melon_smoked_giant_steak": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 50.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 100.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "oxygen_consumption",
+        "value": -25.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "melon_smoked_giant_steak",
+    "imageUrl": "/food-images/melon_smoked_giant_steak.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Melon Smoked Giant Steak",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "micromeal": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 10.0
+      },
+      {
+        "id": "oxygen_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 10.0
+      },
+      {
+        "id": "water_consumption",
+        "value": -10.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "micromeal",
+    "imageUrl": "/food-images/micromeal.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "MicroMeal",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "mixed_berries": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      },
+      {
+        "id": "water_consumption",
+        "value": -10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "mixed_berries",
+    "imageUrl": "/food-images/mixed_berries.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Mixed Berries",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "mushroom_omlette": {
+    "buffs": [
+      {
+        "id": "chance_to_find_additional_stone",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "mushroom_omlette",
+    "imageUrl": "/food-images/mushroom_omlette.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Mushroom Omlette",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "mushroom_soup": {
+    "buffs": [
+      {
+        "id": "maximum_health",
+        "value": 100.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "mushroom_soup",
+    "imageUrl": "/food-images/mushroom_soup.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      },
+      {
+        "id": "water_when_consumed",
+        "value": 25
+      }
+    ],
+    "name": "Mushroom Soup",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "onion_rings": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 50.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "onion_rings",
+    "imageUrl": "/food-images/onion_rings.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 75
+      }
+    ],
+    "name": "Onion Rings",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_perceived_threat",
+        "name": "Perceived Threat",
+        "unit": "percent",
+        "value": 10.0
+      },
+      {
+        "id": "wiki_yield_from_foraging",
+        "name": "Yield from Foraging",
+        "unit": "percent",
+        "value": 10.0
+      }
+    ]
+  },
+  "onion_souffle": {
+    "buffs": [
+      {
+        "id": "chance_to_find_additional_stone",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "onion_souffle",
+    "imageUrl": "/food-images/onion_souffle.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Onion Souffle",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_perceived_threat",
+        "name": "Perceived Threat",
+        "unit": "percent",
+        "value": 10.0
+      },
+      {
+        "id": "wiki_yield_from_foraging",
+        "name": "Yield from Foraging",
+        "unit": "percent",
+        "value": 10.0
+      }
+    ]
+  },
+  "pavlova": {
+    "buffs": [
+      {
+        "id": "chance_to_find_additional_stone",
+        "value": 20.0
+      },
+      {
+        "id": "chance_to_resist_cave_sickness",
+        "value": 20.0
+      },
+      {
+        "id": "charge_speed",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 125.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "reload_speed",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 1800,
+    "id": "pavlova",
+    "imageUrl": "/food-images/pavlova.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      }
+    ],
+    "name": "Pavlova",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "pickled_avocado": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -20.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      },
+      {
+        "id": "shared_experience_gained",
+        "value": 20.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "pickled_avocado",
+    "imageUrl": "/food-images/pickled_avocado.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Pickled Avocado",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "pickled_carrot": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      },
+      {
+        "id": "projectile_damage",
+        "value": 20.0
+      },
+      {
+        "id": "shared_experience_gained",
+        "value": 20.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "pickled_carrot",
+    "imageUrl": "/food-images/pickled_carrot.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Pickled Carrot",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "pickled_eggs": {
+    "buffs": [
+      {
+        "id": "chance_to_find_additional_stone",
+        "value": 20.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      },
+      {
+        "id": "shared_experience_gained",
+        "value": 20.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "pickled_eggs",
+    "imageUrl": "/food-images/pickled_eggs.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Pickled Eggs",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "pickled_freshwater_fillet": {
+    "buffs": [
+      {
+        "id": "health_regeneration",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "shared_experience_gained",
+        "value": 20.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 30.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "pickled_freshwater_fillet",
+    "imageUrl": "/food-images/pickled_freshwater_fillet.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Pickled Freshwater Fillet",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "pickled_tomato": {
+    "buffs": [
+      {
+        "id": "health_regeneration",
+        "value": 20.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      },
+      {
+        "id": "shared_experience_gained",
+        "value": 20.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "pickled_tomato",
+    "imageUrl": "/food-images/pickled_tomato.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Pickled Tomato",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "plain_jerky": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 60.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "plain_jerky",
+    "imageUrl": "/food-images/plain_jerky.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Plain Jerky",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "potato_and_carrot_fries": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "projectile_damage",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "potato_and_carrot_fries",
+    "imageUrl": "/food-images/potato_and_carrot_fries.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Potato and Carrot Fries",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "potato_bread": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 15.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -20.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "potato_bread",
+    "imageUrl": "/food-images/potato_bread.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Potato Bread",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "prickly_pear_jelly": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 50.0
+      },
+      {
+        "id": "shared_experience_gained",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "prickly_pear_jelly",
+    "imageUrl": "/food-images/prickly_pear_jelly.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 75
+      }
+    ],
+    "name": "Prickly Pear Jelly",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_explosive_damage",
+        "name": "Explosive Damage",
+        "unit": "percent",
+        "value": 5.0
+      },
+      {
+        "id": "wiki_chance_to_return_melee_physical_damage_to_attacker",
+        "name": "Chance to Return Melee Physical Damage to Attacker",
+        "unit": "percent",
+        "value": 10.0
+      },
+      {
+        "id": "wiki_melee_physical_damage_returned",
+        "name": "Melee Physical Damage Returned",
+        "unit": "percent",
+        "value": 25.0
+      }
+    ]
+  },
+  "prickly_pear_margarita": {
+    "buffs": [
+      {
+        "id": "maximum_health",
+        "value": 50.0
+      },
+      {
+        "id": "water_consumption",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "prickly_pear_margarita",
+    "imageUrl": "/food-images/prickly_pear_margarita.png",
+    "instantEffects": [
+      {
+        "id": "water_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Prickly Pear Margarita",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_explosive_damage",
+        "name": "Explosive Damage",
+        "unit": "percent",
+        "value": 5.0
+      },
+      {
+        "id": "wiki_melee_resistance",
+        "name": "Melee Resistance",
+        "unit": "percent",
+        "value": 10.0
+      },
+      {
+        "id": "wiki_cold_resistance",
+        "name": "Cold Resistance",
+        "unit": "percent",
+        "value": 5.0
+      },
+      {
+        "id": "wiki_heat_resistance",
+        "name": "Heat Resistance",
+        "unit": "percent",
+        "value": 5.0
+      },
+      {
+        "id": "wiki_chance_to_return_melee_physical_damage_to_attacker",
+        "name": "Chance to REturn Melee Physical Damage to Attacker",
+        "unit": "percent",
+        "value": 10.0
+      },
+      {
+        "id": "wiki_melee_physical_damage_returned",
+        "name": "Melee Physical Damage Returned",
+        "unit": "percent",
+        "value": 25.0
+      }
+    ]
+  },
+  "prickly_pear_muffins": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "prickly_pear_muffins",
+    "imageUrl": "/food-images/prickly_pear_muffins.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Prickly Pear Muffins",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_explosive_damage",
+        "name": "Explosive Damage",
+        "unit": "percent",
+        "value": 5.0
+      },
+      {
+        "id": "wiki_chance_to_return_melee_physical_damage_to_attacker",
+        "name": "Chance to Return Melee Physical Damage to Attacker",
+        "unit": "percent",
+        "value": 10.0
+      },
+      {
+        "id": "wiki_melee_physical_damage_returned",
+        "name": "Melee Physical Damage Returned",
+        "unit": "percent",
+        "value": 25.0
+      }
+    ]
+  },
+  "pumpkin_bread": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 15.0
+      },
+      {
+        "id": "exposure_resistance",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "pumpkin_bread",
+    "imageUrl": "/food-images/pumpkin_bread.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Pumpkin Bread",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "pumpkin_pie": {
+    "buffs": [
+      {
+        "id": "exposure_resistance",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 100.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "pumpkin_pie",
+    "imageUrl": "/food-images/pumpkin_pie.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      }
+    ],
+    "name": "Pumpkin Pie",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_explosive_damage",
+        "name": "Explosive Damage",
+        "unit": "percent",
+        "value": 5.0
+      }
+    ]
+  },
+  "rhubarb_stew": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 225.0
+      },
+      {
+        "id": "oxygen_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "stamina_consumed_by_actions",
+        "value": -10.0
+      },
+      {
+        "id": "water_consumption",
+        "value": -10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "rhubarb_stew",
+    "imageUrl": "/food-images/rhubarb_stew.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      },
+      {
+        "id": "water_when_consumed",
+        "value": 25
+      }
+    ],
+    "name": "Rhubarb Stew",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "ripe_coconut": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "ripe_coconut",
+    "imageUrl": "/food-images/ripe_coconut.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 8
+      },
+      {
+        "id": "water_when_consumed",
+        "value": 8
+      }
+    ],
+    "name": "Ripe Coconut",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_spoils_into_mature_coconut_mature_coconutmature_coconut",
+        "name": "Spoils into Mature Coconut\u2060 \u2060Mature CoconutMature Coconut",
+        "unit": "text",
+        "value": null
+      }
+    ]
+  },
+  "roast_chicken": {
+    "buffs": [
+      {
+        "id": "chance_to_find_additional_stone",
+        "value": 25.0
+      },
+      {
+        "id": "exposure_resistance",
+        "value": 25.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 250.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 200.0
+      }
+    ],
+    "durationSec": 1500,
+    "id": "roast_chicken",
+    "imageUrl": "/food-images/roast_chicken.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Roast Chicken",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "roast_squash": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "melee_damage",
+        "value": 5.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "roast_squash",
+    "imageUrl": "/food-images/roast_squash.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Roast Squash",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "roast_vegetables": {
+    "buffs": [
+      {
+        "id": "exposure_resistance",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 225.0
+      },
+      {
+        "id": "melee_damage",
+        "value": 10.0
+      },
+      {
+        "id": "projectile_damage",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "roast_vegetables",
+    "imageUrl": "/food-images/roast_vegetables.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Roast Vegetables",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "roasted_banana": {
+    "buffs": [
+      {
+        "id": "maximum_health",
+        "value": 40.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 40.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "roasted_banana",
+    "imageUrl": "/food-images/roasted_banana.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Roasted Banana",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_experience_gained_for_tamed_creatures",
+        "name": "Experience Gained for Tamed Creatures",
+        "unit": "percent",
+        "value": 10.0
+      }
+    ]
+  },
+  "saltwater_fillet_sashimi": {
+    "buffs": [
+      {
+        "id": "exposure_resistance",
+        "value": 5.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "projectile_damage",
+        "value": 5.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 15.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "saltwater_fillet_sashimi",
+    "imageUrl": "/food-images/saltwater_fillet_sashimi.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Saltwater Fillet Sashimi",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "sauteed_rhubarb": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "oxygen_consumption",
+        "value": -10.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "sauteed_rhubarb",
+    "imageUrl": "/food-images/sauteed_rhubarb.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Sauteed Rhubarb",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "savory_roll": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -30.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 30.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 225.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 15.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "savory_roll",
+    "imageUrl": "/food-images/savory_roll.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Savory Roll",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "scrambled_eggs": {
+    "buffs": [
+      {
+        "id": "chance_to_find_additional_stone",
+        "value": 25.0
+      },
+      {
+        "id": "experience_gained",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 50.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "scrambled_eggs",
+    "imageUrl": "/food-images/scrambled_eggs.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 20
+      }
+    ],
+    "name": "Scrambled Eggs",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "seared_mushroom": {
+    "buffs": [
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 5.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "seared_mushroom",
+    "imageUrl": "/food-images/seared_mushroom.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Seared Mushroom",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "seed_bread": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      },
+      {
+        "id": "stamina_consumed_by_tool_actions",
+        "value": -20.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "seed_bread",
+    "imageUrl": "/food-images/seed_bread.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 80
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 10
+      }
+    ],
+    "name": "Seed Bread",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "seed_cracker": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      },
+      {
+        "id": "stamina_consumed_by_tool_actions",
+        "value": -15.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "seed_cracker",
+    "imageUrl": "/food-images/seed_cracker.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 10
+      }
+    ],
+    "name": "Seed Cracker",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "shepherd_s_pie": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -20.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 40.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 225.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "shepherd_s_pie",
+    "imageUrl": "/food-images/shepherd_s_pie.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Shepherd's Pie",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "shepherd_s_roll": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      },
+      {
+        "id": "melee_attack_speed",
+        "value": 15.0
+      },
+      {
+        "id": "projectile_damage",
+        "value": 15.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "shepherd_s_roll",
+    "imageUrl": "/food-images/shepherd_s_roll.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Shepherd's Roll",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "smashed_avocado_toast": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 15.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "smashed_avocado_toast",
+    "imageUrl": "/food-images/smashed_avocado_toast.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 20
+      }
+    ],
+    "name": "Smashed Avocado Toast",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "smoked_garlic": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 20.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 25.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "water_consumption",
+        "value": 15.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "smoked_garlic",
+    "imageUrl": "/food-images/smoked_garlic.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Smoked Garlic",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_perceived_threat",
+        "name": "Perceived Threat",
+        "unit": "percent",
+        "value": 10.0
+      }
+    ]
+  },
+  "soy_bean_stir_fry": {
+    "buffs": [
+      {
+        "id": "health_regeneration",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "projectile_damage",
+        "value": 10.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "soy_bean_stir_fry",
+    "imageUrl": "/food-images/soy_bean_stir_fry.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Soy Bean Stir-fry",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "steamed_fish": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 20.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "steamed_fish",
+    "imageUrl": "/food-images/steamed_fish.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 80
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Steamed Fish",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "stew": {
+    "buffs": [
+      {
+        "id": "health_regeneration",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "projectile_damage",
+        "value": 10.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "stew",
+    "imageUrl": "/food-images/stew.png",
+    "instantEffects": [
+      {
+        "id": "water_when_consumed",
+        "value": 25
+      }
+    ],
+    "name": "Stew",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "strawberries_cream": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 30.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 50.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "strawberries_cream",
+    "imageUrl": "/food-images/strawberries_cream.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      }
+    ],
+    "name": "Strawberries & Cream",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "strawberry_hard_candy": {
+    "buffs": [
+      {
+        "id": "movement_speed",
+        "value": 25.0
+      }
+    ],
+    "durationSec": 120,
+    "id": "strawberry_hard_candy",
+    "imageUrl": "/food-images/strawberry_hard_candy.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 10
+      }
+    ],
+    "name": "Strawberry Hard Candy",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "strawberry_jam": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 20.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 125.0
+      },
+      {
+        "id": "shared_experience_gained",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "strawberry_jam",
+    "imageUrl": "/food-images/strawberry_jam.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 40
+      }
+    ],
+    "name": "Strawberry Jam",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "stringy_jerky": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 50.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "melee_attack_speed",
+        "value": 20.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "stringy_jerky",
+    "imageUrl": "/food-images/stringy_jerky.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Stringy Jerky",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "stuffed_avocado": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "stuffed_avocado",
+    "imageUrl": "/food-images/stuffed_avocado.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Stuffed Avocado",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "sweetcorn_soup": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      },
+      {
+        "id": "stamina_consumed_by_actions",
+        "value": -20.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "sweetcorn_soup",
+    "imageUrl": "/food-images/sweetcorn_soup.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      },
+      {
+        "id": "water_when_consumed",
+        "value": 25
+      }
+    ],
+    "name": "Sweetcorn Soup",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "tea_smoked_freshwater_fillet": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 50.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 25.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "tea_smoked_freshwater_fillet",
+    "imageUrl": "/food-images/tea_smoked_freshwater_fillet.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "Tea Smoked Freshwater Fillet",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "tomato_egg_bowl": {
+    "buffs": [
+      {
+        "id": "chance_to_find_additional_stone",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      },
+      {
+        "id": "projectile_damage",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "tomato_egg_bowl",
+    "imageUrl": "/food-images/tomato_egg_bowl.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Tomato & Egg Bowl",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "tomato_soup": {
+    "buffs": [
+      {
+        "id": "health_regeneration",
+        "value": 20.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 100.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "tomato_soup",
+    "imageUrl": "/food-images/tomato_soup.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      },
+      {
+        "id": "water_when_consumed",
+        "value": 25
+      }
+    ],
+    "name": "Tomato Soup",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "truffle_focaccia": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 35.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "shared_experience_gained",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "truffle_focaccia",
+    "imageUrl": "/food-images/truffle_focaccia.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Truffle Focaccia",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_perceived_threat",
+        "name": "Perceived Threat",
+        "unit": "percent",
+        "value": 10.0
+      }
+    ]
+  },
+  "truffle_pasta": {
+    "buffs": [
+      {
+        "id": "chance_to_find_additional_stone",
+        "value": 10.0
+      },
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 35.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 125.0
+      },
+      {
+        "id": "shared_experience_gained",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "truffle_pasta",
+    "imageUrl": "/food-images/truffle_pasta.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 250
+      }
+    ],
+    "name": "Truffle Pasta",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_perceived_threat",
+        "name": "Perceived Threat",
+        "unit": "percent",
+        "value": 10.0
+      }
+    ]
+  },
+  "ultrameal": {
+    "buffs": [
+      {
+        "id": "food_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 10.0
+      },
+      {
+        "id": "oxygen_consumption",
+        "value": -10.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 10.0
+      },
+      {
+        "id": "water_consumption",
+        "value": -10.0
+      }
+    ],
+    "durationSec": 3600,
+    "id": "ultrameal",
+    "imageUrl": "/food-images/ultrameal.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      }
+    ],
+    "name": "UltraMeal",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "vegetable_pie": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 15.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      },
+      {
+        "id": "melee_damage",
+        "value": 15.0
+      },
+      {
+        "id": "stamina_consumed_by_actions",
+        "value": -15.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "vegetable_pie",
+    "imageUrl": "/food-images/vegetable_pie.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Vegetable Pie",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "vegetable_roll": {
+    "buffs": [
+      {
+        "id": "experience_gained",
+        "value": 10.0
+      },
+      {
+        "id": "exposure_resistance",
+        "value": 15.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 30.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 150.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      },
+      {
+        "id": "oxygen_consumption",
+        "value": -30.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "vegetable_roll",
+    "imageUrl": "/food-images/vegetable_roll.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 150
+      }
+    ],
+    "name": "Vegetable Roll",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "watermelon": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 50.0
+      },
+      {
+        "id": "water_consumption",
+        "value": -10.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "watermelon",
+    "imageUrl": "/food-images/watermelon.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 50
+      },
+      {
+        "id": "water_when_consumed",
+        "value": 60
+      }
+    ],
+    "name": "Watermelon",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "watermelon_lollypop": {
+    "buffs": [],
+    "durationSec": 300,
+    "id": "watermelon_lollypop",
+    "imageUrl": "/food-images/watermelon_lollypop.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 10
+      }
+    ],
+    "name": "Watermelon Lollypop",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_over_encumbrance_penalty",
+        "name": "Over-Encumbrance Penalty",
+        "unit": "percent",
+        "value": -50.0
+      }
+    ]
+  },
+  "white_jerky": {
+    "buffs": [
+      {
+        "id": "exposure_resistance",
+        "value": 15.0
+      },
+      {
+        "id": "food_consumption",
+        "value": -25.0
+      },
+      {
+        "id": "health_regeneration",
+        "value": 50.0
+      },
+      {
+        "id": "maximum_health",
+        "value": 75.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 75.0
+      }
+    ],
+    "durationSec": 1200,
+    "id": "white_jerky",
+    "imageUrl": "/food-images/white_jerky.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 200
+      },
+      {
+        "id": "health_when_consumed",
+        "value": 30
+      }
+    ],
+    "name": "White Jerky",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "wild_berry": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 50.0
+      },
+      {
+        "id": "water_consumption",
+        "value": -10.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "wild_berry",
+    "imageUrl": "/food-images/wild_berry.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 4
+      },
+      {
+        "id": "water_when_consumed",
+        "value": 2
+      }
+    ],
+    "name": "Wild Berry",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "wild_salad": {
+    "buffs": [
+      {
+        "id": "exposure_resistance",
+        "value": 10.0
+      },
+      {
+        "id": "maximum_stamina",
+        "value": 150.0
+      },
+      {
+        "id": "melee_damage",
+        "value": 10.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "wild_salad",
+    "imageUrl": "/food-images/wild_salad.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 100
+      }
+    ],
+    "name": "Wild Salad",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "wine": {
+    "buffs": [
+      {
+        "id": "maximum_stamina",
+        "value": 125.0
+      },
+      {
+        "id": "stamina_regeneration",
+        "value": 100.0
+      }
+    ],
+    "durationSec": 900,
+    "id": "wine",
+    "imageUrl": "/food-images/wine.png",
+    "instantEffects": [
+      {
+        "id": "water_when_consumed",
+        "value": 40
+      }
+    ],
+    "name": "Wine",
+    "stomachCost": 1,
+    "wikiEffects": []
+  },
+  "young_coconut": {
+    "buffs": [
+      {
+        "id": "maximum_health",
+        "value": 25.0
+      }
+    ],
+    "durationSec": 600,
+    "id": "young_coconut",
+    "imageUrl": "/food-images/young_coconut.png",
+    "instantEffects": [
+      {
+        "id": "food_when_consumed",
+        "value": 2
+      },
+      {
+        "id": "water_when_consumed",
+        "value": 10
+      }
+    ],
+    "name": "Young Coconut",
+    "stomachCost": 1,
+    "wikiEffects": [
+      {
+        "id": "wiki_spoils_into_a_ripe_coconut_ripe_coconutripe_coconut",
+        "name": "Spoils into a Ripe Coconut\u2060 \u2060Ripe CoconutRipe Coconut",
+        "unit": "text",
+        "value": null
+      }
+    ]
+  }
+}

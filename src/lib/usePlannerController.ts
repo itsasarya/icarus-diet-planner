@@ -1,5 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
-import type { BuffId, EffectId } from "@/types/buff";
+import { useCallback, useState } from "react";
 import type { Food } from "@/types/food";
 import type { PlannerController } from "@/types/plannerTypes";
 import type { SavedDiet } from "@/types/diet";
@@ -8,22 +7,6 @@ import { Buffs } from "@/data/buffs";
 import { useLocalStorage } from "@/lib/useLocalStorage";
 
 export default function usePlannerController(): PlannerController {
-  const [activeFilter, setActiveFilters] = useState<Set<BuffId | EffectId>>(
-    new Set(),
-  );
-
-  const toggle = useCallback((id: BuffId | EffectId) => {
-    setActiveFilters((prev) => {
-      const next = new Set(prev);
-      next.has(id) ? next.delete(id) : next.add(id);
-      return next;
-    });
-  }, []);
-
-  const clear = useCallback(() => {
-    setActiveFilters(new Set());
-  }, []);
-
   const [selectedFoods, setSelectedFoods] = useLocalStorage<Food[]>(
     "selected-foods",
     [],
@@ -33,17 +16,14 @@ export default function usePlannerController(): PlannerController {
     setSelectedFoods((prev) =>
       prev.some((f) => f.id === food.id) ? prev : [...prev, food],
     );
-  }, []);
+  }, [setSelectedFoods]);
 
   const remove = useCallback((id: string) => {
     setSelectedFoods((prev) => prev.filter((f) => f.id !== id));
-  }, []);
+  }, [setSelectedFoods]);
 
   // Diet save
-  const [savedDiets, setSavedDiets] = useState<SavedDiet[]>([]);
-  useEffect(() => {
-    setSavedDiets(getDiets());
-  }, []);
+  const [savedDiets, setSavedDiets] = useState<SavedDiet[]>(getDiets);
 
   const saveCurrentDiet = useCallback(
     (name: string, id?: string, tags?: string[]) => {
@@ -86,7 +66,7 @@ export default function usePlannerController(): PlannerController {
     const diets = getDiets();
     const diet = diets.find((d) => d.id === id);
     if (diet) setSelectedFoods(diet.foods);
-  }, []);
+  }, [setSelectedFoods]);
 
   const removeDiet = useCallback((id: string) => {
     deleteDiet(id);
@@ -94,8 +74,7 @@ export default function usePlannerController(): PlannerController {
   }, []);
 
   return {
-    filters: { active: activeFilter, toggle, clear },
-    foods: { selected: selectedFoods, add, remove },
+    foods: { selected: selectedFoods, add, remove, replace: setSelectedFoods },
     diets: {
       list: savedDiets,
       save: saveCurrentDiet,

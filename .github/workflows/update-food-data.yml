@@ -1,0 +1,58 @@
+name: Update food statistics
+
+on:
+  schedule:
+    - cron: "00 8 * * 6"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: update-food-statistics
+  cancel-in-progress: false
+
+jobs:
+  update-food-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: |
+          python -m pip install -r requirements.txt
+          npm ci
+
+      - name: Refresh wiki statistics
+        run: npm run sync:foods
+
+      - name: Verify parser and application build
+        run: |
+          npm run test:foods
+          npm run build
+
+      - name: Open or update data pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: automation/update-food-statistics
+          delete-branch: true
+          title: "Update food statistics from Icarus Wiki"
+          commit-message: "chore: update food statistics from Icarus Wiki"
+          body: "Refresh generated food stats and filterable effects from the Icarus Wiki Statistics table."
+          add-paths: |
+            src/data/foods/wiki-statistics.json
+            public/food-images/*

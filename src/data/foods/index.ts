@@ -1,15 +1,17 @@
 import type { Food } from '@/types/food'
+import catalog from './wiki-statistics.json'
 
-const modules = import.meta.glob<{ default?: Food }>('./*.ts', {
-  eager: true
+type FoodRecord = Omit<Food, 'image'> & {
+  imageUrl?: string
+  imageAsset?: string
+}
+
+const foods = Object.values(catalog as Record<string, FoodRecord>).map((record) => {
+  const { imageUrl, ...food } = record
+  return {
+    ...food,
+    image: imageUrl,
+  }
 })
-
-const foods: Food[] = Object.entries(modules)
-  .filter(([path]) =>
-    !path.endsWith('index.ts') &&
-    !path.endsWith('food.types.ts')
-  )
-  .map(([, mod]) => mod.default)
-  .filter((f): f is Food => Boolean(f))
 
 export default foods
