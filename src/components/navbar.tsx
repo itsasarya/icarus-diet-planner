@@ -25,9 +25,9 @@ export default function Navbar() {
             </Button>
           </div>
           <ButtonGroup className="order-3 min-w-0 basis-full lg:order-2 lg:w-72 lg:basis-auto lg:flex-none">
-            <span className="flex h-9 items-center border-y border-l px-2 text-muted-foreground" aria-hidden="true">
+            <Button variant="outline" size="icon">
               <Search className="size-4" />
-            </span>
+            </Button>
             <Input
               value={query}
               onChange={(e) => setQuery(e.target.value)}
